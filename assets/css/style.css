@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .hero-slider::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(191, 224, 247, 0.664);
   position: absolute;
   height: 100%;
   width: 100%;
