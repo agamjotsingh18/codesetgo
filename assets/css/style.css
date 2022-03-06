@@ -1165,10 +1165,19 @@ section {
     color: #2796FF;
 }
 
+#contact .contact-info i:hover {
+  color:#081e5b ;
+}
+#contact .contact-info address, #contact .contact-info p {
+  margin-bottom: 0;
+  color: #000;
+=======
+
 #contact .contact-info address,
 #contact .contact-info p {
     margin-bottom: 0;
     color: #000;
+
 }
 
 #contact .contact-info h3 {
