@@ -1,11 +1,3 @@
-/**
-* Template Name: Reveal - v4.5.0
-* Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -79,55 +71,6 @@ h6 {
 .back-to-top.active {
     visibility: visible;
     opacity: 1;
-}
-
-
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-
-#topbar {
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    font-size: 14px;
-    padding: 0;
-    height: 40px;
-}
-
-#topbar .contact-info i {
-    font-style: normal;
-    color: #2796FF;
-}
-
-#topbar .contact-info i a,
-#topbar .contact-info i span {
-    padding-left: 5px;
-    color: #444;
-}
-
-#topbar .contact-info i a {
-    line-height: 0;
-    transition: 0.3s;
-}
-
-#topbar .contact-info i a:hover {
-    color: #2796FF;
-}
-
-#topbar .social-links a {
-    color: #555;
-    padding: 0 15px;
-    display: inline-block;
-    line-height: 1px;
-    border-left: 1px solid #e9e9e9;
-}
-
-#topbar .social-links a:hover {
-    color: #2796FF;
-}
-
-#topbar .social-links a:first-child {
-    border-left: 0;
 }
 
 
@@ -232,68 +175,6 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
     color: #2796FF;
-}
-
-.navbar .dropdown ul {
-    display: block;
-    position: absolute;
-    left: 14px;
-    top: calc(100% + 30px);
-    margin: 0;
-    padding: 10px 0;
-    z-index: 99;
-    opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    transition: 0.3s;
-}
-
-.navbar .dropdown ul li {
-    min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-.navbar .dropdown ul a i {
-    font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-    color: #2796FF;
-}
-
-.navbar .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-}
-
-@media (max-width: 1366px) {
-    .navbar .dropdown .dropdown ul {
-        left: -90%;
-    }
-    .navbar .dropdown .dropdown:hover>ul {
-        left: -100%;
-    }
 }
 
 
@@ -555,61 +436,6 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-
-.breadcrumbs {
-    padding: 20px 0;
-    background-color: #fafafa;
-    min-height: 40px;
-}
-
-.breadcrumbs h2 {
-    font-size: 24px;
-    font-weight: 300;
-    margin: 0;
-}
-
-@media (max-width: 992px) {
-    .breadcrumbs h2 {
-        margin: 0 0 10px 0;
-    }
-}
-
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-    padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #6c757d;
-    content: "/";
-}
-
-@media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-        display: block !important;
-    }
-    .breadcrumbs ol {
-        display: block;
-    }
-    .breadcrumbs ol li {
-        display: inline-block;
-    }
-}
-
-
 /* About Section
 --------------------------------*/
 
@@ -649,29 +475,6 @@ section {
     font-size: 18px;
     line-height: 26px;
     font-style: italic;
-}
-
-#about .content p {
-    line-height: 26px;
-}
-
-#about .content p:last-child {
-    margin-bottom: 0;
-}
-
-#about .content i {
-    font-size: 20px;
-    padding-right: 4px;
-    color: #2796FF;
-}
-
-#about .content ul {
-    list-style: none;
-    padding: 0;
-}
-
-#about .content ul li {
-    padding-bottom: 10px;
 }
 
 
@@ -749,213 +552,6 @@ section {
         margin-left: 0;
         text-align: center;
     }
-}
-
-
-/* Clients Section
---------------------------------*/
-
-#clients {
-    padding: 30px 0;
-}
-
-#clients img {
-    max-width: 100%;
-    opacity: 0.5;
-    transition: 0.3s;
-    padding: 15px 0;
-}
-
-#clients img:hover {
-    opacity: 1;
-}
-
-#clients .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-}
-
-#clients .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #2796FF;
-}
-
-#clients .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #2796FF;
-}
-
-
-/* Our Portfolio Section
---------------------------------*/
-
-#portfolio {
-    background: #fff;
-    padding: 30px 0;
-}
-
-#portfolio #portfolio-flters {
-    padding: 0;
-    margin: 0 auto 25px auto;
-    list-style: none;
-    text-align: center;
-    border-radius: 50px;
-}
-
-#portfolio #portfolio-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 18px 12px 18px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1;
-    color: #444;
-    margin: 0 3px 10px 3px;
-    transition: all ease-in-out 0.3s;
-    background: #f7f7f7;
-    border-radius: 4px;
-}
-
-#portfolio #portfolio-flters li:hover,
-#portfolio #portfolio-flters li.filter-active {
-    color: #fff;
-    background: #2796FF;
-}
-
-#portfolio #portfolio-flters li:last-child {
-    margin-right: 0;
-}
-
-#portfolio .portfolio-item {
-    margin-bottom: 30px;
-    overflow: hidden;
-}
-
-#portfolio .portfolio-item img {
-    position: relative;
-    top: 0;
-    transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-#portfolio .portfolio-item .portfolio-info {
-    opacity: 0;
-    position: absolute;
-    left: 12px;
-    right: 12px;
-    bottom: -50px;
-    z-index: 3;
-    transition: all ease-in-out 0.3s;
-    background: #2796FF;
-    padding: 15px 20px;
-}
-
-#portfolio .portfolio-item .portfolio-info h4 {
-    font-size: 18px;
-    color: #fff;
-    font-weight: 600;
-}
-
-#portfolio .portfolio-item .portfolio-info p {
-    color: #fff;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-#portfolio .portfolio-item .portfolio-info .preview-link,
-#portfolio .portfolio-item .portfolio-info .details-link {
-    position: absolute;
-    right: 50px;
-    font-size: 24px;
-    top: calc(50% - 18px);
-    color: rgba(255, 255, 255, 0.6);
-    transition: ease-in-out 0.3s;
-}
-
-#portfolio .portfolio-item .portfolio-info .preview-link:hover,
-#portfolio .portfolio-item .portfolio-info .details-link:hover {
-    color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-info .details-link {
-    right: 15px;
-}
-
-#portfolio .portfolio-item:hover img {
-    top: -30px;
-}
-
-#portfolio .portfolio-item:hover .portfolio-info {
-    opacity: 1;
-    bottom: 0;
-}
-
-
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-
-.portfolio-details {
-    padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-    width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #2796FF;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #2796FF;
-}
-
-.portfolio-details .portfolio-info {
-    padding: 30px;
-    box-shadow: 0px 0 30px rgba(12, 46, 138, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-    margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-    padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-    padding: 0;
 }
 
 
@@ -1091,61 +687,6 @@ section {
 }
 
 
-/* Our Team Section
---------------------------------*/
-
-#team {
-    background: #fff;
-    padding: 30px 0 0 0;
-}
-
-#team .member {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#team .member .pic {
-    overflow: hidden;
-    text-align: center;
-}
-
-#team .member .pic img {
-    max-width: 100%;
-}
-
-#team .member .details {
-    background: #2796FF;
-    color: #fff;
-    padding: 15px;
-    border-radius: 0 0 3px 3px;
-}
-
-#team .member h4 {
-    font-weight: 700;
-    margin-bottom: 2px;
-    font-size: 18px;
-}
-
-#team .member span {
-    font-style: italic;
-    display: block;
-    font-size: 13px;
-}
-
-#team .member .social {
-    margin-top: 5px;
-}
-
-#team .member .social a {
-    color: #fff;
-}
-
-#team .member .social i {
-    font-size: 16px;
-    margin: 0 2px;
-}
-
-
 /* Contact Section
 --------------------------------*/
 
@@ -1166,18 +707,7 @@ section {
 }
 
 #contact .contact-info i:hover {
-  color:#081e5b ;
-}
-#contact .contact-info address, #contact .contact-info p {
-  margin-bottom: 0;
-  color: #000;
-=======
-
-#contact .contact-info address,
-#contact .contact-info p {
-    margin-bottom: 0;
-    color: #000;
-
+    color: #081e5b;
 }
 
 #contact .contact-info h3 {
@@ -1215,94 +745,9 @@ section {
         border-left: 1px solid #ddd;
         border-right: 1px solid #ddd;
     }
-}
-
-#contact #google-map {
-    height: 290px;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 576px) {
-    #contact #google-map {
-        margin-top: 20px;
+    #contact .contact-email {
+        border-right: 1px solid #ddd;
     }
-}
-
-#contact .php-email-form .validate {
-    display: none;
-    color: red;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-}
-
-#contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-}
-
-#contact .php-email-form .error-message br+br {
-    margin-top: 25px;
-}
-
-#contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-}
-
-#contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-}
-
-#contact .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-}
-
-#contact .php-email-form input,
-#contact .php-email-form textarea {
-    padding: 10px 14px;
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 15px;
-}
-
-#contact .php-email-form input::focus,
-#contact .php-email-form textarea::focus {
-    background-color: #2796FF;
-}
-
-#contact .php-email-form button[type=submit] {
-    background: #2796FF;
-    border: 0;
-    border-radius: 3px;
-    padding: 10px 30px;
-    color: #fff;
-    transition: 0.4s;
-    cursor: pointer;
-}
-
-#contact .php-email-form button[type=submit]:hover {
-    background: #2dc899;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1337,14 +782,4 @@ section {
 #footer .copyright {
     text-align: center;
     padding-top: 30px;
-}
-
-#footer .credits {
-    text-align: center;
-    font-size: 13px;
-    color: #555;
-}
-
-#footer .credits a {
-    color: #0c2e8a;
 }
