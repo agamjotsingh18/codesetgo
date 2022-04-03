@@ -32,6 +32,9 @@
 
     <!-- CSS  -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="public/css/enquiry-form.css" rel="stylesheet">
+
+    <script src=""></script>
 
 </head>
 
@@ -227,6 +230,16 @@
                     <h2>Contact Us</h2>
                 </div>
                 <div class="row contact-info">
+                    <div class="enquiry">
+                        <form class = "enquiry-form" id="enquiry-form" >
+                            <div class="title">GET IN TOUCH</div>
+                            <input type = "text" id = "name" placeholder = "Your Name" required>
+                            <input type = "email" id = "email" placeholder = "Email id" required>
+                            <input type = "text" id = "phone" placeholder = "Phone no." required>
+                            <textarea id="message" row="5" placeholder="How can we help you?" required></textarea>
+                            <button type="button" onclick="sendMail(); reset();">Send</button>
+                        </form>
+                    </div>
                     <div class="col-md-12">
                         <div class="contact-phone">
                             <a href="index.html"><img src="assets/img/Light Blue - White.jpg" alt="" height="90px" width="260px"></a>
@@ -288,6 +301,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js" integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- JS -->
     <script src="assets/js/main.js"></script>
