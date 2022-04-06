@@ -2,10 +2,14 @@
 # General
 --------------------------------------------------------------*/
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
 body {
     background: #fff;
     color: #444;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -33,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
@@ -90,7 +94,7 @@ h6 {
     font-size: 42px;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
 
@@ -155,9 +159,9 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     color: #444;
     white-space: nowrap;
     transition: 0.3s;
@@ -335,7 +339,7 @@ h6 {
 
 #hero .hero-content .btn-get-started,
 #hero .hero-content .btn-projects {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -474,7 +478,9 @@ section {
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
-    font-style: italic;
+    padding: 0.5rem 0;
+    line-height: 1.8;
+    /* font-style: italic; */
 }
 
 
@@ -618,7 +624,6 @@ section {
 }
 
 #testimonials .testimonial-item p {
-    font-style: italic;
     margin: 0 auto 15px auto;
 }
 
@@ -668,7 +673,7 @@ section {
 }
 
 #call-to-action .cta-btn {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 1px;
