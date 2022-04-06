@@ -34,6 +34,10 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/darkmode.css">
    
+    <link href="public/css/enquiry-form.css" rel="stylesheet">
+
+    <script src=""></script>
+
 </head>
 
 <body>
@@ -90,7 +94,7 @@
                     <div class="col-lg-6 about-img">
                         <img src="assets/img/3186535.jpg" alt="">
                     </div>
-                    <div class="col-lg-6 content text-center">
+                    <div class="col-lg-6 content">
                         <h2>About Us</h2>
                         <h3><strong>CodeSetGo</strong> is a community made for the students and made by the students. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners,
                             developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations!<br> The Tech interested students and professionals are all welcomed! We provide the best learning experience
@@ -229,6 +233,16 @@
                     <h2>Contact Us</h2>
                 </div>
                 <div class="row contact-info">
+                    <div class="enquiry">
+                        <form class = "enquiry-form" id="enquiry-form" >
+                            <div class="title">GET IN TOUCH</div>
+                            <input type = "text" id = "name" placeholder = "Your Name" required>
+                            <input type = "email" id = "email" placeholder = "Email id" required>
+                            <input type = "text" id = "phone" placeholder = "Phone no." required>
+                            <textarea id="message" row="5" placeholder="How can we help you?" required></textarea>
+                            <button type="button" onclick="sendMail(); reset();">Send</button>
+                        </form>
+                    </div>
                     <div class="col-md-12">
                         <div class="contact-phone">
                             <a href="index.html"><img src="assets/img/Light Blue - White.jpg" alt="" height="90px" width="260px"></a>
@@ -293,6 +307,9 @@
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <!-- JS -->
     <script defer src="./assets/js/darkmode_logic.js"></script>
     <script src="assets/js/main.js"></script>
