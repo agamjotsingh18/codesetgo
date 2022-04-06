@@ -11,9 +11,9 @@ So, here you go! Contribute to the Open Source Website of CodeSetGo Community ðŸ
 
 <div align="center">
 
-<a href="https://github.com/agamjotsingh18/codesetgo-website"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
-<a href="https://github.com/agamjotsingh18/codesetgo-website"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
-<a href="https://github.com/Amit366/"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href="https://github.com/agamjotsingh18/codesetgo-website">  <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href="https://github.com/agamjotsingh18/codesetgo-website">  <img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href="https://github.com/Amit366/">  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
 
 
 <a href="https://github.com/agamjotsingh18/codesetgo-website/graphs/contributors"><img src="https://img.shields.io/github/contributors/agamjotsingh18/codesetgo-website?color=brightgreen"></a>
@@ -30,17 +30,18 @@ So, here you go! Contribute to the Open Source Website of CodeSetGo Community ðŸ
 <p align="center">
 
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt=" forks"/>
+<img src="https://user-images.githubusercontent.com/99464268/161958847-c0747b01-88fe-41dc-b8aa-34583fc6dd02.svg" alt=" forks"/>	
+<img src="https://user-images.githubusercontent.com/99464268/161957706-0933557d-44d1-49ce-b011-08cc6a7ec1c4.svg" alt=" forks"/>
 
 </p>
 
 ### Tech Used
 
-<img alt="HTML" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white">
-<img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white">
-<img alt="Javascript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
-<img alt="React" src="https://img.shields.io/badge/react%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%#61DBFB"/> 
+<img alt="HTML" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white">  <img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white">  <img alt="Javascript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">  <img alt="React" src="https://img.shields.io/badge/react%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%#61DBFB"/> 
 
 ## Sneak Peek of the Website:
+
+![codesetgo ss](https://user-images.githubusercontent.com/99464268/161961954-274028d8-dfbf-4505-b253-d26740658031.png)
 
 
 
