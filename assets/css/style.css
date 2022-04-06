@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
+
 body {
     background: #fff;
     color: #444;
@@ -163,8 +164,10 @@ h6 {
     padding: 10px 0 10px 30px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
+
     font-weight: 600;
     color: var(--box-anchor);
+
     white-space: nowrap;
     transition: 0.3s;
 }
