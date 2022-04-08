@@ -2,7 +2,6 @@
 # General
 --------------------------------------------------------------*/
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 
@@ -11,6 +10,10 @@ body {
     color: #444;
     font-family: "Poppins", sans-serif;
 }
+
+
+
+
 
 a {
     color: #2796FF;
@@ -86,7 +89,7 @@ h6 {
     height: 80px;
     transition: all 0.5s;
     z-index: 997;
-    background: #fff;
+    background: var(--bar);
     box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -161,8 +164,10 @@ h6 {
     padding: 10px 0 10px 30px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-    font-weight: 400;
-    color: #444;
+
+    font-weight: 600;
+    color: var(--box-anchor);
+
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -179,6 +184,39 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover>a {
     color: #2796FF;
+}
+
+.darkmode{
+    margin-left: 1em;
+    
+    font-size: 1.3em;
+    transform: translateY(3px) rotateZ(0deg);
+    transition: 400ms;
+    color: var(--box-anchor);
+    cursor: pointer;
+}
+.darkmode:hover{
+   animation: anim-one 2s linear infinite forwards;
+    
+}
+
+@keyframes anim-one{
+    0%{
+        transform: translateY(3px) rotateZ(0deg);
+    }
+    25%{
+
+        transform: translateY(3px) rotateZ(20deg);
+    }
+    50%{
+        transform: translateY(3px) rotateZ(0deg);
+    }
+    75%{
+        transform: translateY(3px) rotateZ(-20deg);
+    }
+    100%{
+        transform: translateY(3px) rotateZ(0deg);
+    }
 }
 
 
@@ -206,6 +244,10 @@ h6 {
     .navbar ul {
         display: none;
     }
+    .darkmode:hover{
+        animation:none;
+        
+     }
 }
 
 .navbar-mobile {
@@ -416,7 +458,7 @@ section {
 
 .section-header h2 {
     font-size: 32px;
-    color: #0c2e8a;
+    color: var( --section-header);
     text-transform: uppercase;
     font-weight: 700;
     position: relative;
@@ -437,6 +479,7 @@ section {
 .section-header p {
     padding: 0;
     margin: 0;
+    color: var( --textcolor);
 }
 
 
@@ -494,7 +537,8 @@ section {
 #services .box {
     padding: 40px;
     box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-    background: #fff;
+    background: var(--darkback);
+    border: 4px solid var(--postborder);
     transition: 0.4s;
     height: 100%;
 }
@@ -534,7 +578,7 @@ section {
 }
 
 #services .box h4 a {
-    color: #444;
+    color: var(--box-anchor);
 }
 
 #services .box p {
@@ -542,6 +586,7 @@ section {
     margin-left: 100px;
     margin-bottom: 0;
     line-height: 24px;
+    color: var(--textcolor);
 }
 
 @media (max-width: 767px) {
@@ -579,7 +624,7 @@ section {
     margin: 30px 15px;
     text-align: center;
     min-height: fit-content;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 2px 12px var(--border-color);
 }
 
 @media (max-width: 767px) {
@@ -599,7 +644,7 @@ section {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 5px 0;
-    color: #111;
+    color: var(--textcolor3);
 }
 
 #testimonials .testimonial-item h4 {
@@ -613,6 +658,7 @@ section {
     padding-right: 10px;
     display: inline-block;
     width: 37px;
+    
 }
 
 #testimonials .testimonial-item .quote-sign-right {
@@ -625,6 +671,7 @@ section {
 
 #testimonials .testimonial-item p {
     margin: 0 auto 15px auto;
+    color: var(--textcolor3);
 }
 
 #testimonials .swiper-pagination {
@@ -712,7 +759,7 @@ section {
 }
 
 #contact .contact-info i:hover {
-    color: #081e5b;
+    color: var(--hover-color1);
 }
 
 #contact .contact-info h3 {
@@ -724,7 +771,7 @@ section {
 }
 
 #contact .contact-info a {
-    color: #000;
+    color: var(--textcolor3);
 }
 
 #contact .contact-info a:hover {
@@ -779,7 +826,7 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #f2f5f8;
+    background: var(--footer);
     padding: 0 0 30px 0;
     font-size: 14px;
 }
@@ -787,4 +834,5 @@ section {
 #footer .copyright {
     text-align: center;
     padding-top: 30px;
+    color: var(--textcolor);
 }
