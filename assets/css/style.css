@@ -118,9 +118,11 @@ h6 {
     #header {
         height: 60px;
     }
+
     #header #logo h1 {
         font-size: 34px;
     }
+
     #header #logo img {
         max-height: 40px;
     }
@@ -186,35 +188,40 @@ h6 {
     color: #2796FF;
 }
 
-.darkmode{
+.darkmode {
     margin-left: 1em;
-    
+
     font-size: 1.3em;
     transform: translateY(3px) rotateZ(0deg);
     transition: 400ms;
     color: var(--box-anchor);
     cursor: pointer;
 }
-.darkmode:hover{
-   animation: anim-one 2s linear infinite forwards;
-    
+
+.darkmode:hover {
+    animation: anim-one 2s linear infinite forwards;
+
 }
 
-@keyframes anim-one{
-    0%{
+@keyframes anim-one {
+    0% {
         transform: translateY(3px) rotateZ(0deg);
     }
-    25%{
+
+    25% {
 
         transform: translateY(3px) rotateZ(20deg);
     }
-    50%{
+
+    50% {
         transform: translateY(3px) rotateZ(0deg);
     }
-    75%{
+
+    75% {
         transform: translateY(3px) rotateZ(-20deg);
     }
-    100%{
+
+    100% {
         transform: translateY(3px) rotateZ(0deg);
     }
 }
@@ -241,13 +248,15 @@ h6 {
     .mobile-nav-toggle {
         display: block;
     }
+
     .navbar ul {
         display: none;
     }
-    .darkmode:hover{
-        animation:none;
-        
-     }
+
+    .darkmode:hover {
+        animation: none;
+
+    }
 }
 
 .navbar-mobile {
@@ -362,7 +371,7 @@ h6 {
 }
 
 #hero .hero-content h2 {
-    color: #0c2e8a;
+    color: #fff;
     margin-bottom: 30px;
     font-size: 64px;
     font-weight: 700;
@@ -420,7 +429,7 @@ h6 {
 
 #hero .hero-slider::before {
     content: "";
-    background-color: rgba(221, 236, 247, 0.60);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -458,7 +467,7 @@ section {
 
 .section-header h2 {
     font-size: 32px;
-    color: var( --section-header);
+    color: var(--section-header);
     text-transform: uppercase;
     font-weight: 700;
     position: relative;
@@ -479,7 +488,7 @@ section {
 .section-header p {
     padding: 0;
     margin: 0;
-    color: var( --textcolor);
+    color: var(--textcolor);
 }
 
 
@@ -503,6 +512,7 @@ section {
     #about .about-img {
         height: auto;
     }
+
     #about .about-img img {
         margin-left: 0;
         padding-bottom: 30px;
@@ -593,11 +603,13 @@ section {
     #services .box .box {
         margin-bottom: 20px;
     }
+
     #services .box .icon {
         float: none;
         text-align: center;
         padding-bottom: 15px;
     }
+
     #services .box h4,
     #services .box p {
         margin-left: 0;
@@ -658,7 +670,7 @@ section {
     padding-right: 10px;
     display: inline-block;
     width: 37px;
-    
+
 }
 
 #testimonials .testimonial-item .quote-sign-right {
@@ -734,8 +746,10 @@ section {
 }
 
 #call-to-action .cta-btn:hover {
-    background: #2796FF;
-    border: 3px solid #2796FF;
+    background: white;
+    /* border: 3px solid #2796FF; */
+    color: #081e5b;
+    /* font-weight: 700; */
 }
 
 
@@ -785,6 +799,7 @@ section {
 }
 
 @media (min-width: 768px) {
+
     #contact .contact-address,
     #contact .contact-phone,
     #contact .contact-email {
@@ -797,6 +812,7 @@ section {
         border-left: 1px solid #ddd;
         border-right: 1px solid #ddd;
     }
+
     #contact .contact-email {
         border-right: 1px solid #ddd;
     }
@@ -806,6 +822,7 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -815,6 +832,7 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
