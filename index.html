@@ -1,558 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
+    <meta charset = "utf-8" />
+    <meta content = "width = device-width, initial-scale = 1.0" name = "viewport" />
     <title>CodeSetGo</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
+    
     <!-- Favicons -->
-    <link href="assets/img/Light Blue.jpg" rel="icon" />
-    <link href="assets/img/Light Blue.jpg" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
-      rel="stylesheet"
-    />
+    <link href = "assets/img/favicon.jpg" rel = "icon" />
+    <link href = "assets/img/favicon.jpg" rel = "apple-touch-icon" />
 
     <!-- CSS CDNs -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      rel = "stylesheet"
+      href = "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity = "sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin ="anonymous"
+      referrerpolicy = "no-referrer"
     />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+    <!--- Font Awesome CDN -->
+    <link rel = "stylesheet" 
+          href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+          integrity = "sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+          crossorigin = "anonymous" 
+          referrerpolicy = "no-referrer" 
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-      integrity="sha512-Oy+sz5W86PK0ZIkawrG0iv7XwWhYecM3exvUtMKNJMekGFJtVAhibhRPTpmyTj8+lJCkmWfnpxKgT2OopquBHA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Custom CSS -->
+    <link rel = "stylesheet" href = "assets/css/main.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
-      integrity="sha512-nOk7sj5T6Zi3Ond5VHhc+L4WHvRuRhV/cOcWWDl2mOyTetiIfuv56UJzD0yYhz9Kqwk1PpU0/PX5+qpX43hVWg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css"
-      integrity="sha512-+S5HQ2Ix/L84uhBLMimQiJlFjqR/Unnord77MEDNpWtK99i2Tk212EPb3/ahEjgaPRBKkKtTzMHIdO2HQXT3dQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- CSS  -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/darkmode.css" />
-    <link href="public/css/enquiry-form.css" rel="stylesheet" />
-
-    <script src=""></script>
+    <!--- Tailwind Script -->
+    <script src = "https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex justify-content-between">
-        <div id="logo">
-          <a href="index.html"
-            ><img
-              src="assets/img/Banner - Light.png"
-              alt=""
-              height="50px"
-              width="270px"
-          /></a>
-        </div>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#testimonials">Testimonials</a>
-            </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <li class="darkmode"></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-      </div>
-    </header>
-    <!-- End Header -->
+  <body class = "flex flex-col items-center overflow-x-hidden bg-black text-white">
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero">
-      <div class="hero-content" data-aos="fade-up">
-        <h2>Make <span>Learning</span><br />Fun!</h2>
-        <div>
-          <a href="#about" class="btn-get-started scrollto">Know More</a>
-          <a
-            href="https://forms.gle/7KViepY21qBSvdRUA"
-            class="btn-projects scrollto"
-            >Join Us</a
-          >
-        </div>
-      </div>
-      <div class="hero-slider swiper">
-        <div class="swiper-wrapper">
-          <div
-            class="swiper-slide"
-            style="
-              background-image: url('assets/img/hero-carousel/csg-bg1.jfif');
-            "
-          ></div>
-          <div
-            class="swiper-slide"
-            style="
-              background-image: url('assets/img/hero-carousel/csg-bg3.jfif');
-            "
-          ></div>
-          <div
-            class="swiper-slide"
-            style="
-              background-image: url('assets/img/hero-carousel/csg-bg6.jpg');
-            "
-          ></div>
-          <div
-            class="swiper-slide"
-            style="
-              background-image: url('assets/img/hero-carousel/csg-bg7.jpg');
-            "
-          ></div>
-        </div>
-      </div>
-    </section>
-    <!-- End Hero Section -->
+    <!-- Nav -->
+    <nav class = "fixed z-50 h-12 flex flex-row items-center justify-between bg-[#1a1a1a] rounded-md shadow-2xl px-4 py-8 mt-12" id = "nav">
+      <a href = "index.html">
+        <img src = "assets/img/logo.png" class = "w-36" alt = "web_logo">
+      </a>
+      <ul class = "lg:flex flex-row items-center hidden">
+        <li><a class = "scroll hover:bg-[#e72250] rounded-md px-4 py-2 ml-8" href = "#about">About</a></li>
+        <li><a class = "scroll hover:bg-[#e72250] rounded-md px-4 py-2 ml-8" href = "#services">Services</a></li>
+        <li><a class = "scroll hover:bg-[#e72250] rounded-md px-4 py-2 ml-8" href = "#testimonials">Testimonials</a></li>
+        <li><a class = "scroll hover:bg-[#e72250] rounded-md px-4 py-2 ml-8" href = "#contact">Contact</a></li>
+      </ul>
+      <button class = "text-xl lg:hidden" id = "hamburger"><i class = "fas fa-bars"></i></button>
+    </nav>
 
-    <!-- ======= Main Section ======= -->
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-6 about-img">
-              <img src="assets/img/3186535.jpg" alt="" />
-            </div>
-            <div class="col-lg-6 content">
-              <h2>About Us</h2>
-              <h3>
-                <strong>CodeSetGo</strong> is a community made for the students
-                and made by the students. It's a place for Tech Enthusiasts to
-                learn the latest technology in the comfort and convenience of
-                their homes! It's the community of learners, developers,
-                cryptographers and enthusiastic folks who are engaged toward the
-                brighter future of technology and innovations!<br />
-                The Tech interested students and professionals are all welcomed!
-                We provide the best learning experience and the latest trends of
-                the tech world at your doorsteps from the minds of highly
-                qualified industry professionals. <br />
-                We organise webinars, workshops, boot camps to further spread
-                the learning environment to aspiring students and professionals
-                around us. So JOIN US! and LEARN AND INCREASE YOUR SKILL SET AT
-                EASE!
-              </h3>
-            </div>
-          </div>
+    <!-- Mobile Nav -->
+    <nav class = "fixed z-50 flex flex-col text-right bg-[#1a1a1a] rounded-md hidden px-6 py-4" id = "mobile">
+      <a class = "scroll w-full hover:bg-[#e72250] rounded-md px-4 py-2" href = "#about">About</a>
+      <a class = "scroll w-full hover:bg-[#e72250] rounded-md px-4 py-2" href = "#services">Services</a>
+      <a class = "scroll w-full hover:bg-[#e72250] rounded-md px-4 py-2" href = "#testimonials">Testimonials</a>
+      <a class = "scroll w-full hover:bg-[#e72250] rounded-md px-4 py-2" href = "#contact">Contact</a>
+    </nav>
+
+    <!-- Main -->
+    <main class = "px-12 py-6 lg:px-36 lg:py-12">
+      <!-- Hero -->
+      <section class = "flex flex-col lg:flex-row lg:items-center my-16">
+        <div class = "flex-grow">
+          <hr style = "border-top: 3px solid #e72250; width: 40px; margin-bottom: 1rem;">
+          <h2 class = "text-4xl font-bold mb-12">We're a community to<br>make learning fun.</h2>
+          <a href = "https://forms.gle/7KViepY21qBSvdRUA" class = "font-light border-2 border-[#e72250] rounded-md hover:bg-[#e72250] px-6 py-2">Join Us</a>
+        </div>
+        <img src = "assets/img/hero.png" class = "h-[20rem] lg:w-[25rem] lg:h-[25rem] lg:rounded-full object-cover my-12 lg:my-0" data-aos = "fade-left" alt = "hero_image">
+      </section>
+
+      <!-- Services -->
+      <section class = "flex flex-col lg:grid grid-cols-4 gap-6 my-6" id = "services">
+        <div class = "flex flex-col bg-[#e72250] rounded-md px-4 py-12" data-aos = "fade-up-right">
+          <i class = "text-4xl fa-solid fa-code mb-6"></i>
+          <h4 class = "text-2xl font-bold mb-4"><a href = "">Coding Resources</a></h4>
+          <hr style = "border-top: 3px solid white; width: 40px; margin-bottom: 4rem;">
+          <p class = "text-justify">
+            We provide Tutorials, articles, videos, cheatsheets and other educational materials to excel.
+          </p>
+        </div>
+        <div class = "flex flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "400">
+          <i class="text-4xl text-[#e72250] fa-solid fa-earth-americas mb-6"></i>
+          <h4 class = "text-2xl font-bold mb-4"><a href = "">Online Webinars</a></h4>
+          <hr style = "border-top: 3px solid #e72250; width: 40px; margin-bottom: 4rem;">
+          <p class = "text-justify">
+            We conduct online webinars for every field in Computer Science.
+          </p>
+        </div>
+        <div class = "flex flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "800">
+          <i class = "text-4xl text-[#e72250] fa-solid fa-question mb-6"></i>
+          <h4 class = "text-2xl font-bold mb-4"><a href = "">Doubt Support</a></h4>
+          <hr style = "border-top: 3px solid #e72250; width: 40px; margin-bottom: 4rem;">
+          <p class = "text-justify">
+            Clear all your doubts through LIVE discord support.
+          </p>
+        </div>
+        <div class = "flex flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "1200">
+          <i class = "text-4xl text-[#e72250] fa-solid fa-user mb-6"></i>
+          <h4 class = "text-2xl font-bold mb-4"><a href = "">Guidance</a></h4>
+          <hr style = "border-top: 3px solid #e72250; width: 40px; margin-bottom: 4rem;">
+          <p class = "text-justify">
+            Get expert guidance with career, open source and internships, jobs around the world.
+          </p>
         </div>
       </section>
-      <!-- End About Section -->
-
-      <!-- ======= Services Section ======= -->
-      <section id="services">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Services</h2>
-            <p>
-              We aim to provide a real world practical learning experience and
-              keep students informed about the latest trends in technology,
-              open-source and opportunities.
-            </p>
-          </div>
-          <div class="row gy-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="box">
-                <div class="icon"><i class="bi bi-journal-code"></i></div>
-                <h4 class="title"><a href="">Coding Resources</a></h4>
-                <p class="description">
-                  We provide Tutorials, articles, videos, cheatsheets and other
-                  educational materials to excel.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <div class="icon"><i class="bi bi-megaphone"></i></div>
-                <h4 class="title"><a href="">Online Webinars</a></h4>
-                <p class="description">
-                  We conduct online webinars for every field in Computer
-                  Science.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="box">
-                <div class="icon"><i class="bi bi-question-square"></i></div>
-                <h4 class="title"><a href="">Doubt Support</a></h4>
-                <p class="description">
-                  Clear all your doubts through LIVE discord support.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="box">
-                <div class="icon"><i class="bi bi-book-half"></i></div>
-                <h4 class="title"><a href="">Guidance</a></h4>
-                <p class="description">
-                  Get expert guidance with career, open source and internships,
-                  jobs around the world.
-                </p>
-              </div>
-            </div>
-          </div>
+    
+      <!-- About -->
+      <section class = "grid grid-cols-8 gap-12 my-24" id = "about" data-aos = "fade-up">
+        <div class = "flex flex-col col-span-3">
+          <hr style = "border-top: 3px solid #e72250; width: 40px; margin-bottom: 1rem;">
+          <h2 class = "text-4xl font-bold">About.</h2>
+          <h3 class = "text-[#e72250] font-bold">A community made for the students and made by the students.</h3>
         </div>
-      </section>
-      <!-- End Services Section -->
+        <h3 class = "col-span-5 text-justify text-sm font-light">
+          It's a place for techies to learn the latest technfrom  the comfort of their homes! It's the 
+          community of learners, devs, cryptographers and geeks who are engaged towards brighter innovations! 
+          All interested students and professionals are all welcome! We provide the best learning experience 
+          and the latest of trends of the tech world at your doorsteps from the highly qualified industry giants. 
+          We organise webinars, workshops, boot camps to further spread the spark among students and professionals 
+          around us. So JOIN US, to LEARN, to INCREASE YOUR SKILLS and GET SET GO!
+        </h3>
+        <img src = "assets/img/bootcamp.png" class = "col-span-8 lg:col-span-5 w-full h-[20rem] lg:h-[30rem] object-cover" alt = "" data-aos = "fade-right" data-aos-delay = "200">
+        <div class = "hidden lg:flex flex-col gap-4 col-span-3">
+          <img src = "assets/img/webinar.png" class = "w-full h-[14rem] object-cover" alt = "" data-aos = "fade-left" data-aos-delay = "400">
+          <img src = "assets/img/workshop.png" class = "w-full h-[15rem] object-cover" alt = "" data-aos = "fade-left" data-aos-delay = "600">
+        </div>
+      </section>        
 
-      <!-- ======= Call To Action Section ======= -->
-      <section id="call-to-action">
-        <div class="container" data-aos="zoom-out">
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-start">
-              <h3 class="cta-title">Call For Speaker</h3>
-              <p class="cta-text">
-                You are more than welcome to present your research or skills
-                with us. CodeSetGo invites you to serve as our speaker.
+      <!-- Call To Action -->
+      <section class = "flex flex-col lg:flex-row lg:items-center justify-between my-24" data-aos = "zoom-out">
+        <div class = "flex flex-col">
+          <h3 class = "text-4xl font-bold mb-6">Any speakers here?</h3>
+          <p class = "text-[#e72250] font-bold">
+            Want to present your research or skills with us? CodeSetGo invites you to serve as our speaker.
+          </p>
+        </div>
+        <a class = "w-fit font-light border-2 border-[#e72250] rounded-md hover:bg-[#e72250] mt-6 lg:mt-0 px-6 py-2" href = "https://forms.gle/HfDMg1Xuh7KnJPyu6">Speak For Us</a>
+      </section>
+
+      <!-- Testimonials -->
+      <section class = "my-24" id = "testimonials" data-aos = "fade-up">
+        <div class = "flex flex-col mb-12">
+          <hr style = "border-top: 3px solid #e72250; width: 40px; margin-bottom: 1rem;">
+          <h2 class = "text-4xl font-bold">Testimonials.</h2>
+          <h3 class = "text-[#e72250] font-bold">What people who help us prosper say about us.</h3>
+        </div>
+        <div class = "flex flex-col lg:grid grid-cols-4 gap-6" data-aos = "fade-up" data-aos-delay = "100">
+          <div class = "flex flex-col items-center bg-[#e72250] rounded-md px-4 py-12" data-aos = "fade-down" data-aos-delay = "600">
+            <img src = "assets/img/1516365445572.jfif" class = "w-[10rem] h-[10rem] rounded-full object-cover mb-6" alt = "">
+            <div class = "flex flex-col items-end">
+              <p class = "text-justify mb-6">
+                The experience of being associated with CodeSetGo since past
+                few months has been a wonderful one. The various resources,
+                scholarship, events and new opportunities to participate in
+                have proven to be successful team efforts.
               </p>
+              <h3 class = "text-lg font-bold mb-4">Praveen Kumar, Speaker</h3>
+              <hr style = "border-top: 3px solid white; width: 40px;">
             </div>
-            <div class="col-lg-3 cta-btn-container text-center">
-              <a
-                class="cta-btn align-middle"
-                href="https://forms.gle/HfDMg1Xuh7KnJPyu6"
-                >Call For Speaker</a
-              >
+          </div>
+          <div class = "flex flex-col items-center bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-down" data-aos-delay = "1200">
+            <img src = "assets/img/1627730807968.jfif" class = "w-[10rem] h-[10rem] rounded-full object-cover mb-6" alt = "">
+            <div class = "flex flex-col items-end">
+              <p class = "text-justify mb-6">
+                It's the perfect platform for beginners to get guidance from
+                not only guidance but through this platform we can easily
+                interact and talk freely about the common problem which we
+                as a student face during this period of time.
+              </p>
+              <h3 class = "text-lg font-bold mb-4">Arth Nangia, Member</h3>
+              <hr style = "border-top: 3px solid #e72250; width: 40px;">
+            </div>
+          </div>
+          <div class = "flex flex-col items-center bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-down" data-aos-delay = "1800">
+            <img src = "assets/img/1613580988884.jfif" class = "w-[10rem] h-[10rem] rounded-full object-cover mb-6" alt = "">
+            <div class = "flex flex-col items-end">
+              <p class = "text-justify mb-6">
+                It's awesome. If I ask one doubt then like atleast 10 of
+                them are ready to clear it at that moment. It doesn't matter
+                how silly is my doubt. This gives me confidence to ask
+                anything which I think is one of the most important and
+                unique feature of CSG Community.
+              </p>
+              <h3 class = "text-lg font-bold mb-4">Aastha Tripathi, Member</h3>
+              <hr style = "border-top: 3px solid #e72250; width: 40px;">
+            </div>
+          </div>
+          <div class = "flex flex-col items-center bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-down" data-aos-delay = "2400">
+            <img src = "assets/img/1600361001868.jfif" class = "w-[10rem] h-[10rem] rounded-full object-cover mb-6" alt = "">
+            <div class = "flex flex-col items-end">
+              <p class = "text-justify mb-6">
+                FIVE STARS ⭐⭐⭐⭐⭐ <br>
+                I have been to many bootcamps and workshops related to 
+                coding but none matches the level of professional quality 
+                mentorship I got here from the CSG Team. Thank you Code Set Go!
+              </p>
+              <h3 class = "text-lg font-bold mb-4">Anishaa Choudhury, Member</h3>
+              <hr style = "border-top: 3px solid #e72250; width: 40px;">
             </div>
           </div>
         </div>
       </section>
-      <!-- End Call To Action Section -->
 
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Testimonials</h2>
+      <!-- Enquiry -->
+      <section class = "flex flex-col lg:grid grid-cols-2 bg-[#1a1a1a] rounded-md px-4 py-12 my-24" id = "contact">
+        <div class = "flex flex-col justify-center lg:ml-12" data-aos = "fade-right">
+          <h2 class = "text-3xl font-bold mb-6">Let's Talk?</h2>
+          <div class = "lg:flex flex-row text-xl gap-6">
+            <a href = "https://www.linkedin.com/company/codesetgo/" target = "_blank" class = "border-2 border-[#e72250] rounded-full px-2 py-1 hover:bg-[#e72250]" ><i class = "fa-brands fa-linkedin-in"></i></a>
+            <a href = "https://instagram.com/codesetgo/" target = "_blank" class = "border-2 border-[#e72250] rounded-full px-2 py-1 hover:bg-[#e72250]"><i class = "fa-brands fa-instagram"></i></a>
+            <a href = "https://www.youtube.com/channel/UC4dJIsV1bWwCwPFHFI6sY7Q?sub_confirmation=1" target = "_blank" class = "border-2 border-[#e72250] rounded-full px-2 py-1 hover:bg-[#e72250]"><i class = "fa-brands fa-youtube"></i></a>
+            <a href = "https://discord.gg/yWhNysUEej" target = "_blank" class = "border-2 border-[#e72250] rounded-full px-2 py-1 hover:bg-[#e72250]"><i class = "fa-brands fa-discord"></i></a>
+            <a href = "https://t.me/Code_Set_Go" target = "_blank" class = "border-2 border-[#e72250] rounded-full px-2 py-1 hover:bg-[#e72250]"><i class = "fa-brands fa-telegram"></i></a>
+            <a href = "https://github.com/CodeSetGo" target = "_blank" class = "border-2 border-[#e72250] rounded-full px-2 py-1 hover:bg-[#e72250]"><i class = "fa-brands fa-github"></i></a>
           </div>
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <img
-                      src="assets/img/quote-sign-left.png"
-                      class="quote-sign-left"
-                      alt=""
-                    />
-                    The experience of being associated with CodeSetGo since past
-                    few months has been a wonderful one. The various resources,
-                    scholarship, events and new opportunities to participate in
-                    have proven to be successful team efforts.
-                    <img
-                      src="assets/img/quote-sign-right.png"
-                      class="quote-sign-right"
-                      alt=""
-                    />
-                  </p>
-                  <img
-                    src="assets/img/1516365445572.jfif"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Praveen Kumar</h3>
-                  <h4>Speaker</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <img
-                      src="assets/img/quote-sign-left.png"
-                      class="quote-sign-left"
-                      alt=""
-                    />
-                    It's the perfect platform for beginners to get guidance from
-                    not only guidance but through this platform we can easily
-                    interact and talk freely about the common problem which we
-                    as a student face during this period of time.
-                    <img
-                      src="assets/img/quote-sign-right.png"
-                      class="quote-sign-right"
-                      alt=""
-                    />
-                  </p>
-                  <img
-                    src="assets/img/1627730807968.jfif"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Arth Nangia</h3>
-                  <h4>Member</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <img
-                      src="assets/img/quote-sign-left.png"
-                      class="quote-sign-left"
-                      alt=""
-                    />
-                    It's awesome. If I ask one doubt then like atleast 10 of
-                    them are ready to clear it at that moment. It doesn't matter
-                    how silly is my doubt. This gives me confidence to ask
-                    anything which I think is one of the most important and
-                    unique feature of CSG Community.
-                    <img
-                      src="assets/img/quote-sign-right.png"
-                      class="quote-sign-right"
-                      alt=""
-                    />
-                  </p>
-                  <img
-                    src="assets/img/1613580988884.jfif"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Aastha Tripathi</h3>
-                  <h4>Member</h4>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <img
-                      src="assets/img/quote-sign-left.png"
-                      class="quote-sign-left"
-                      alt=""
-                    />
-                    FIVE STARS ⭐⭐⭐⭐⭐ I have been to many bootcamps and
-                    workshops related to coding but none matches the level of
-                    professional quality mentorship I got here from the CSG
-                    Team. Thank you Code Set Go
-                    <img
-                      src="assets/img/quote-sign-right.png"
-                      class="quote-sign-right"
-                      alt=""
-                    />
-                  </p>
-                  <img
-                    src="assets/img/1600361001868.jfif"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Anishaa Choudhury</h3>
-                  <h4>Member</h4>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+        </div>
+        <form class = "flex flex-col gap-6 mt-24 lg:mt-0" id = "enquiry-form" data-aos = "fade-left">
+          <input type = "text" class = "w-full lg:w-[30rem] block rounded-md p-2 placeholder:text-[#e72250] placeholder:font-bold" id = "name" placeholder = "Name" required>
+          <input type = "email" class = "w-full lg:w-[30rem] block rounded-md p-2 placeholder:text-[#e72250] placeholder:font-bold" id = "email" placeholder = "Mailing Address" required>
+          <input type = "tel" class = "w-full lg:w-[30rem] block rounded-md p-2 placeholder:text-[#e72250] placeholder:font-bold" id = "phone" placeholder = "Contact" required>
+          <textarea rows = "5" class = "w-full lg:w-[30rem] block rounded-md p-2 placeholder:text-[#e72250] placeholder:font-bold" id = "message" placeholder = "Any suggestions?" required></textarea>
+          <button type = "button" class = "w-fit bg-[#e72250] rounded-md px-6 py-2" onclick = "sendMail(); reset();">Send</button>
+        </form>
+      </section>
+    
+      <!-- Contact -->
+      <section class = "flex flex-col lg:grid grid-cols-2 gap-12 bg-[#171717] rounded-md px-12 py-6 my-12">
+        <div class = "text-center" data-aos = "zoom-in">
+          <h3 class = "text-lg font-bold mb-2">Helpline</h3>
+          +91 9319042075
+        </div>
+        <div class = "text-center" data-aos = "zoom-in">
+          <h3 class = "text-lg font-bold mb-2">Mailbox</h3>
+          codesetgo@gmail.com
         </div>
       </section>
-      <!-- End Testimonials Section -->
 
-      <!-- ======= Contact Section ======= -->
-      <section id="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Contact Us</h2>
-          </div>
-          <div class="row contact-info">
-            <div class="enquiry">
-              <form class="enquiry-form" id="enquiry-form">
-                <div class="title">GET IN TOUCH</div>
-                <input type="text" id="name" placeholder="Your Name" required />
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email id"
-                  required
-                />
-                <input
-                  type="text"
-                  id="phone"
-                  placeholder="Phone no."
-                  required
-                />
-                <textarea
-                  id="message"
-                  row="5"
-                  placeholder="How can we help you?"
-                  required
-                ></textarea>
-                <button type="button" onclick="sendMail(); reset();">
-                  Send
-                </button>
-              </form>
-            </div>
-            <div class="col-md-12">
-              <div class="contact-phone">
-                <a href="index.html"
-                  ><img
-                    src="assets/img/Light Blue - White.jpg"
-                    alt=""
-                    height="90px"
-                    width="260px"
-                /></a>
-                <h3>Connect With Us</h3>
-                <div class="social">
-                  <a
-                    href="https://www.linkedin.com/company/codesetgo/"
-                    target="_blank"
-                    class="linkedin"
-                    ><i class="bx bxl-linkedin"></i
-                  ></a>
-                  <a
-                    href="https://instagram.com/codesetgo/"
-                    target="_blank"
-                    class="instagram"
-                    ><i class="bx bxl-instagram"></i
-                  ></a>
-                  <a
-                    href="https://www.youtube.com/channel/UC4dJIsV1bWwCwPFHFI6sY7Q?sub_confirmation=1"
-                    target="_blank"
-                    class="youtube"
-                    ><i class="bx bxl-youtube"></i
-                  ></a>
-                  <a
-                    href="https://discord.gg/yWhNysUEej"
-                    target="_blank"
-                    class="discord"
-                    ><i class="bx bxl-discord"></i
-                  ></a>
-                  <a
-                    href="https://t.me/Code_Set_Go"
-                    target="_blank"
-                    class="telegram"
-                    ><i class="bx bxl-telegram"></i
-                  ></a>
-                  <a
-                    href="https://github.com/CodeSetGo"
-                    target="_blank"
-                    class="github"
-                    ><i class="bx bxl-github"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="contact-phone">
-                <i class="bi bi-phone"></i>
-                <h3>Phone Number</h3>
-                <p><a href="tel:+919319042075">+91 9319042075</a></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="contact-email">
-                <i class="bi bi-envelope"></i>
-                <h3>Email</h3>
-                <p>
-                  <a href="mailto:codesetgo@gmail.com">codesetgo@gmail.com</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Contact Section -->
-    </main>
-    <!-- End #main -->
+      <!-- Footer -->
+      <footer class = "flex flex-col lg:flex-row items-center justify-between mt-12">
+        <h4>Made with <i class = "text-[#e72250] fa-solid fa-heart"></i> from <strong class = "text-[#e72250] font-bold">CodeSetGo Team</strong></h4>
+        <h4 class = "my-6 lg:my-0">
+          <span class = "hover:text-[#e72250] hover:cursor-pointer mr-6">Privacy Policy</span> 
+          <span class = "hover:text-[#e72250] hover:cursor-pointer">Terms of Use</span>
+        </h4>
+      </footer>
+    </main>    
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright text-center">
-          Made with <i class="bi bi-heart-fill" style="color: red"></i> by
-          <strong style="color: #2796ff">CodeSetGo Team</strong>
-        </div>
-      </div>
-    </footer>
-    <!-- End Footer -->
-
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <!-- Back To Top -->
+    <button id = "scrollBtn" class = "fixed hidden z-50 bottom-12 right-12 text-xl border-2 border-[#e72250] hover:bg-[#e72250] rounded-full shadow-2xl px-4 py-2"><i class = "fa-solid fa-arrow-up"></i></button>
 
     <!-- JS CDN -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      src = "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity = "sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin = "anonymous"
+      referrerpolicy = "no-referrer"
     ></script>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
+      src = "https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity = "sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin = "anonymous"
+      referrerpolicy = "no-referrer"
     ></script>
 
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
-      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type = "text/javascript"
+      src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
 
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
-      integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type = "text/javascript"
+      src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-
-    <!-- JS -->
-    <script defer src="./assets/js/darkmode_logic.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Custom JS -->
+    <script src = "assets/js/main.js"></script>
   </body>
 </html>

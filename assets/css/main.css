@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap');
+
+body {
+    font-family: 'Mali', cursive;
+    padding: 0;
+    margin: 0;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+nav {
+    width: calc(100vw - 18rem);
+}
+
+#mobile {
+    top: 8rem;
+    width: calc(100vw - 6rem);
+}
+      
+main {
+    position: relative;
+    top: 5rem;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: calc(100vw - 6rem);
+    } 
+}
