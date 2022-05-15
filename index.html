@@ -36,15 +36,24 @@
   <body class = "flex flex-col items-center overflow-x-hidden bg-black text-white">
 
     <!-- Nav -->
-    <nav class = "fixed z-50 h-12 flex flex-row items-center justify-between bg-[#1a1a1a] rounded-md shadow-2xl px-4 py-8 mt-12" id = "nav">
+    <nav  class = "fixed z-50 h-12 flex flex-row items-center justify-between bg-[#1a1a1a] rounded-md shadow-2xl px-4 py-8 mt-12" id = "nav">
       <a href = "index.html">
         <img src = "assets/img/logo.png" class = "w-36" alt = "web_logo">
       </a>
       <ul class = "lg:flex flex-row items-center hidden">
-        <li><a class = "scroll hover:bg-[#2797ff] rounded-md px-4 py-2 ml-8" href = "#about">About</a></li>
-        <li><a class = "scroll hover:bg-[#2797ff] rounded-md px-4 py-2 ml-8" href = "#services">Services</a></li>
-        <li><a class = "scroll hover:bg-[#2797ff] rounded-md px-4 py-2 ml-8" href = "#testimonials">Testimonials</a></li>
-        <li><a class = "scroll hover:bg-[#2797ff] rounded-md px-4 py-2 ml-8" href = "#contact">Contact</a></li>
+        <li id="navs"><a class = "scroll hover:bg-[#2797ff] rounded-md px-2 py-2 ml-8" href = "#about">About</a></li>
+        <li id="navs"><a class = "scroll hover:bg-[#2797ff] rounded-md px-2 py-2 ml-8" href = "#services">Services</a></li>
+        <li id="navs"><a class = "scroll hover:bg-[#2797ff] rounded-md px-2 py-2 ml-8" href = "#testimonials">Testimonials</a></li>
+        <li id="navs"><a class = "scroll hover:bg-[#2797ff] rounded-md px-2 py-2 ml-8" href = "#contact">Contact</a></li>
+        <li class="tog"><input type="checkbox" class="checkbox" id="checkbox">
+         
+          <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+          
+        </li>
       </ul>
       <button class = "text-xl lg:hidden" id = "hamburger"><i class = "fas fa-bars"></i></button>
     </nav>
@@ -55,6 +64,15 @@
       <a class = "scroll w-full hover:bg-[#2797ff] rounded-md px-4 py-2" href = "#services">Services</a>
       <a class = "scroll w-full hover:bg-[#2797ff] rounded-md px-4 py-2" href = "#testimonials">Testimonials</a>
       <a class = "scroll w-full hover:bg-[#2797ff] rounded-md px-4 py-2" href = "#contact">Contact</a>
+      <li class="tog"><input type="checkbox" class="checkbox" id="checkbox">
+         
+        <label for="checkbox" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+        
+      </li>
     </nav>
 
     <!-- Main -->
@@ -63,15 +81,15 @@
       <section class = "flex flex-col lg:flex-row lg:items-center my-16">
         <div class = "flex-grow">
           <hr style = "border-top: 3px solid #2797ff; width: 40px; margin-bottom: 1rem;">
-          <h2 class = "text-4xl font-bold mb-12">We're a community to<br>make learning fun.</h2>
+          <h2 class = "text-4xl text-${dark?[black]:[white]} font-bold mb-12">We're a community to<br>make learning fun.</h2>
           <a href = "https://forms.gle/7KViepY21qBSvdRUA" class = "font-light border-2 border-[#2797ff] rounded-md hover:bg-[#2797ff] px-6 py-2">Join Us</a>
         </div>
         <img src = "assets/img/hero.png" class = "h-[20rem] lg:w-[25rem] lg:h-[25rem] lg:rounded-full object-cover my-12 lg:my-0" data-aos = "fade-left" alt = "hero_image">
       </section>
 
       <!-- Services -->
-      <section class = "flex flex-col lg:grid grid-cols-4 gap-6 my-6" id = "services">
-        <div class = "flex flex-col bg-[#2797ff] rounded-md px-4 py-12" data-aos = "fade-up-right">
+      <section class = "flex-b flex-col lg:grid grid-cols-4 gap-6 my-6" id = "services">
+        <div class = "flex-b flex-col bg-[#2797ff] rounded-md px-4 py-12" data-aos = "fade-up-right">
           <i class = "text-4xl fa-solid fa-code mb-6"></i>
           <h4 class = "text-2xl font-bold mb-4"><a href = "">Coding Resources</a></h4>
           <hr style = "border-top: 3px solid white; width: 40px; margin-bottom: 4rem;">
@@ -79,7 +97,7 @@
             We provide Tutorials, articles, videos, cheatsheets and other educational materials to excel.
           </p>
         </div>
-        <div class = "flex flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "400">
+        <div class = "flex-b flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "400">
           <i class="text-4xl text-[#2797ff] fa-solid fa-earth-americas mb-6"></i>
           <h4 class = "text-2xl font-bold mb-4"><a href = "">Online Webinars</a></h4>
           <hr style = "border-top: 3px solid #2797ff; width: 40px; margin-bottom: 4rem;">
@@ -87,7 +105,7 @@
             We conduct online webinars for every field in Computer Science.
           </p>
         </div>
-        <div class = "flex flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "800">
+        <div class = "flex-b flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "800">
           <i class = "text-4xl text-[#2797ff] fa-solid fa-question mb-6"></i>
           <h4 class = "text-2xl font-bold mb-4"><a href = "">Doubt Support</a></h4>
           <hr style = "border-top: 3px solid #2797ff; width: 40px; margin-bottom: 4rem;">
@@ -95,7 +113,7 @@
             Clear all your doubts through LIVE discord support.
           </p>
         </div>
-        <div class = "flex flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "1200">
+        <div class = "flex-b flex-col bg-[#1a1a1a] rounded-md px-4 py-12" data-aos = "fade-up-right" data-aos-delay = "1200">
           <i class = "text-4xl text-[#2797ff] fa-solid fa-user mb-6"></i>
           <h4 class = "text-2xl font-bold mb-4"><a href = "">Guidance</a></h4>
           <hr style = "border-top: 3px solid #2797ff; width: 40px; margin-bottom: 4rem;">
@@ -203,10 +221,10 @@
       </section>
 
       <!-- Enquiry -->
-      <section class = "flex flex-col lg:grid grid-cols-2 bg-[#1a1a1a] rounded-md px-4 py-12 my-24" id = "contact">
+      <section id="form" class = "flex flex-col lg:grid grid-cols-2 bg-[#1a1a1a] rounded-md px-4 py-12 my-24" id = "contact">
         <div class = "flex flex-col justify-center lg:ml-12" data-aos = "fade-right">
           <h2 class = "text-3xl font-bold mb-6">Let's Talk?</h2>
-          <div class = "lg:flex flex-row text-xl gap-6">
+          <div id="logos" class = "lg:flex flex-row text-xl gap-6">
             <a href = "https://www.linkedin.com/company/codesetgo/" target = "_blank" class = "border-2 border-[#2797ff] rounded-full px-2 py-1 hover:bg-[#2797ff]" ><i class = "fa-brands fa-linkedin-in"></i></a>
             <a href = "https://instagram.com/codesetgo/" target = "_blank" class = "border-2 border-[#2797ff] rounded-full px-2 py-1 hover:bg-[#2797ff]"><i class = "fa-brands fa-instagram"></i></a>
             <a href = "https://www.youtube.com/channel/UC4dJIsV1bWwCwPFHFI6sY7Q?sub_confirmation=1" target = "_blank" class = "border-2 border-[#2797ff] rounded-full px-2 py-1 hover:bg-[#2797ff]"><i class = "fa-brands fa-youtube"></i></a>
