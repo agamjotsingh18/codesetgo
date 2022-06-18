@@ -1,178 +1,92 @@
 (function() {
-    "use strict";
-
     // Selector Function
-
-    const select = (el, all = false) => {
-        el = el.trim()
+    const select = (element, all = false) => {
+        el = element.trim();
         if (all) {
-            return [...document.querySelectorAll(el)]
+            return [...document.querySelectorAll(element)];
         } else {
-            if (el !== '')
-                return document.querySelector(el)
+            if (element !== '') {
+                return document.querySelector(element);
+            }    
         }
-    }
+    };
 
     // Listener Function
-    const on = (type, el, listener, all = false) => {
-        let selectEl = select(el, all)
-        if (selectEl) {
+    const on = (type, element, listener, all = false) => {
+        let selectElement = select(element, all);
+        if (selectElement) {
             if (all) {
-                selectEl.forEach(e => e.addEventListener(type, listener))
+                selectElement.forEach(item => item.addEventListener(type, listener));
             } else {
-                selectEl.addEventListener(type, listener)
+                selectElement.addEventListener(type, listener);
             }
         }
-    }
-
-    // Scroll Event Listener
-    const onscroll = (el, listener) => {
-        el.addEventListener('scroll', listener)
-    }
-
-    // Navbar Links
-    let navbarlinks = select('#navbar .scrollto', true)
-    const navbarlinksActive = () => {
-        let position = window.scrollY + 200
-        navbarlinks.forEach(navbarlink => {
-            if (!navbarlink.hash) return
-            let section = select(navbarlink.hash)
-            if (!section) return
-            if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-                navbarlink.classList.add('active')
-            } else {
-                navbarlink.classList.remove('active')
-            }
-        })
-    }
-    window.addEventListener('load', navbarlinksActive)
-    onscroll(document, navbarlinksActive)
+    };
 
     // Scroll To
-    const scrollto = (el) => {
-        let header = select('#header')
-        let offset = header.offsetHeight
+    const scrollTo = (element) => {
+        let nav = select('#nav');
+        let offset = nav.offsetHeight;
 
-        let elementPos = select(el).offsetTop
+        let position = select(element).offsetTop;
         window.scrollTo({
-            top: elementPos - offset,
+            top: position - offset,
             behavior: 'smooth'
-        })
+        });
+    };
+
+    // Smooth scroll
+    on('click', '.scroll', function(e) {
+        if (select(this.hash)) {
+            e.preventDefault();
+            scrollTo(this.hash);
+        }
+    }, true);
+
+    // Back to Top
+    const button = document.getElementById('scrollBtn');
+    window.onscroll = () => scrollTop();
+
+    function scrollTop() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
     }
 
-    // Header Fixed to top
-    let selectHeader = select('#header')
-    if (selectHeader) {
-        let headerOffset = selectHeader.offsetTop
-        let nextElement = selectHeader.nextElementSibling
-        const headerFixed = () => {
-            if ((headerOffset - window.scrollY) <= 0) {
-                selectHeader.classList.add('fixed-top')
-                nextElement.classList.add('scrolled-offset')
-            } else {
-                selectHeader.classList.remove('fixed-top')
-                nextElement.classList.remove('scrolled-offset')
-            }
-        }
-        window.addEventListener('load', headerFixed)
-        onscroll(document, headerFixed)
-    }
-
-    //  Back to Top
-    let backtotop = select('.back-to-top')
-    if (backtotop) {
-        const toggleBacktotop = () => {
-            if (window.scrollY > 100) {
-                backtotop.classList.add('active')
-            } else {
-                backtotop.classList.remove('active')
-            }
-        }
-        window.addEventListener('load', toggleBacktotop)
-        onscroll(document, toggleBacktotop)
-    }
+    button.onclick = function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
 
     // Mobile Nav
-    on('click', '.mobile-nav-toggle', function(e) {
-        select('#navbar').classList.toggle('navbar-mobile')
-        this.classList.toggle('bi-list')
-        this.classList.toggle('bi-x')
-    })
-
-    on('click', '.navbar .dropdown > a', function(e) {
-        if (select('#navbar').classList.contains('navbar-mobile')) {
-            e.preventDefault()
-            this.nextElementSibling.classList.toggle('dropdown-active')
-        }
-    }, true)
-
-    // Scroll with offset
-    on('click', '.scrollto', function(e) {
-        if (select(this.hash)) {
-            e.preventDefault()
-
-            let navbar = select('#navbar')
-            if (navbar.classList.contains('navbar-mobile')) {
-                navbar.classList.remove('navbar-mobile')
-                let navbarToggle = select('.mobile-nav-toggle')
-                navbarToggle.classList.toggle('bi-list')
-                navbarToggle.classList.toggle('bi-x')
-            }
-            scrollto(this.hash)
-        }
-    }, true)
-
-    window.addEventListener('load', () => {
-        if (window.location.hash) {
-            if (select(window.location.hash)) {
-                scrollto(window.location.hash)
-            }
+    const nav = document.getElementById('mobile');
+    const hamburgerBtn = document.getElementById('hamburger');
+    hamburgerBtn.addEventListener('click', () => nav.classList.toggle('hidden'));
+    
+    document.getElementsByTagName('main')[0].addEventListener('click', () => {
+        if(!nav.classList.contains('hidden')) {
+            nav.classList.add('hidden');
         }
     });
 
-    // Swiper
+    // Email JS
+    emailjs.init('');
+    
+    function sendMail() {
+        var tempParams = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value,
+        };
 
-    new Swiper('.hero-slider', {
-        speed: 1000,
-        loop: true,
-        effect: 'fade',
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        }
-    });
+        emailjs.send('','',tempParams)
+               .then((responce) => alert('Form Submitted Successfully'), (error) => alert('Form Submission Faild! Try Again'));
+    }
 
-    new Swiper('.testimonials-slider', {
-        speed: 600,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        slidesPerView: 'auto',
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            }
-        }
-    });
-
-    // Emailjs
-    emailjs.init("YOUR_USER_ID");
-
-    // AOS
-
+    // AOS 
     window.addEventListener('load', () => {
         AOS.init({
             duration: 1000,
@@ -181,41 +95,4 @@
             mirror: false
         })
     });
-
-})()
-
-// Responsive Testimonial Height
-
-const setTestimonialSize = () => {
-    var maxHeight = 0;
-    document.querySelectorAll(".testimonial-item").forEach(el => {
-        el.style.height = 'fit-content';
-        maxHeight = Math.max(maxHeight, el.offsetHeight);
-    })
-    document.querySelectorAll(".testimonial-item").forEach(el => {
-        el.style.height = maxHeight + 'px';
-    });
-}
-setTestimonialSize();
-window.addEventListener('resize', () => {
-    setTestimonialSize()
-});
-
-//send the content of enquiry form to the email
-function sendMail() {
-    var tempParams = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        message: document.getElementById('message').value,
-    };
-    emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',tempParams)
-    .then(function(responce){
-        console.log('SUCCESS!',response.status);
-        alert('Form Submitted Successfully');
-    },
-    function(error){
-        console.log('FAILED!',response.status,response.text);
-        alert('Form Submission Faild! Try Again');
-    })
-}
+})();
