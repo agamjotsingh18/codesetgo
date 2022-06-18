@@ -22,17 +22,7 @@
             }
         }
     };
-//Background theme
-    const checkbox=document.getElementById('checkbox');
-    let dark=true;
-    checkbox.addEventListener('change',()=>{
-        dark=!dark;
-        document.body.classList.toggle('dark');
-        document.h3.classList.toggle('dark');
-        document.p.classList.toggle('dark');
-        document.div.classList.toggle('dark');
 
-    })
     // Scroll To
     const scrollTo = (element) => {
         let nav = select('#nav');
