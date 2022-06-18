@@ -168,9 +168,6 @@
         }
     });
 
-    // Emailjs
-    emailjs.init("YOUR_USER_ID");
-
     // AOS
 
     window.addEventListener('load', () => {
@@ -200,22 +197,3 @@ setTestimonialSize();
 window.addEventListener('resize', () => {
     setTestimonialSize()
 });
-
-//send the content of enquiry form to the email
-function sendMail() {
-    var tempParams = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        message: document.getElementById('message').value,
-    };
-    emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',tempParams)
-    .then(function(responce){
-        console.log('SUCCESS!',response.status);
-        alert('Form Submitted Successfully');
-    },
-    function(error){
-        console.log('FAILED!',response.status,response.text);
-        alert('Form Submission Faild! Try Again');
-    })
-}
