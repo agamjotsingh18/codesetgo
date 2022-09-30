@@ -1,5 +1,8 @@
 # CodeSetGo👩‍💻👨‍💻
 
+![image](https://user-images.githubusercontent.com/70067726/193332466-7ed2c4b8-e2fa-4d8d-8f60-444bbeaef0e1.png)
+<h1 align="center"> HacktoberFest Accepted</h1>
+
 CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed! 
 
 <h2>
