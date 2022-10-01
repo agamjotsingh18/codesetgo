@@ -784,3 +784,21 @@ section {
     text-align: center;
     padding-top: 30px;
 }
+
+/*--------------------------------------------------------------
+#Scrollbar
+--------------------------------------------------------------*/
+
+  ::-webkit-scrollbar
+{
+  width: 12px;
+  height: 20px;
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(transparent,#00ffff);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:linear-gradient(transparent,#00ffe1);
+}
+
