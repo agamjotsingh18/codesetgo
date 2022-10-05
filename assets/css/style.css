@@ -9,7 +9,22 @@ body {
   color: #444;
   font-family: "Poppins", sans-serif;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 #0c2e8a; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2796ff;
+  border-radius: 10px;
+}
 a {
   color: #2796ff;
   text-decoration: none;
