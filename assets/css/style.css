@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Merriweather&family=Montserrat:wght@100;400;700;900&family=Roboto&family=Sacramento&family=Titillium+Web&family=Ubuntu&family=Work+Sans:wght@500&display=swap');
+
 body {
   background: #fff;
   color: #444;
@@ -154,13 +156,12 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-
-  font-weight: 600;
+  padding:1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1rem;
+  line-height: 1;
+  font-weight: 500;
   color: var(--box-anchor);
-
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -853,8 +854,13 @@ section {
 /* Main secion */
 .hacktober-heading {
   color: #2796ff;
+  margin-top: 2rem;
+  padding:2rem;
+  border-bottom: #2796ff 4px solid;
+  margin:auto;
+  width: 1380px;
+  margin-bottom: 2rem;
   text-align: center;
-  padding-top: 30px;
 }
 
 .cards-container {
@@ -870,6 +876,10 @@ section {
   width: 450px;
   border: 4px solid var(--postborder);
   padding: 20px 20px;
+  transition: margin 0.5s ease-in;
+}
+.card:hover{
+  margin:10px;
 }
 .card-heading {
   color: #fff;
@@ -883,8 +893,14 @@ section {
 }
 .view-btn {
   width: fit-content;
+  border:2px #2796ff solid;
+  padding:0.5rem 1rem;
+  
 }
-
+.view-btn:hover{
+  color:#fff;
+  background-color: #2796ff;
+}
 /* Responsive Website */
 
 @media (max-width: 320px){
