@@ -69,10 +69,10 @@
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex justify-content-between">
+      <div class="navbar container d-flex justify-content-between">
         <div id="logo">
-          <a href="index.html"
-            ><img
+          <a href="index.html">
+            <img
               src="assets/img/Banner - Light.png"
               alt=""
               height="50px"
@@ -157,7 +157,7 @@
             <div class="col-lg-6 about-img">
               <img src="assets/img/3186535.jpg" alt="" />
             </div>
-            <div class="col-lg-6 content">
+            <div class=" content section-header">
               <h2>About Us</h2>
               <h3>
                 <strong>CodeSetGo</strong> is a community made for the students
@@ -192,46 +192,59 @@
               open-source and opportunities.
             </p>
           </div>
-          <div class="row gy-4">
+
+          <div class="boxes row gy-4">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="box">
                 <div class="icon"><i class="bi bi-journal-code"></i></div>
-                <h4 class="title"><a href="">Coding Resources</a></h4>
-                <p class="description">
-                  We provide Tutorials, articles, videos, cheatsheets and other
-                  educational materials to excel.
-                </p>
+                <div>
+                  <h4 class="title"><a href="">Coding Resources</a></h4>
+                  <p class="description">
+                    We provide Tutorials, articles, videos, cheatsheets and other
+                    educational materials to excel.
+                  </p>
+                </div>
               </div>
             </div>
+
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <div class="box">
                 <div class="icon"><i class="bi bi-megaphone"></i></div>
-                <h4 class="title"><a href="">Online Webinars</a></h4>
-                <p class="description">
-                  We conduct online webinars for every field in Computer
-                  Science.
-                </p>
+                <div>
+                  <h4 class="title"><a href="">Online Webinars</a></h4>
+                  <p class="description">
+                    We conduct online webinars for every field in Computer
+                    Science.
+                  </p>
+                </div>
               </div>
             </div>
+
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
               <div class="box">
                 <div class="icon"><i class="bi bi-question-square"></i></div>
-                <h4 class="title"><a href="">Doubt Support</a></h4>
-                <p class="description">
-                  Clear all your doubts through LIVE discord support.
-                </p>
+                <div>
+                  <h4 class="title"><a href="">Doubt Support</a></h4>
+                  <p class="description">
+                    Clear all your doubts through LIVE discord support.
+                  </p>
+                </div>
               </div>
             </div>
+
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
               <div class="box">
                 <div class="icon"><i class="bi bi-book-half"></i></div>
-                <h4 class="title"><a href="">Guidance</a></h4>
-                <p class="description">
-                  Get expert guidance with career, open source and internships,
-                  jobs around the world.
-                </p>
+                <div>
+                  <h4 class="title"><a href="">Guidance</a></h4>
+                  <p class="description">
+                    Get expert guidance with career, open source and internships,
+                    jobs around the world.
+                  </p>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -299,6 +312,7 @@
                   <h4>Speaker</h4>
                 </div>
               </div>
+              
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
@@ -394,6 +408,7 @@
           <div class="section-header">
             <h2>Contact Us</h2>
           </div>
+
           <div class="row contact-info">
             <div class="enquiry">
               <form class="enquiry-form" id="enquiry-form">
@@ -417,7 +432,7 @@
                   placeholder="How can we help you?"
                   required
                 ></textarea>
-                <button type="button" onclick="sendMail(); reset();">
+                <button class="btn" type="button" onclick="sendMail(); reset();">
                   Send
                 </button>
               </form>
