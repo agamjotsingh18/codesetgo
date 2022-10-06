@@ -2,6 +2,7 @@
  justify-content: center;
  align-items: center;
  display: flex;
+ padding: 20px;
 }
 
 .enquiry-form{
@@ -44,4 +45,16 @@
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+}
+
+.success-message {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }

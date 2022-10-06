@@ -396,7 +396,7 @@
           </div>
           <div class="row contact-info">
             <div class="enquiry">
-              <form class="enquiry-form" id="enquiry-form">
+              <form class="enquiry-form" id="enquiry-form" onsubmit="submit_function(); return false;">
                 <div class="title">GET IN TOUCH</div>
                 <input type="text" id="name" placeholder="Your Name" required />
                 <input
@@ -406,7 +406,7 @@
                   required
                 />
                 <input
-                  type="text"
+                  type="number"
                   id="phone"
                   placeholder="Phone no."
                   required
@@ -417,10 +417,12 @@
                   placeholder="How can we help you?"
                   required
                 ></textarea>
-                <button type="button" onclick="sendMail(); reset();">
+                <button type="submit" onclick="sendMail();">
                   Send
                 </button>
+                
               </form>
+              <h4 id = "success-message" class="success-message">Thank you for taking interest! We will reach out to you shortly!</h4>
             </div>
             <div class="col-md-12">
               <div class="contact-phone">
