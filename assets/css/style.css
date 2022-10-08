@@ -165,6 +165,15 @@ h6 {
   transition: 0.3s;
 }
 
+/*hacktoberfest button day mode color resolved
+
+nav ul li a .btn_color{
+//added white color for better visibility of text (can uncomment in future )
+color:#fff;
+
+}
+*/
+
 .navbar a i,
 .navbar a:focus i {
   font-size: 12px;
