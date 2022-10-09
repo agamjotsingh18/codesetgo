@@ -842,9 +842,16 @@ section {
   background-color: #0c2e8a;
   color: #fff;
 }
-.hacktoberfest-btn:hover {
-  background-color: transparent;
+
+/* Fixed issue #56 */
+#fixed-hacktober-bug{
+  color: white;
 }
+
+#fixed-hacktober-bug:hover{
+  color: black;
+}
+
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
   margin-left: 20px;
