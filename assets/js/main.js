@@ -201,7 +201,6 @@ window.addEventListener('resize', () => {
     setTestimonialSize()
 });
 
-
 //send the content of enquiry form to the email
 function sendMail() {
     var tempParams = {
@@ -220,15 +219,3 @@ function sendMail() {
         alert('Form Submission Faild! Try Again');
     })
 }
-//adding on-submit message
-function submit_function() {
-    
-    event.preventDefault();
-    console.log("script start")
-    document.getElementById('enquiry-form').style.display = 'none';
-    console.log("got first element")
-    document.getElementById('success-message').style.display = 'flex';
-    console.log("got third element");
-   
-    return true;
-  };
