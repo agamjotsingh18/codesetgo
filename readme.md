@@ -79,6 +79,14 @@ $ git checkout -b branch_name
 ## Step 4 : Work on the issue assigned
 - Work on the issue(s) assigned to you. 
 - Add all the files/folders needed.
+```
+# To start the server in development mode
+$ npm run dev
+```
+```
+# To start the server in production mode
+$ npm start
+```
 - After you've made changes or made your contribution to the project add changes to the branch you've just created by:
 ```
 # To add all new files to branch Branch_Name
