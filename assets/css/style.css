@@ -840,10 +840,11 @@ section {
 }
 .hacktoberfest-btn {
   background-color: #0c2e8a;
-  color: #fff;
+  color: #ffffff !important;
 }
 .hacktoberfest-btn:hover {
   background-color: transparent;
+  color: #0c2e8a !important;
 }
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
@@ -868,16 +869,16 @@ section {
 .card {
   background-color: transparent;
   width: 450px;
-  border: 4px solid var(--postborder);
+  border: 4px solid var(--box-anchor);
   padding: 20px 20px;
 }
 .card-heading {
-  color: #fff;
+  color: var(--box-anchor);
   font-weight: 700;
   margin-bottom: 15px;
 }
 .card-description {
-  color: #fff;
+  color: var(--box-anchor);
   font-size: 14px;
   margin-bottom: 15px;
 }
@@ -887,67 +888,69 @@ section {
 
 /* Responsive Website */
 
-@media (max-width: 320px){
-    #header #logo img {
-        max-height: 24px;
-        max-width: 93px;
-    }
-    #about .content h2 {
-        font-size: 16px;
-    }
+@media (max-width: 320px) {
+  #header #logo img {
+    max-height: 24px;
+    max-width: 93px;
+  }
+  #about .content h2 {
+    font-size: 16px;
+  }
 
-    #about .content h3 {
-        font-size: 15px;
-    }
-    .section-header h2 {
-        font-size: 23px;
-    }
-    #about {
-        padding: 60px 0 0px 0;
-    }
-    .section-header p {
-        font-size: 15px;
-    }
-    #services .box {
-        padding: 12px;
-    }
-    #call-to-action .cta-title {
-        font-size: 22px;
-    }
-    #call-to-action .cta-text {
-        font-size: 12px;
-    }
-    #call-to-action .cta-btn {
-        font-size: 12px;
-        padding: 6px 26px;
-    }
-    #testimonials .testimonial-item p {
-        font-size: 14px;
-    }
-    #testimonials .testimonial-item .quote-sign-left {
-        width: 24px;
-    }
-    #testimonials .testimonial-item .quote-sign-right {
-        width: 24px;
-    }
-    .enquiry-form .title {
-        font-size: 16pt;
-        margin-bottom: 7px;
-    }
-    .enquiry-form input, textarea {
-        margin: 7px 0;
-        padding: 10px;
-        font-size: 12px;
-    }
-    .enquiry-form button {
-        padding: 8px;
-        font-size: 16px;
-        margin: 3px auto 0;
-    }
-    #contact {
-        padding: 13px 0;
-    }
-    .navbar-mobile a, .navbar-mobile a:focus {
-        font-size: 12px;
-    }
+  #about .content h3 {
+    font-size: 15px;
+  }
+  .section-header h2 {
+    font-size: 23px;
+  }
+  #about {
+    padding: 60px 0 0px 0;
+  }
+  .section-header p {
+    font-size: 15px;
+  }
+  #services .box {
+    padding: 12px;
+  }
+  #call-to-action .cta-title {
+    font-size: 22px;
+  }
+  #call-to-action .cta-text {
+    font-size: 12px;
+  }
+  #call-to-action .cta-btn {
+    font-size: 12px;
+    padding: 6px 26px;
+  }
+  #testimonials .testimonial-item p {
+    font-size: 14px;
+  }
+  #testimonials .testimonial-item .quote-sign-left {
+    width: 24px;
+  }
+  #testimonials .testimonial-item .quote-sign-right {
+    width: 24px;
+  }
+  .enquiry-form .title {
+    font-size: 16pt;
+    margin-bottom: 7px;
+  }
+  .enquiry-form input,
+  textarea {
+    margin: 7px 0;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .enquiry-form button {
+    padding: 8px;
+    font-size: 16px;
+    margin: 3px auto 0;
+  }
+  #contact {
+    padding: 13px 0;
+  }
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    font-size: 12px;
+  }
 }
