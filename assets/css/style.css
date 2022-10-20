@@ -840,7 +840,8 @@ section {
   padding: 0;
   margin: 0;
 }
-.hacktoberfest-btn {
+.hacktoberfest-btn,
+.navbar-mobile .hacktoberfest-btn {
   background-color: #0c2e8a;
   color: #ffffff !important;
 }
