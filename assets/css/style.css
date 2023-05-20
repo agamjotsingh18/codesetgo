@@ -731,6 +731,75 @@ section {
   /* font-weight: 700; */
 }
 
+/* ---------- CommunityNexus section ---------- */
+/* Styling for the Community Nexus section */
+#CommunityNexus {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+#CommunityNexus .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+#CommunityNexus .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#CommunityNexus .section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+#CommunityNexus .social-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#CommunityNexus .social-info > div {
+  margin-right: 20px;
+}
+
+#CommunityNexus .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+/* Styling for the Discord icon */
+ .discord a {
+  display: inline-block;
+  background-color: #7289da;
+  color: #fff;
+  padding: 12px;
+  border-radius: 55%;
+  transition: background-color 0.3s ease;
+}
+
+ .discord a:hover {
+  background-color: #6272a4;
+}
+/* Styling for the WhatsApp icon */
+ .whatsapp a {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+ .whatsapp a:hover {
+  background-color: #128c7e;
+}
+
+
 /* Contact Section
 --------------------------------*/
 
