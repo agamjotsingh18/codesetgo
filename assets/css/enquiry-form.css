@@ -2,15 +2,17 @@
  justify-content: center;
  align-items: center;
  display: flex;
+ z-index: -1;
 }
 
 .enquiry-form{
-    background: #2796FF;
     display: flex;
+    background: url("https://images.pexels.com/photos/1010496/pexels-photo-1010496.jpeg?auto=compress&cs=tinysrgb&w=1600"); 
+    backdrop-filter: blur(10px);
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
     border-radius: 10px;
     margin: 4vw;
 }
@@ -21,6 +23,10 @@
     font-weight: 800;
     font-size: 20pt;
     margin-bottom: 20px;
+}
+
+.enquiry-form span {
+    color: #2796ff;
 }
 
 .enquiry-form input,textarea{
@@ -35,13 +41,13 @@
 
 .enquiry-form button{
     padding: 15px;
-    background: #081e5b;
-    color: #fff;
+    background: #fff;
+    color: #000;
     font-size: 18px;
     border: 0;
     outline: none;
     cursor: pointer;
     width: 150px;
     margin: 20px auto 0;
-    border-radius: 30px;
+    border-radius: 10px;
 }
