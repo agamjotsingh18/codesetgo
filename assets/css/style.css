@@ -135,6 +135,7 @@ h6 {
 
 .navbar {
   padding: 0;
+  height: 8vh;
 }
 
 .navbar ul {
@@ -335,15 +336,13 @@ h6 {
 
 #hero {
   width: 100%;
-  height: 60vh;
-  position: relative;
-  background: url("../img/hero-carousel/1.jpg") no-repeat;
+  height: 92vh;
+  background: url("../img/hero-carousel/csg-bg6.jpg") no-repeat;
   background-size: cover;
   padding: 0;
 }
 
 #hero .hero-content {
-  position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
@@ -354,6 +353,7 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  height: 92vh;
 }
 
 #hero .hero-content h2 {
@@ -389,13 +389,13 @@ h6 {
 }
 
 #hero .hero-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+  background: #2796ff;
+  border: 2px solid #2796ff;
 }
 
 #hero .hero-content .btn-get-started:hover {
   background: none;
-  color: #0c2e8a;
+  color: #d7e0f8;
 }
 
 #hero .hero-content .btn-projects {
@@ -405,12 +405,12 @@ h6 {
 
 #hero .hero-content .btn-projects:hover {
   background: none;
-  color: #2796ff;
+  color: #d7e0f8;
 }
 
-#hero .hero-slider {
-  z-index: 8;
-  height: 60vh;
+/* #hero .hero-slider {
+  z-index: 999;
+  height: 100vh;
 }
 
 #hero .hero-slider::before {
@@ -431,7 +431,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   transition-property: opacity;
-}
+} */
 
 /*--------------------------------------------------------------
 # Sections
@@ -729,6 +729,13 @@ section {
   /* border: 3px solid #2796FF; */
   color: #081e5b;
   /* font-weight: 700; */
+}
+
+.social{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Contact Section
