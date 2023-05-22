@@ -62,7 +62,12 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/darkmode.css" />
     <link href="./assets/css/enquiry-form.css" rel="stylesheet" />
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src=""></script>
   </head>
 
@@ -405,12 +410,10 @@
                   placeholder="Email id"
                   required
                 />
-                <input
-                  type="text"
-                  id="phone"
-                  placeholder="Phone no."
-                  required
-                />
+                
+            
+                <input id="phone" type="tel" name="phone" placeholder="Phone No." required style="width:400px" margin-left="3rem" text-align="left">
+                
                 <textarea
                   id="message"
                   row="5"
@@ -563,4 +566,13 @@
     <script defer src="./assets/js/darkmode_logic.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
+  <script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  </script>
 </html>
+
+
