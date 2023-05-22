@@ -851,7 +851,7 @@ section {
 }
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
-  margin-left: 20px;
+  margin: 0 8px;
 }
 
 /* Main secion */
