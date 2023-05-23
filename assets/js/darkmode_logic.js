@@ -13,10 +13,20 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 //* fire window load event
 window.onload = function(e){
+    if(localStorage.getItem("theme") == null){
+        if(prefersDarkScheme){
+            //* if OS has dark theme then set web page to dark theme also
+            localStorage.setItem("theme", "dark");
+        }
+        else{
+             //* if OS has light theme then set web page to light theme also
+            localStorage.setItem("theme", "dark");
+        }
+    }
     
-    if(prefersDarkScheme.matches){
+    if(localStorage.getItem("theme") == "dark"){
 
-        //* if OS has dark theme then set web page to dark theme also
+        // User prefers dark theme
 
         darkmodeBtn.innerHTML = '<ion-icon name="sunny"></ion-icon>'
         document.body.classList.contains("light")? document.body.classList.remove("light"):""
@@ -36,7 +46,7 @@ window.onload = function(e){
     }
     else{
 
-        //* if OS has light theme then set web page to light theme also
+       // User prefers light theme
         darkmodeBtn.innerHTML = '<ion-icon name="moon"></ion-icon>'
         
         document.body.classList.contains("dark")? document.body.classList.remove("dark"):""
