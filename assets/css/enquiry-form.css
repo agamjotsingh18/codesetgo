@@ -7,8 +7,7 @@
 
 .enquiry-form{
     display: flex;
-    background: url("https://images.pexels.com/photos/1010496/pexels-photo-1010496.jpeg?auto=compress&cs=tinysrgb&w=1600"); 
-    backdrop-filter: blur(10px);
+    background-color: #050b1f;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
