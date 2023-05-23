@@ -66,6 +66,24 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
   />
+  <style> table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    border-spacing: 2px;
+    border:none;
+    width:345px;
+    border-radius: 10px;
+    height: fit-content;
+    border:none;
+    align-items: center;
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  
+</style>
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src=""></script>
@@ -395,35 +413,68 @@
 
       <!-- ======= Contact Section ======= -->
       <section id="contact">
-        <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up" >
           <div class="section-header">
             <h2>Contact Us</h2>
           </div>
           <div class="row contact-info">
             <div class="enquiry">
-              <form class="enquiry-form" id="enquiry-form">
-                <div class="title">GET IN TOUCH</div>
-                <input type="text" id="name" placeholder="Your Name" required />
-                <input
+              <table class="enquiry-form" id="enquiry-form">
+              
+                <th style="color:white"><center>GET IN TOUCH</center></th>
+                <tr>
+                  <td>
+                  <input
+                   type="text"
+                    id="name" 
+                    placeholder="Your Name" 
+                    required 
+                    style="width:300px; 
+                    border-radius:5px"/>
+                </td>
+                </tr>
+                <tr>
+                  <td>
+                  <input
                   type="email"
                   id="email"
                   placeholder="Email id"
                   required
+                  style="width:300px; border-radius:5px"
                 />
+              </td>
+                </tr>
                 
-            
-                <input id="phone" type="tel" name="phone" placeholder="Phone No." required style="width:400px" margin-left="3rem" text-align="left">
-                
-                <textarea
+                <tr>
+                  <td>
+                  <input 
+                id="phone" 
+                type="tel" 
+                name="phone" 
+                placeholder="Phone No." 
+                required 
+                style="width:300px;  border-radius:5px;">
+              </td>
+                </tr>
+                <tr>
+                  <td>
+                  <textarea
                   id="message"
                   row="5"
                   placeholder="How can we help you?"
                   required
+                  style="width:300px;background-color: white;;"
                 ></textarea>
-                <button type="button" onclick="sendMail(); reset();" class="hoverchanger">
+              </td>
+                </tr>
+               
+                <tr> <td><center><button type="button" style="background-color:rgb(16, 101, 192); color:white;border-radius: 10px; width:100px" onclick="sendMail(); reset();"">
                   Send
-                </button>
-              </form>
+                </button></center></td></tr>
+             
+                
+              </table>
+             
             </div>
             <div class="col-md-12">
               <div class="contact-phone">
@@ -572,6 +623,7 @@
       utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
+
   </script>
 </html>
 
