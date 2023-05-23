@@ -50,22 +50,24 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 80px;
   z-index: 996;
   background: #2796ff;
   width: 40px;
   height: 40px;
-  transition: all 0.4s;
+  transition: opacity 0.3s ease;
+  animation: slideUp 0.8s infinite;
 }
 
 .back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
+  transition: opacity 0.3s ease;
 }
 
 .back-to-top:hover {
-  background: #2796ff;
+  background: #8ec2f4;
   color: #fff;
 }
 
@@ -73,7 +75,20 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
-
+@keyframes slideUp {
+  20% {
+    transform: translateY(40px);
+  }
+  30% {
+    transform: translateY(50px);
+  }
+  40% {
+    transform: translateY(60px);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -618,6 +633,11 @@ section {
   text-align: center;
   min-height: fit-content;
   box-shadow: 0px 2px 12px var(--border-color);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#testimonials .testimonial-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 25px var(--border-color);
 }
 
 @media (max-width: 767px) {
@@ -770,7 +790,7 @@ section {
   color: #2796ff;
 }
 .hoverchanger:hover {
-  background-color:#07052c
+  background-color: #07052c;
 }
 #contact .contact-address,
 #contact .contact-phone,
