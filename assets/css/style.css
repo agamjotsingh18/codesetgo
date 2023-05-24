@@ -50,24 +50,22 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 80px;
+  bottom: 15px;
   z-index: 996;
   background: #2796ff;
   width: 40px;
   height: 40px;
-  transition: opacity 0.3s ease;
-  animation: slideUp 0.8s infinite;
+  transition: all 0.4s;
 }
 
 .back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
-  transition: opacity 0.3s ease;
 }
 
 .back-to-top:hover {
-  background: #8ec2f4;
+  background: #2796ff;
   color: #fff;
 }
 
@@ -75,20 +73,7 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
-@keyframes slideUp {
-  20% {
-    transform: translateY(40px);
-  }
-  30% {
-    transform: translateY(50px);
-  }
-  40% {
-    transform: translateY(60px);
-  }
-  50% {
-    transform: translateY(70px);
-  }
-}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -633,11 +618,6 @@ section {
   text-align: center;
   min-height: fit-content;
   box-shadow: 0px 2px 12px var(--border-color);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-#testimonials .testimonial-item:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 10px 25px var(--border-color);
 }
 
 @media (max-width: 767px) {
@@ -790,7 +770,7 @@ section {
   color: #2796ff;
 }
 .hoverchanger:hover {
-  background-color: #07052c;
+  background-color:#07052c
 }
 #contact .contact-address,
 #contact .contact-phone,
@@ -894,11 +874,18 @@ section {
   width: 450px;
   border: 4px solid var(--box-anchor);
   padding: 20px 20px;
+  border-radius: 15px;
+  
 }
+
 .card-heading {
   color: var(--box-anchor);
   font-weight: 700;
   margin-bottom: 15px;
+}
+.card-heading:hover{
+  color: #2796ff;
+  cursor: pointer;
 }
 .card-description {
   color: var(--box-anchor);
@@ -906,8 +893,25 @@ section {
   margin-bottom: 15px;
 }
 .view-btn {
-  width: fit-content;
-}
+       width:140px;
+    height:47px;
+    border-radius:12px;
+    cursor:pointer;
+    border:none;
+    letter-spacing:2px;
+    font-weight:bold;
+    box-shadow:0px 8px 15px rgba(5, 5, 5, 0.1);
+    transition:all 0.3s ease;
+  }
+  .view-btn:hover{
+    background:#2ceae5;
+    transform:translateY(-7px);
+    color:#fff;
+    box-shadow:0px 10px 25px rgba(46,223,229,0.445);
+    
+  }
+  
+
 
 /* Responsive Website */
 
@@ -976,24 +980,4 @@ section {
   .navbar-mobile a:focus {
     font-size: 12px;
   }
-}
-
-
-/* ====================== SCROLL BAR ===================== */
-
-::-webkit-scrollbar{
-  width: 12px;
-}
-
-::-webkit-scrollbar-track{
-  background: rgb(7, 31, 48);
-}
-
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent, #198df9);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(transparent, #99ccfb);
 }
