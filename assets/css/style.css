@@ -981,10 +981,4 @@ section {
     font-size: 12px;
   }
 }
-.card a {
-  transition: text-decoration 0.3s;
-}
 
-.card a.underline {
-  text-decoration: underline;
-}
