@@ -988,3 +988,26 @@ section {
 .card a.underline {
   text-decoration: underline;
 }
+
+.card {
+  transition: transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.card-pop {
+  animation: cardPop 0.7s;
+}
+
+@keyframes cardPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

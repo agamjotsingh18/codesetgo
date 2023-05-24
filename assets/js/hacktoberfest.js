@@ -26,7 +26,7 @@ const repodata = [
     link: "https://github.com/freeCodeCamp/freeCodeCamp",
   },
   {
-    heading: "defaang",
+    heading: "Defaang",
     description:
       "A website that will curate recently-asked interview questions from FAANG+ to help people practice & prep! ",
     link: "https://github.com/ykdojo/defaang",
@@ -71,11 +71,13 @@ for (let i = 0; i < cards.length; i++) {
   card.addEventListener("mouseover", function() {
     card.style.backgroundColor = "#a8d5ff";
     card.style.color = "white";
+    card.classList.add("card-pop");
   });
 
   card.addEventListener("mouseout", function() {
     card.style.backgroundColor = "";
     card.style.color = "";
+    card.classList.remove("card-pop");
   });
 
   link.addEventListener("mouseover", function() {
