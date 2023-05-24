@@ -633,6 +633,8 @@ section {
   text-align: center;
   min-height: fit-content;
   box-shadow: 0px 2px 12px var(--border-color);
+  background-color: #141d26;
+  border-radius: 12px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 #testimonials .testimonial-item:hover {
