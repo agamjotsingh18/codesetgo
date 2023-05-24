@@ -150,6 +150,7 @@ h6 {
 
 .navbar {
   padding: 0;
+  background-color: transparent;
 }
 
 .navbar ul {
@@ -158,10 +159,12 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  background-color: transparent;
 }
 
 .navbar li {
   position: relative;
+  background-color: transparent;
 }
 
 .navbar a,
@@ -241,6 +244,7 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  background-color: transparent;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -976,24 +980,4 @@ section {
   .navbar-mobile a:focus {
     font-size: 12px;
   }
-}
-
-
-/* ====================== SCROLL BAR ===================== */
-
-::-webkit-scrollbar{
-  width: 12px;
-}
-
-::-webkit-scrollbar-track{
-  background: rgb(7, 31, 48);
-}
-
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent, #198df9);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background: linear-gradient(transparent, #99ccfb);
 }
