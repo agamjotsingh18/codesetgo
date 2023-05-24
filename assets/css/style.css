@@ -150,8 +150,7 @@ h6 {
 
 .navbar {
   padding: 0;
-  background-color: transparent; 
-  
+  background-color: transparent;
 }
 
 .navbar ul {
@@ -160,12 +159,12 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .navbar li {
   position: relative;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .navbar a,
@@ -182,7 +181,6 @@ h6 {
 
   white-space: nowrap;
   transition: 0.3s;
-  
 }
 
 .navbar a i,
@@ -246,7 +244,7 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .mobile-nav-toggle.bi-x {
@@ -982,4 +980,11 @@ section {
   .navbar-mobile a:focus {
     font-size: 12px;
   }
+}
+.card a {
+  transition: text-decoration 0.3s;
+}
+
+.card a.underline {
+  text-decoration: underline;
 }

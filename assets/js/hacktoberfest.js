@@ -56,7 +56,7 @@ allCards = repodata.map(
           <p class="card-description">
             ${card.description}
           </p>
-          <a href="${card.link}" class="view-btn">View Repository</a>
+          <a  href="${card.link}" class="view-btn">View Repository</a>
         </div>`
 )
 
@@ -66,6 +66,7 @@ const cards = document.getElementsByClassName("card");
 
 for (let i = 0; i < cards.length; i++) {
   const card = cards[i];
+  const link = card.querySelector("a");
 
   card.addEventListener("mouseover", function() {
     card.style.backgroundColor = "#a8d5ff";
@@ -75,6 +76,14 @@ for (let i = 0; i < cards.length; i++) {
   card.addEventListener("mouseout", function() {
     card.style.backgroundColor = "";
     card.style.color = "";
+  });
+
+  link.addEventListener("mouseover", function() {
+    link.classList.add("underline");
+  });
+
+  link.addEventListener("mouseout", function() {
+    link.classList.remove("underline");
   });
 }
 
