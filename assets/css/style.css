@@ -172,10 +172,8 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-
   font-weight: 600;
   color: var(--box-anchor);
-
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -196,7 +194,6 @@ h6 {
 
 .darkmode {
   margin-left: 1em;
-
   font-size: 1.3em;
   transform: translateY(3px) rotateZ(0deg);
   transition: 400ms;
@@ -544,7 +541,7 @@ section {
 #services .box {
   padding: 40px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-  background: var(--darkback);
+  background: var(--div-color);
   border: 4px solid var(--postborder);
   transition: 0.4s;
   height: 100%;
@@ -633,6 +630,7 @@ section {
   text-align: center;
   min-height: fit-content;
   box-shadow: 0px 2px 12px var(--border-color);
+  background-color: var(--div-color);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 #testimonials .testimonial-item:hover {
@@ -657,12 +655,12 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: var(--textcolor3);
+  color: var(--textcolor);
 }
 
 #testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: var(--poscolor);
   margin: 0;
 }
 
@@ -683,7 +681,7 @@ section {
 
 #testimonials .testimonial-item p {
   margin: 0 auto 15px auto;
-  color: var(--textcolor3);
+  color: var(--textcolor);
 }
 
 #testimonials .swiper-pagination {

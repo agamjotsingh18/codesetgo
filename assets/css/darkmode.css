@@ -1,6 +1,7 @@
 body.light{
 
     --darkback:white;
+    --div-color:white;
     --textcolor:#555;
     --textcolor2:#0c2e8a;
     --textcolor3:#000;
@@ -11,6 +12,7 @@ body.light{
     --border-color:rgba(0, 0, 0, 0.168);
     --color1:rgba(249,24,128);
     --color2:#2796FF;
+    --poscolor:#999;
     --color3:rgba(255,122,0);
     --color4:rgba(0,186,124);
     --bar:white;
@@ -18,15 +20,18 @@ body.light{
 }
 body.dark{
     --darkback:#243447;
+    --div-color:#fffdfd1d;
     --textcolor:white;
+    --poscolor:#c8b8b8;
     --textcolor2:#2796FF;
     --postborder:#657786;
     --box-anchor:#F5F8FA;
     --section-header: white;
-    --textcolor3:white;
+    --textcolor3:#000;
     --hover-color1:#c9d5f9;
     --border-color:rgba(167, 165, 165, 0.168);
-    --bar:#141d26;
+    /* --bar:#141d26; */
+    --bar:#051628;
     --footer:#141d26;
 }
 
@@ -35,14 +40,11 @@ body{
     transition: 500ms;
 }
 
-
-
 #about .content h2 {
     color: var(--textcolor2);
    
 }
 
 #about .content h3 {
-    color:var(--textcolor);
-    
+    color:var(--textcolor); 
 }

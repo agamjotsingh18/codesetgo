@@ -6,11 +6,6 @@ const quote_Right = document.querySelectorAll(".quote-sign-right")
 //* check for OS theme
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-
-
-
-
-
 //* fire window load event
 window.onload = function(e){
     if(localStorage.getItem("theme") == null){
