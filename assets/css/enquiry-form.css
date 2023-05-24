@@ -2,15 +2,16 @@
  justify-content: center;
  align-items: center;
  display: flex;
+ z-index: -1;
 }
 
 .enquiry-form{
-    background: #2796FF;
     display: flex;
+    background-color: #050b1f;
     flex-direction: column;
     padding: 2vw 4vw;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
     border-radius: 10px;
     margin: 4vw;
 }
@@ -21,6 +22,10 @@
     font-weight: 800;
     font-size: 20pt;
     margin-bottom: 20px;
+}
+
+.enquiry-form span {
+    color: #2796ff;
 }
 
 .enquiry-form input,textarea{
@@ -35,13 +40,13 @@
 
 .enquiry-form button{
     padding: 15px;
-    background: #081e5b;
-    color: #fff;
+    background: #fff;
+    color: #000;
     font-size: 18px;
     border: 0;
     outline: none;
     cursor: pointer;
     width: 150px;
     margin: 20px auto 0;
-    border-radius: 30px;
+    border-radius: 10px;
 }
