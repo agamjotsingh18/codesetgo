@@ -1,3 +1,5 @@
+
+
 const repodata = [
   {
     heading: "Poll it up",
@@ -24,7 +26,7 @@ const repodata = [
     link: "https://github.com/freeCodeCamp/freeCodeCamp",
   },
   {
-    heading: "defaang",
+    heading: "Defaang",
     description:
       "A website that will curate recently-asked interview questions from FAANG+ to help people practice & prep! ",
     link: "https://github.com/ykdojo/defaang",
@@ -54,8 +56,36 @@ allCards = repodata.map(
           <p class="card-description">
             ${card.description}
           </p>
-          <a href="${card.link}" class="view-btn">View Repository</a>
+          <a  href="${card.link}" class="view-btn">View Repository</a>
         </div>`
 )
 
 cardsContainer.innerHTML = allCards.join("")
+
+const cards = document.getElementsByClassName("card");
+
+for (let i = 0; i < cards.length; i++) {
+  const card = cards[i];
+  const link = card.querySelector("a");
+
+  card.addEventListener("mouseover", function() {
+    card.style.backgroundColor = "#a8d5ff";
+    card.style.color = "white";
+    card.classList.add("card-pop");
+  });
+
+  card.addEventListener("mouseout", function() {
+    card.style.backgroundColor = "";
+    card.style.color = "";
+    card.classList.remove("card-pop");
+  });
+
+  link.addEventListener("mouseover", function() {
+    link.classList.add("underline");
+  });
+
+  link.addEventListener("mouseout", function() {
+    link.classList.remove("underline");
+  });
+}
+
