@@ -771,16 +771,7 @@ section {
   text-align: center;
 }
 
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #2796ff;
-}
 
-#contact .contact-info i:hover {
-  color: var(--hover-color1);
-}
 
 #contact .contact-info h3 {
   font-size: 18px;
@@ -790,16 +781,7 @@ section {
   color: #999;
 }
 
-#contact .contact-info a {
-  color: var(--textcolor3);
-}
 
-#contact .contact-info a:hover {
-  color: #2796ff;
-}
-.hoverchanger:hover {
-  background-color: #07052c;
-}
 #contact .contact-address,
 #contact .contact-phone,
 #contact .contact-email {
@@ -1115,4 +1097,7 @@ section {
 
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent, #99ccfb);
+}
+.social i:hover:before{
+  content: attr(data-tooltip);
 }
