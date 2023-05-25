@@ -949,8 +949,8 @@ section {
   color: #ffffff !important;
 }
 .hacktoberfest-btn:hover {
-  background-color: transparent;
-  color: #0c2e8a !important;
+  background-color: #0236c5;
+  color: #ffffff !important;
 }
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
