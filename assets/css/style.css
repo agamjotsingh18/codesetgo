@@ -49,7 +49,7 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  right: 9px;
   bottom: 80px;
   z-index: 996;
   background: #2796ff;
@@ -971,37 +971,55 @@ section {
 
 /* Main secion */
 .hacktober-heading {
-  color: #2796ff;
+  color: #8ec6fb;
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .cards-container {
   margin: 0 50px;
   display: flex;
-  gap: 15px;
+  gap: 25px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .card {
   background-color: transparent;
-  width: 450px;
-  border: 4px solid var(--box-anchor);
-  padding: 20px 20px;
+  width: 430px;
+  border: 3px solid var(--box-anchor);
+  padding-bottom: 0px;
 }
 .card-heading {
   color: var(--box-anchor);
-  font-weight: 700;
+  font-weight: 550;
   margin-bottom: 15px;
+  padding: 13px 20px;
+  background-image: linear-gradient(to right, #18558d, #243447);
 }
 .card-description {
   color: var(--box-anchor);
   font-size: 14px;
   margin-bottom: 15px;
+  padding: 10px 20px;
+}
+.viewRepo {
+  color: var(--box-anchor);
+  font-size: 14px;
+  margin-bottom: 0; /* Remove margin bottom */
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  background-color: black;
+  border-top: 1px solid #198df9;
 }
 .view-btn {
+  width: -moz-fit-content;
   width: fit-content;
+  padding: 10px 20px;
 }
 
 /* Responsive Website */
