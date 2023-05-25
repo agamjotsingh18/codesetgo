@@ -1,3 +1,5 @@
+
+
 const repodata = [
   {
     heading: "Poll it up",
@@ -61,3 +63,20 @@ allCards = repodata.map(
 )
 
 cardsContainer.innerHTML = allCards.join("")
+
+const cards = document.getElementsByClassName("card");
+
+for (let i = 0; i < cards.length; i++) {
+  const card = cards[i];
+
+  card.addEventListener("mouseover", function() {
+    card.style.backgroundColor = "#a8d5ff";
+    card.style.color = "white";
+  });
+
+  card.addEventListener("mouseout", function() {
+    card.style.backgroundColor = "";
+    card.style.color = "";
+  });
+}
+
