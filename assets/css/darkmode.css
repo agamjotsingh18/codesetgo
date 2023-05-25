@@ -1,5 +1,4 @@
 body.light{
-
     --darkback:white;
     --textcolor:#555;
     --textcolor2:#0c2e8a;
@@ -50,4 +49,27 @@ body{
 #about .content h3 {
     color:var(--textcolor);
     
+}
+
+
+body.light .card-heading {
+  color: var(--footer);
+  background-image: linear-gradient(to right, #0c2e8a, #6da6db);
+}
+
+body.light .view-btn {
+    color: var(--footer);
+}
+
+body.light .viewRepo {
+    background-color: #051b5a;
+    border-top: 1px solid #87bef1;
+}
+
+body.light .hacktober-heading {
+    color: #081e5b;
+}
+
+body.light .card {
+    background-color: #eff2f5;
 }
