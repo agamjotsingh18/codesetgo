@@ -6,7 +6,7 @@
 CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed! 
 
 <h2>
-<a href="http://codesetgo.github.io/" target="_blank">Visit Our Website💻</a>
+<a href="https://codesetgo.netlify.app/" target="_blank">Visit Our Website💻</a>
 </h2>
 
 So, here you go! Contribute to the Open Source Website of CodeSetGo Community 🤩 Excited?
