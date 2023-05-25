@@ -16,12 +16,13 @@ a {
   transition: 0.5s;
 }
 
-a:hover,
+a:hover, 
 a:active,
 a:focus {
   color: #2796ff;
   outline: none;
   text-decoration: none;
+
 }
 
 p {
@@ -50,13 +51,13 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 80px;
+  bottom: 50px;
   z-index: 996;
   background: #2796ff;
   width: 40px;
   height: 40px;
   transition: opacity 0.3s ease;
-  animation: slideUp 0.8s infinite;
+  animation: none;
 }
 
 .back-to-top i {
