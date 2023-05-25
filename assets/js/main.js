@@ -1,4 +1,18 @@
-(function() {
+//This code implies the feature of changing navbar color when user scrolls
+
+const navbar = document.querySelector('#header');
+
+window.onscroll = () => {
+    if (window.scrollY > 420) {
+        navbar.classList.add('nav-active');
+
+    } else {
+        navbar.classList.remove('nav-active');
+    }
+};
+
+
+(function () {
     "use strict";
 
     // Selector Function
@@ -93,13 +107,13 @@
     }
 
     // Mobile Nav
-    on('click', '.mobile-nav-toggle', function(e) {
+    on('click', '.mobile-nav-toggle', function (e) {
         select('#navbar').classList.toggle('navbar-mobile')
         this.classList.toggle('bi-list')
         this.classList.toggle('bi-x')
     })
 
-    on('click', '.navbar .dropdown > a', function(e) {
+    on('click', '.navbar .dropdown > a', function (e) {
         if (select('#navbar').classList.contains('navbar-mobile')) {
             e.preventDefault()
             this.nextElementSibling.classList.toggle('dropdown-active')
@@ -107,7 +121,7 @@
     }, true)
 
     // Scroll with offset
-    on('click', '.scrollto', function(e) {
+    on('click', '.scrollto', function (e) {
         if (select(this.hash)) {
             e.preventDefault()
 
@@ -209,13 +223,13 @@ function sendMail() {
         phone: document.getElementById('phone').value,
         message: document.getElementById('message').value,
     };
-    emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',tempParams)
-    .then(function(responce){
-        console.log('SUCCESS!',response.status);
-        alert('Form Submitted Successfully');
-    },
-    function(error){
-        console.log('FAILED!',response.status,response.text);
-        alert('Form Submission Faild! Try Again');
-    })
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', tempParams)
+        .then(function (responce) {
+            console.log('SUCCESS!', response.status);
+            alert('Form Submitted Successfully');
+        },
+            function (error) {
+                console.log('FAILED!', response.status, response.text);
+                alert('Form Submission Faild! Try Again');
+            })
 }
