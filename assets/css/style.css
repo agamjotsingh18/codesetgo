@@ -50,22 +50,24 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 80px;
   z-index: 996;
   background: #2796ff;
   width: 40px;
   height: 40px;
-  transition: all 0.4s;
+  transition: opacity 0.3s ease;
+  animation: slideUp 0.8s infinite;
 }
 
 .back-to-top i {
   font-size: 28px;
   color: #fff;
   line-height: 0;
+  transition: opacity 0.3s ease;
 }
 
 .back-to-top:hover {
-  background: #2796ff;
+  background: #8ec2f4;
   color: #fff;
 }
 
@@ -73,7 +75,20 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
-
+@keyframes slideUp {
+  20% {
+    transform: translateY(40px);
+  }
+  30% {
+    transform: translateY(50px);
+  }
+  40% {
+    transform: translateY(60px);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -636,8 +651,17 @@ section {
   margin: 0px 15px;
   text-align: center;
   min-height: fit-content;
+
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
    
+
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#testimonials .testimonial-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 25px var(--border-color);
+
 }
 
 @media (max-width: 767px) {
@@ -791,7 +815,7 @@ section {
   color: #2796ff;
 }
 .hoverchanger:hover {
-  background-color:#07052c
+  background-color: #07052c;
 }
 #contact .contact-address,
 #contact .contact-phone,
@@ -854,6 +878,99 @@ section {
   color: var(--textcolor);
 }
 
+/* ----------------------------------------------------------
+# Social Icons in footer  */
+/* ------------------------------------------------------------ */
+
+.wrapper .icon{
+  position: relative;
+  background-color: #2796ff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #003288;
+  color: #ffffff;
+}
 /*--------------------------------------------------------------
 # Hacktoberfest Page
 --------------------------------------------------------------*/
@@ -872,7 +989,7 @@ section {
 }
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
-  margin-left: 20px;
+  margin: 0 8px;
 }
 
 /* Main secion */
@@ -977,4 +1094,24 @@ section {
   .navbar-mobile a:focus {
     font-size: 12px;
   }
+}
+
+
+/* ====================== SCROLL BAR ===================== */
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(7, 31, 48);
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(transparent, #198df9);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(transparent, #99ccfb);
 }
