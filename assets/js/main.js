@@ -155,6 +155,10 @@
             type: 'bullets',
             clickable: true
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
         breakpoints: {
             320: {
                 slidesPerView: 1,
@@ -219,3 +223,4 @@ function sendMail() {
         alert('Form Submission Faild! Try Again');
     })
 }
+
