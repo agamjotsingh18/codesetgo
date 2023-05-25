@@ -694,12 +694,31 @@ section {
 
 #call-to-action .cta-title {
   color: #fff;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 10px lightseagreen ;
+  overflow: hidden;
+  width: 0;
+  border-right: transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 25s steps(50, end) forwards infinite;
+}
+
+@keyframes typing {
+  from{
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
 }
 
 #call-to-action .cta-text {
   color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (min-width: 769px) {
@@ -727,6 +746,7 @@ section {
 #call-to-action .cta-btn:hover {
   background: white;
   /* border: 3px solid #2796FF; */
+  background-image: linear-gradient(to right, rgb(53, 160, 242),white);
   color: #081e5b;
   /* font-weight: 700; */
 }
