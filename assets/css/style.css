@@ -780,6 +780,79 @@ section {
   /* font-weight: 700; */
 }
 
+/* ---------- CommunityNexus section ---------- */
+/* Styling for the Community Nexus section */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#call-to-action .cta-btn:hover {
+  background: darkgreen;
+  /* border: 3px solid #2796FF; */
+
+  
+}
+
+#communitynexus .section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.whatsapp .title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.whatsapp a {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp a:hover {
+  background-color: darkgreen;
+}
+
+.whatsapp i {
+  font-size: 20px;
+  color: white;
+}
+
+.cta-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cta-text {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 15px;
+}
+
 /* Contact Section
 --------------------------------*/
 
