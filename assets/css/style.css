@@ -1294,3 +1294,18 @@ section {
 .social i:hover:before{
   content: attr(data-tooltip);
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  opacity: 0.6;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+
+
+
