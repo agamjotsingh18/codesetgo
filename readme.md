@@ -44,7 +44,7 @@ So, here you go! Contribute to the Open Source Website of CodeSetGo Community ðŸ
 
 ## Sneak Peek of the Website:
 
-![codesetgo ss](https://user-images.githubusercontent.com/99464268/161961954-274028d8-dfbf-4505-b253-d26740658031.png)
+![codesetgo_ss](https://github.com/gulshanjakhon/codesetgo/assets/72978519/4e275569-8001-4fc4-98ad-b7e99d69f79e)
 
 
 
