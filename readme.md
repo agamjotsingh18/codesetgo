@@ -1,7 +1,11 @@
 # CodeSetGo👩‍💻👨‍💻
 
-![image](https://user-images.githubusercontent.com/70067726/193332466-7ed2c4b8-e2fa-4d8d-8f60-444bbeaef0e1.png)
-<h1 align="center"> HacktoberFest Accepted</h1>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88102392/239682688-0c5debf5-d414-4916-87d8-e1a710773ae3.png" alt="image">
+</p>
+
+<h1 align="center">Contributions Accepted under GSSoC '23</h1>
+
 
 CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed! 
 
@@ -189,3 +193,8 @@ Thanks goes to these wonderful people :
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+---
+
+<p align="right"><a href="#top">Back to top</a></p>
+
