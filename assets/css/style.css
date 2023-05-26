@@ -151,6 +151,8 @@ h6 {
 
 .navbar {
   padding: 0;
+  background-color: transparent; 
+  
 }
 
 .navbar ul {
@@ -159,10 +161,12 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  background-color: transparent; 
 }
 
 .navbar li {
   position: relative;
+  background-color: transparent; 
 }
 
 .navbar a,
@@ -179,6 +183,7 @@ h6 {
 
   white-space: nowrap;
   transition: 0.3s;
+  
 }
 
 .navbar a i,
@@ -242,6 +247,7 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  background-color: transparent; 
 }
 
 .mobile-nav-toggle.bi-x {
@@ -630,12 +636,12 @@ section {
 #testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 50px 50px 0 50px;
-  margin: 30px 15px;
+  margin: 25px 15px;
   text-align: center;
   min-height: fit-content;
   box-shadow: 0px 2px 12px var(--border-color);
   background-color: #141d26;
-  border-radius: 12px;
+  border-radius: 15px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 #testimonials .testimonial-item:hover {
@@ -650,7 +656,7 @@ section {
 }
 
 #testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  width: 100px;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
@@ -667,6 +673,7 @@ section {
   font-size: 14px;
   color: #999;
   margin: 0;
+  padding-bottom: 5px;
 }
 
 #testimonials .testimonial-item .quote-sign-left {
@@ -766,16 +773,7 @@ section {
   text-align: center;
 }
 
-#contact .contact-info i {
-  font-size: 48px;
-  display: inline-block;
-  margin-bottom: 10px;
-  color: #2796ff;
-}
 
-#contact .contact-info i:hover {
-  color: var(--hover-color1);
-}
 
 #contact .contact-info h3 {
   font-size: 18px;
@@ -785,16 +783,7 @@ section {
   color: #999;
 }
 
-#contact .contact-info a {
-  color: var(--textcolor3);
-}
 
-#contact .contact-info a:hover {
-  color: #2796ff;
-}
-.hoverchanger:hover {
-  background-color: #07052c;
-}
 #contact .contact-address,
 #contact .contact-phone,
 #contact .contact-email {
@@ -962,8 +951,8 @@ section {
   color: #ffffff !important;
 }
 .hacktoberfest-btn:hover {
-  background-color: transparent;
-  color: #0c2e8a !important;
+  background-color: #0236c5;
+  color: #ffffff !important;
 }
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
@@ -972,37 +961,55 @@ section {
 
 /* Main secion */
 .hacktober-heading {
-  color: #2796ff;
+  color: #8ec6fb;
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .cards-container {
   margin: 0 50px;
   display: flex;
-  gap: 15px;
+  gap: 25px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .card {
   background-color: transparent;
-  width: 450px;
-  border: 4px solid var(--box-anchor);
-  padding: 20px 20px;
+  width: 430px;
+  border: 3px solid var(--box-anchor);
+  padding-bottom: 0px;
 }
 .card-heading {
   color: var(--box-anchor);
-  font-weight: 700;
+  font-weight: 550;
   margin-bottom: 15px;
+  padding: 13px 20px;
+  background-image: linear-gradient(to right, #18558d, #243447);
 }
 .card-description {
   color: var(--box-anchor);
   font-size: 14px;
   margin-bottom: 15px;
+  padding: 10px 20px;
+}
+.viewRepo {
+  color: var(--box-anchor);
+  font-size: 14px;
+  margin-bottom: 0; /* Remove margin bottom */
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  background-color: black;
+  border-top: 1px solid #198df9;
 }
 .view-btn {
+  width: -moz-fit-content;
   width: fit-content;
+  padding: 10px 20px;
 }
 
 /* Responsive Website */
@@ -1074,6 +1081,125 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# CheatSheets Page
+--------------------------------------------------------------*/
+
+/* Main secion */
+.cheatsheet-heading {
+  color: #2796ff;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.option-container {
+  margin: 0 100px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.option {
+  background-color: transparent;
+  width: 430px;
+  border: 4px solid var(--box-anchor);
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.option-heading {
+  color: var(--box-anchor);
+  font-weight:bolder;
+  margin-bottom: 15px;
+}
+.option-description {
+  color: var(--box-anchor);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.option-btn {
+  width: fit-content;
+  margin: 10px auto;
+  padding: 5px 6px;
+  background-color: #2796ff;
+  color: #fff;
+  background: linear-gradient(#2796ff, #1779e0);
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  border: 2px solid #2796ff; /* Set the border color */
+}
+
+/* Dark mode */
+.dark-mode .option-btn {
+  background: linear-gradient(#2796ff, #1779e0);
+  color:  #1779e0;
+  background-color: #fff;
+  border-color: #2796ff; /* Set the border color for dark mode */
+}
+
+.option-btn:hover {
+  background-color: #0c5d99; /* Update the hover background color */
+  border-color: #0c5d99; /* Update the hover border color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* ...other hover styles... */
+}
+
+/* CSS for overlay and iframe container */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 90%;
+  max-height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  padding: 5px 5px;
+  background-color: #2796ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.close-btn:hover {
+  background-color: #0c5d99; /* Update the hover background color */
+  border-color: #0c5d99; /* Update the hover border color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* ...other hover styles... */
+}
+
+/* Rest of your existing CSS styles */
+
+
 
 /* ====================== SCROLL BAR ===================== */
 
@@ -1092,4 +1218,7 @@ section {
 
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent, #99ccfb);
+}
+.social i:hover:before{
+  content: attr(data-tooltip);
 }
