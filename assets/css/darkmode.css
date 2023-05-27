@@ -51,6 +51,51 @@ body{
     
 }
 
+/* Back To Top Button in dark mode */
+
+.back-to-top-dark {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 50px;
+    z-index: 996;
+    background: #042c52;
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+    animation: none;
+    border: 3px solid #fff;
+    border-radius: 0.2rem;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  }
+  
+  
+  .back-to-top-dark i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .back-to-top-dark:hover {
+    background: #1d5181;
+    color: #fff;
+  }
+  
+  .back-to-top-dark.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
 
 body.light .card-heading {
   color: var(--footer);
