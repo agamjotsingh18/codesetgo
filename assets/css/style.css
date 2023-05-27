@@ -51,7 +51,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 50px;
+  bottom: 80px;
   z-index: 996;
   background: #2796ff;
   width: 40px;
@@ -151,8 +151,6 @@ h6 {
 
 .navbar {
   padding: 0;
-  background-color: transparent; 
-  
 }
 
 .navbar ul {
@@ -161,12 +159,10 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
-  background-color: transparent; 
 }
 
 .navbar li {
   position: relative;
-  background-color: transparent; 
 }
 
 .navbar a,
@@ -183,7 +179,6 @@ h6 {
 
   white-space: nowrap;
   transition: 0.3s;
-  
 }
 
 .navbar a i,
@@ -247,7 +242,6 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
-  background-color: transparent; 
 }
 
 .mobile-nav-toggle.bi-x {
@@ -545,23 +539,48 @@ section {
 --------------------------------*/
 
 #services {
-  padding: 40px 0;
+  padding: 40px;
+}
+
+#services .col-lg-6 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
 }
 
 #services .box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
   padding: 40px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-  background: var(--darkback);
+  background: var(--service);
   border: 4px solid var(--postborder);
-  transition: 0.4s;
-  height: 100%;
 }
 
-#services .box:hover {
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  transform: translateY(-10px);
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
+#services .col-lg-6:hover .box {
+  transform: rotateY(180deg);
+}
+
+#services .icon{
+ 
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+#services .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  
 }
 
 #services .box .icon {
@@ -573,33 +592,30 @@ section {
   font-size: 64px;
   transition: 0.5s;
   line-height: 0;
-  margin-top: 34px;
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
-  background: linear-gradient(45deg, #2796ff 0%, #4d85b9 100%);
+  background: var(--icon);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#services .box h4 {
-  margin-left: 100px;
+#services .icon h4 {
+  margin-left: 10px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 22px;
-}
-
-#services .box h4 a {
-  color: var(--box-anchor);
+  text-align: center;
+  color: var(--textcolor);
 }
 
 #services .box p {
-  font-size: 14px;
-  margin-left: 100px;
-  margin-bottom: 0;
-  line-height: 24px;
+  margin-top: 0%;
+  margin-left: 80px;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
   color: var(--textcolor);
 }
 
@@ -608,17 +624,12 @@ section {
     margin-bottom: 20px;
   }
 
-  #services .box .icon {
+  #services  .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
   }
 
-  #services .box h4,
-  #services .box p {
-    margin-left: 0;
-    text-align: center;
-  }
 }
 
 /* Testimonials Section
@@ -636,12 +647,12 @@ section {
 #testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 50px 50px 0 50px;
-  margin: 25px 15px;
+  margin: 30px 15px;
   text-align: center;
   min-height: fit-content;
   box-shadow: 0px 2px 12px var(--border-color);
   background-color: #141d26;
-  border-radius: 15px;
+  border-radius: 12px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 #testimonials .testimonial-item:hover {
@@ -656,7 +667,7 @@ section {
 }
 
 #testimonials .testimonial-item .testimonial-img {
-  width: 100px;
+  width: 90px;
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
@@ -673,7 +684,6 @@ section {
   font-size: 14px;
   color: #999;
   margin: 0;
-  padding-bottom: 5px;
 }
 
 #testimonials .testimonial-item .quote-sign-left {
@@ -724,12 +734,31 @@ section {
 
 #call-to-action .cta-title {
   color: #fff;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 10px lightseagreen ;
+  overflow: hidden;
+  width: 0;
+  border-right: transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 25s steps(50, end) forwards infinite;
+}
+
+@keyframes typing {
+  from{
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
 }
 
 #call-to-action .cta-text {
   color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (min-width: 769px) {
@@ -757,6 +786,7 @@ section {
 #call-to-action .cta-btn:hover {
   background: white;
   /* border: 3px solid #2796FF; */
+  background-image: linear-gradient(to right, rgb(53, 160, 242),white);
   color: #081e5b;
   /* font-weight: 700; */
 }
@@ -773,7 +803,16 @@ section {
   text-align: center;
 }
 
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #2796ff;
+}
 
+#contact .contact-info i:hover {
+  color: var(--hover-color1);
+}
 
 #contact .contact-info h3 {
   font-size: 18px;
@@ -783,7 +822,16 @@ section {
   color: #999;
 }
 
+#contact .contact-info a {
+  color: var(--textcolor3);
+}
 
+#contact .contact-info a:hover {
+  color: #2796ff;
+}
+.hoverchanger:hover {
+  background-color: #07052c;
+}
 #contact .contact-address,
 #contact .contact-phone,
 #contact .contact-email {
@@ -951,8 +999,8 @@ section {
   color: #ffffff !important;
 }
 .hacktoberfest-btn:hover {
-  background-color: #0236c5;
-  color: #ffffff !important;
+  background-color: transparent;
+  color: #0c2e8a !important;
 }
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
@@ -961,56 +1009,63 @@ section {
 
 /* Main secion */
 .hacktober-heading {
-  color: #8ec6fb;
+  color: #2796ff;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 10px;
-  font-weight: 600;
 }
 
 .cards-container {
   margin: 0 50px;
   display: flex;
-  gap: 25px;
+  gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .card {
   background-color: transparent;
-  width: 430px;
-  border: 3px solid var(--box-anchor);
-  padding-bottom: 0px;
+  width: 450px;
+  border: 4px solid var(--box-anchor);
+  padding: 20px 20px;
+  border-radius: 15px;
+  
 }
+
 .card-heading {
   color: var(--box-anchor);
-  font-weight: 550;
+  font-weight: 700;
   margin-bottom: 15px;
-  padding: 13px 20px;
-  background-image: linear-gradient(to right, #18558d, #243447);
+}
+.card-heading:hover{
+  color: #2796ff;
+  cursor: pointer;
 }
 .card-description {
   color: var(--box-anchor);
   font-size: 14px;
   margin-bottom: 15px;
-  padding: 10px 20px;
-}
-.viewRepo {
-  color: var(--box-anchor);
-  font-size: 14px;
-  margin-bottom: 0; /* Remove margin bottom */
-  padding: 10px 20px;
-  position: relative;
-  width: 100%;
-  margin-top: auto;
-  background-color: black;
-  border-top: 1px solid #198df9;
 }
 .view-btn {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px 20px;
-}
+  /* width: fit-content; */
+      width:140px;
+    height:47px;
+    border-radius:12px;
+    cursor:pointer;
+    border:none;
+    letter-spacing:2px;
+    font-weight:bold;
+    box-shadow:0px 8px 15px rgba(5, 5, 5, 0.1);
+    transition:all 0.3s ease;
+  }
+  .view-btn:hover{
+    background:#2ceae5;
+    transform:translateY(-7px);
+    color:#fff;
+    box-shadow:0px 10px 25px rgba(46,223,229,0.445);
+    
+  }
+  
+
 
 /* Responsive Website */
 
@@ -1081,125 +1136,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# CheatSheets Page
---------------------------------------------------------------*/
-
-/* Main secion */
-.cheatsheet-heading {
-  color: #2796ff;
-  text-align: center;
-  padding-top: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-}
-
-.option-container {
-  margin: 0 100px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-.option {
-  background-color: transparent;
-  width: 430px;
-  border: 4px solid var(--box-anchor);
-  padding: 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.option-heading {
-  color: var(--box-anchor);
-  font-weight:bolder;
-  margin-bottom: 15px;
-}
-.option-description {
-  color: var(--box-anchor);
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.option-btn {
-  width: fit-content;
-  margin: 10px auto;
-  padding: 5px 6px;
-  background-color: #2796ff;
-  color: #fff;
-  background: linear-gradient(#2796ff, #1779e0);
-  transition: background-color 0.3s ease;
-  border-radius: 5px;
-  border: 2px solid #2796ff; /* Set the border color */
-}
-
-/* Dark mode */
-.dark-mode .option-btn {
-  background: linear-gradient(#2796ff, #1779e0);
-  color:  #1779e0;
-  background-color: #fff;
-  border-color: #2796ff; /* Set the border color for dark mode */
-}
-
-.option-btn:hover {
-  background-color: #0c5d99; /* Update the hover background color */
-  border-color: #0c5d99; /* Update the hover border color */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  /* ...other hover styles... */
-}
-
-/* CSS for overlay and iframe container */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.iframe-container {
-  position: relative;
-  width: 100%;
-  max-width: 90%;
-  max-height: 100%;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.iframe-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.close-btn {
-  position: absolute;
-  top: 12px;
-  right: 5px;
-  padding: 5px 5px;
-  background-color: #2796ff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.close-btn:hover {
-  background-color: #0c5d99; /* Update the hover background color */
-  border-color: #0c5d99; /* Update the hover border color */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  /* ...other hover styles... */
-}
-
-/* Rest of your existing CSS styles */
-
-
 
 /* ====================== SCROLL BAR ===================== */
 
@@ -1218,7 +1154,4 @@ section {
 
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent, #99ccfb);
-}
-.social i:hover:before{
-  content: attr(data-tooltip);
 }
