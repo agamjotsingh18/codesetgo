@@ -16,7 +16,7 @@ a {
   transition: 0.5s;
 }
 
-a:hover, 
+a:hover,
 a:active,
 a:focus {
   color: #2796ff;
@@ -76,20 +76,25 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+
 @keyframes slideUp {
   20% {
     transform: translateY(40px);
   }
+
   30% {
     transform: translateY(50px);
   }
+
   40% {
     transform: translateY(60px);
   }
+
   50% {
     transform: translateY(70px);
   }
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -191,7 +196,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #2796ff;
 }
 
@@ -302,7 +307,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #2796ff;
 }
 
@@ -337,11 +342,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul li:hover>a {
   color: #2796ff;
 }
 
-.navbar-mobile .dropdown > .dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
 
@@ -565,11 +570,11 @@ section {
   transform: rotateY(180deg);
 }
 
-#services .icon{
- 
+#services .icon {
+
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -577,10 +582,10 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  
+
 }
 
 #services .box .icon {
@@ -624,7 +629,7 @@ section {
     margin-bottom: 20px;
   }
 
-  #services  .icon {
+  #services .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
@@ -655,6 +660,7 @@ section {
   border-radius: 12px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 #testimonials .testimonial-item:hover {
   transform: scale(1.1);
   box-shadow: 0px 10px 25px var(--border-color);
@@ -737,20 +743,23 @@ section {
   font-size: 35px;
   font-weight: 700;
   font-family: 'Times New Roman', Times, serif;
-  text-shadow: 2px 2px 10px lightseagreen ;
+  text-shadow: 2px 2px 10px lightseagreen;
   overflow: hidden;
   width: 0;
-  border-right: transparent; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
   animation: typing 25s steps(50, end) forwards infinite;
 }
 
 @keyframes typing {
-  from{
-      width: 0%;
+  from {
+    width: 0%;
   }
+
   to {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -786,7 +795,7 @@ section {
 #call-to-action .cta-btn:hover {
   background: white;
   /* border: 3px solid #2796FF; */
-  background-image: linear-gradient(to right, rgb(53, 160, 242),white);
+  background-image: linear-gradient(to right, rgb(53, 160, 242), white);
   color: #081e5b;
   /* font-weight: 700; */
 }
@@ -829,9 +838,11 @@ section {
 #contact .contact-info a:hover {
   color: #2796ff;
 }
+
 .hoverchanger:hover {
   background-color: #07052c;
 }
+
 #contact .contact-address,
 #contact .contact-phone,
 #contact .contact-email {
@@ -839,6 +850,7 @@ section {
 }
 
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -897,7 +909,7 @@ section {
 # Social Icons in footer  */
 /* ------------------------------------------------------------ */
 
-.wrapper .icon{
+.wrapper .icon {
   position: relative;
   background-color: #2796ff;
   border-radius: 50%;
@@ -914,6 +926,7 @@ section {
   color: #333;
   text-decoration: none;
 }
+
 .wrapper .tooltip {
   position: absolute;
   top: 0;
@@ -928,6 +941,7 @@ section {
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .wrapper .tooltip::before {
   position: absolute;
   content: "";
@@ -939,40 +953,47 @@ section {
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .wrapper .icon:hover .tooltip {
   top: -45px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
+
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
+
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
   background-color: #3b5999;
   color: #ffffff;
 }
+
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
   background-color: #46c1f6;
   color: #ffffff;
 }
+
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
   background-color: #e1306c;
   color: #ffffff;
 }
+
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
   background-color: #333333;
   color: #ffffff;
 }
+
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
@@ -986,6 +1007,7 @@ section {
   background-color: #003288;
   color: #ffffff;
 }
+
 /*--------------------------------------------------------------
 # Hacktoberfest Page
 --------------------------------------------------------------*/
@@ -993,16 +1015,19 @@ section {
   padding: 0;
   margin: 0;
 }
+
 .hacktoberfest-btn,
 .navbar-mobile .hacktoberfest-btn {
   background-color: #0c2e8a;
   color: #ffffff !important;
 }
+
 .hacktoberfest-btn:hover {
   background-color: transparent;
   color: #0c2e8a !important;
 }
-.navbar ul > :nth-child(6) a {
+
+.navbar ul> :nth-child(6) a {
   padding: 10px 12px;
   margin: 0 8px;
 }
@@ -1029,11 +1054,12 @@ section {
   padding: 20px 20px;
   border-radius: 15px;
   transition: transform 0.4s, box-shadow 0.5s;
-  
+
 }
+
 .card:hover {
   transform: scale(1.07);
-  box-shadow: 0 10px 20px rgba(0,0,0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0);
 }
 
 .card-heading {
@@ -1041,37 +1067,42 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
 }
-.card-heading:hover{
+
+.card-heading:hover {
   color: #2796ff;
   cursor: pointer;
 }
+
 .card-description {
   color: var(--box-anchor);
   font-size: 14px;
   margin-bottom: 15px;
 }
+
 .view-btn {
   /* width: fit-content; */
-      width:140px;
-    height:57px;
-    border-radius:12px;
-    cursor:pointer;
-    border:none;
-    letter-spacing:2px;
-    font-weight:bold;
-    box-shadow:0px 8px 15px rgb(5, 15, 20);
-    transition:all 0.3s ease;
-    padding: 2px 10px 5px 10px;
- 
-  }
-  .view-btn:hover{
-    background:#2678f4;
-    transform:translateY(-4px);
-    color:#fff;
-    box-shadow:0px 8px 15px #040d1b;
-    
-  }
-  
+  width: 140px;
+  height: 57px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #6ba2ff;
+  border: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgb(5, 15, 20);
+  transition: all 0.3s ease;
+  padding: 2px 10px 5px 10px;
+
+}
+
+.view-btn:hover {
+  background: #2678f4;
+  transform: translateY(-4px);
+  color: #fff;
+  box-shadow: 0px 8px 15px #040d1b;
+
+}
+
 
 
 /* Responsive Website */
@@ -1081,6 +1112,7 @@ section {
     max-height: 24px;
     max-width: 93px;
   }
+
   #about .content h2 {
     font-size: 16px;
   }
@@ -1088,55 +1120,70 @@ section {
   #about .content h3 {
     font-size: 15px;
   }
+
   .section-header h2 {
     font-size: 23px;
   }
+
   #about {
     padding: 60px 0 0px 0;
   }
+
   .section-header p {
     font-size: 15px;
   }
+
   #services .box {
     padding: 12px;
   }
+
   #call-to-action .cta-title {
     font-size: 22px;
   }
+
   #call-to-action .cta-text {
     font-size: 12px;
   }
+
   #call-to-action .cta-btn {
     font-size: 12px;
     padding: 6px 26px;
   }
+
   #testimonials .testimonial-item p {
     font-size: 14px;
   }
+
   #testimonials .testimonial-item .quote-sign-left {
     width: 24px;
   }
+
   #testimonials .testimonial-item .quote-sign-right {
     width: 24px;
   }
+
   .enquiry-form .title {
     font-size: 16pt;
     margin-bottom: 7px;
   }
+
   .enquiry-form input,
   textarea {
     margin: 7px 0;
     padding: 10px;
     font-size: 12px;
   }
+
   .enquiry-form button {
     padding: 8px;
     font-size: 16px;
     margin: 3px auto 0;
   }
+
   #contact {
     padding: 13px 0;
   }
+
   .navbar-mobile a,
   .navbar-mobile a:focus {
     font-size: 12px;
@@ -1146,19 +1193,19 @@ section {
 
 /* ====================== SCROLL BAR ===================== */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: rgb(7, 31, 48);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: linear-gradient(transparent, #198df9);
   border-radius: 6px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #99ccfb);
 }

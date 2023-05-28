@@ -54,7 +54,7 @@ allCards = repodata.map(
           <p class="card-description ">
             ${card.description}
           </p>
-          <a href="${card.link}" class="view-btn  ">View Repository</a>
+          <a href="${card.link}" class="view-btn ">View Repository</a>
         </div>`
 ) 
 
