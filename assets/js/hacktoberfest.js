@@ -1,5 +1,3 @@
-
-
 const repodata = [
   {
     heading: "Poll it up",
@@ -51,41 +49,11 @@ let allCards
 
 allCards = repodata.map(
   (card) =>
-    `<div class="card">
+    `<div class="card  m-lg-3 ">
           <h2 class="card-heading">${card.heading}</h2>
-          <p class="card-description">
+          <p class="card-description ">
             ${card.description}
           </p>
-          <a  href="${card.link}" class="view-btn">View Repository</a>
-        </div>`
-)
+
 
 cardsContainer.innerHTML = allCards.join("")
-
-const cards = document.getElementsByClassName("card");
-
-for (let i = 0; i < cards.length; i++) {
-  const card = cards[i];
-  const link = card.querySelector("a");
-
-  card.addEventListener("mouseover", function() {
-    card.style.backgroundColor = "#a8d5ff";
-    card.style.color = "white";
-    card.classList.add("card-pop");
-  });
-
-  card.addEventListener("mouseout", function() {
-    card.style.backgroundColor = "";
-    card.style.color = "";
-    card.classList.remove("card-pop");
-  });
-
-  link.addEventListener("mouseover", function() {
-    link.classList.add("underline");
-  });
-
-  link.addEventListener("mouseout", function() {
-    link.classList.remove("underline");
-  });
-}
-

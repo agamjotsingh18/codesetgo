@@ -16,12 +16,13 @@ a {
   transition: 0.5s;
 }
 
-a:hover,
+a:hover, 
 a:active,
 a:focus {
   color: #2796ff;
   outline: none;
   text-decoration: none;
+
 }
 
 p {
@@ -56,7 +57,7 @@ h6 {
   width: 40px;
   height: 40px;
   transition: opacity 0.3s ease;
-  animation: slideUp 0.8s infinite;
+  animation: none;
 }
 
 .back-to-top i {
@@ -150,8 +151,6 @@ h6 {
 
 .navbar {
   padding: 0;
-  background-color: transparent;
-}
 
 .navbar ul {
   margin: 0;
@@ -159,13 +158,11 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
-  background-color: transparent;
-}
+
 
 .navbar li {
   position: relative;
-  background-color: transparent;
-}
+
 
 .navbar a,
 .navbar a:focus {
@@ -244,8 +241,7 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
-  background-color: transparent;
-}
+
 
 .mobile-nav-toggle.bi-x {
   color: #fff;
@@ -542,23 +538,48 @@ section {
 --------------------------------*/
 
 #services {
-  padding: 40px 0;
+  padding: 40px;
+}
+
+#services .col-lg-6 {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
 }
 
 #services .box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
   padding: 40px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-  background: var(--darkback);
+  background: var(--service);
   border: 4px solid var(--postborder);
-  transition: 0.4s;
-  height: 100%;
 }
 
-#services .box:hover {
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  transform: translateY(-10px);
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
+#services .col-lg-6:hover .box {
+  transform: rotateY(180deg);
+}
+
+#services .icon{
+ 
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+#services .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  
 }
 
 #services .box .icon {
@@ -570,33 +591,30 @@ section {
   font-size: 64px;
   transition: 0.5s;
   line-height: 0;
-  margin-top: 34px;
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
-  background: linear-gradient(45deg, #2796ff 0%, #4d85b9 100%);
+  background: var(--icon);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#services .box h4 {
-  margin-left: 100px;
+#services .icon h4 {
+  margin-left: 10px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 22px;
-}
-
-#services .box h4 a {
-  color: var(--box-anchor);
+  text-align: center;
+  color: var(--textcolor);
 }
 
 #services .box p {
-  font-size: 14px;
-  margin-left: 100px;
-  margin-bottom: 0;
-  line-height: 24px;
+  margin-top: 0%;
+  margin-left: 80px;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
   color: var(--textcolor);
 }
 
@@ -605,17 +623,12 @@ section {
     margin-bottom: 20px;
   }
 
-  #services .box .icon {
+  #services  .icon {
     float: none;
     text-align: center;
     padding-bottom: 15px;
   }
 
-  #services .box h4,
-  #services .box p {
-    margin-left: 0;
-    text-align: center;
-  }
 }
 
 /* Testimonials Section
@@ -637,6 +650,8 @@ section {
   text-align: center;
   min-height: fit-content;
   box-shadow: 0px 2px 12px var(--border-color);
+  background-color: #141d26;
+  border-radius: 12px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 #testimonials .testimonial-item:hover {
@@ -718,12 +733,31 @@ section {
 
 #call-to-action .cta-title {
   color: #fff;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px 10px lightseagreen ;
+  overflow: hidden;
+  width: 0;
+  border-right: transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 25s steps(50, end) forwards infinite;
+}
+
+@keyframes typing {
+  from{
+      width: 0%;
+  }
+  to {
+      width: 100%;
+  }
 }
 
 #call-to-action .cta-text {
   color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 @media (min-width: 769px) {
@@ -751,6 +785,7 @@ section {
 #call-to-action .cta-btn:hover {
   background: white;
   /* border: 3px solid #2796FF; */
+  background-image: linear-gradient(to right, rgb(53, 160, 242),white);
   color: #081e5b;
   /* font-weight: 700; */
 }
@@ -857,6 +892,99 @@ section {
   color: var(--textcolor);
 }
 
+/* ----------------------------------------------------------
+# Social Icons in footer  */
+/* ------------------------------------------------------------ */
+
+.wrapper .icon{
+  position: relative;
+  background-color: #2796ff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #003288;
+  color: #ffffff;
+}
 /*--------------------------------------------------------------
 # Hacktoberfest Page
 --------------------------------------------------------------*/
@@ -898,11 +1026,23 @@ section {
   width: 450px;
   border: 4px solid var(--box-anchor);
   padding: 20px 20px;
+  border-radius: 15px;
+  transition: transform 0.4s, box-shadow 0.5s;
+  
 }
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0,0,0);
+}
+
 .card-heading {
   color: var(--box-anchor);
   font-weight: 700;
   margin-bottom: 15px;
+}
+.card-heading:hover{
+  color: #2796ff;
+  cursor: pointer;
 }
 .card-description {
   color: var(--box-anchor);
@@ -910,8 +1050,28 @@ section {
   margin-bottom: 15px;
 }
 .view-btn {
-  width: fit-content;
-}
+  /* width: fit-content; */
+      width:140px;
+    height:57px;
+    border-radius:12px;
+    cursor:pointer;
+    border:none;
+    letter-spacing:2px;
+    font-weight:bold;
+    box-shadow:0px 8px 15px rgb(5, 15, 20);
+    transition:all 0.3s ease;
+    padding: 2px 10px 5px 10px;
+ 
+  }
+  .view-btn:hover{
+    background:#2678f4;
+    transform:translateY(-4px);
+    color:#fff;
+    box-shadow:0px 8px 15px #040d1b;
+    
+  }
+  
+
 
 /* Responsive Website */
 
@@ -979,36 +1139,5 @@ section {
   .navbar-mobile a,
   .navbar-mobile a:focus {
     font-size: 12px;
-  }
-}
-.card a {
-  transition: text-decoration 0.3s;
-}
-
-.card a.underline {
-  text-decoration: underline;
-}
-
-.card {
-  transition: transform 0.3s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  border: none;
-}
-.card-pop {
-  animation: cardPop 0.7s;
-}
-
-@keyframes cardPop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }
