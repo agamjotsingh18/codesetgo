@@ -998,9 +998,26 @@ section {
   background-color: #0c2e8a;
   color: #ffffff !important;
 }
+.hacktoberfest-btn {
+  background-color: #0c2e8a;
+  color: #ffffff !important;
+  transition: transform 0.3s ease;
+}
+
+.hacktoberfest-btn:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .hacktoberfest-btn {
+    transform: none;
+    transition: none;
+  }
+}
+
 .hacktoberfest-btn:hover {
   background-color: transparent;
-  color: #0c2e8a !important;
+  color: #2d65ff !important;
 }
 .navbar ul > :nth-child(6) a {
   padding: 10px 12px;
