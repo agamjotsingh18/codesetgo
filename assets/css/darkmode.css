@@ -12,8 +12,8 @@ body.light{
     --color2:#2796FF;
     --color3:rgba(255,122,0);
     --color4:rgba(0,186,124);
-    --bar:white;
-    --footer:#f2f5f8;
+    --bar:orange;
+    --footer:red;
     --service: linear-gradient(#47A992, #98EECC);
     --icon : linear-gradient(45deg, #2796ff 30%, #0c2e8a 70%);
 }
@@ -55,7 +55,7 @@ body{
 
 .back-to-top-dark {
     position: fixed;
-    visibility: hidden;
+    visibility:visible;
     opacity: 0;
     right: 15px;
     bottom: 50px;
@@ -109,12 +109,15 @@ body.light .view-btn {
 body.light .viewRepo {
     background-color: #051b5a;
     border-top: 1px solid #87bef1;
+    color:pink;
 }
 
 body.light .hacktober-heading {
     color: #081e5b;
+    color:pink;
 }
 
 body.light .card {
     background-color: #eff2f5;
+    color:pink;
 }
