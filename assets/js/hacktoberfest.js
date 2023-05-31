@@ -24,7 +24,7 @@ const repodata = [
     link: "https://github.com/freeCodeCamp/freeCodeCamp",
   },
   {
-    heading: "defaang",
+    heading: "Defaang",
     description:
       "A website that will curate recently-asked interview questions from FAANG+ to help people practice & prep! ",
     link: "https://github.com/ykdojo/defaang",
@@ -54,8 +54,6 @@ allCards = repodata.map(
           <p class="card-description ">
             ${card.description}
           </p>
-          <a href="${card.link}" class="view-btn  ">View Repository</a>
-        </div>`
-) 
+
 
 cardsContainer.innerHTML = allCards.join("")
