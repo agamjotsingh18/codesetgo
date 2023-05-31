@@ -814,6 +814,7 @@ section {
   color: var(--hover-color1);
 }
 
+
 #contact .contact-info h3 {
   font-size: 18px;
   margin-bottom: 15px;
@@ -986,6 +987,41 @@ section {
   background-color: #003288;
   color: #ffffff;
 }
+
+#linked__{
+  transition: 0.5s;
+  font-size: 40px;
+}
+
+#linked__:hover{
+  transform: translateY(-10px);
+}
+
+.bxl-linkedin:hover::before{
+  color: #0a66c2;
+}
+.bxl-instagram:hover::before{
+  color: #c32aa3;
+}
+
+.bxl-youtube:hover::before{
+  color: red;
+}
+
+.bxl-discord:hover::before{
+  color: #5865f2;
+}
+
+.bxl-telegram:hover::before{
+  color: #0088cc;
+}
+
+.bxl-github:hover::before{
+  color: #171515;
+}
+
+
+
 /*--------------------------------------------------------------
 # Hacktoberfest Page
 --------------------------------------------------------------*/
@@ -1020,6 +1056,7 @@ section {
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .card {
