@@ -117,7 +117,7 @@ h6 {
   }
 
   #header #logo img {
-    max-height: 40px;
+    max-height: 20px;
   }
 }
 
@@ -180,8 +180,8 @@ h6 {
 }
 
 .darkmode {
-  margin-left: 1em;
-
+  margin-top: 1rem;
+  margin-left: auto;
   font-size: 1.3em;
   transform: translateY(3px) rotateZ(0deg);
   transition: 400ms;
