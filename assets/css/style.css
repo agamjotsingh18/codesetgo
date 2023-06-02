@@ -988,6 +988,13 @@ section {
   background-color: #003288;
   color: #ffffff;
 }
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+  background-color: #4ced64;
+  color: #ffffff;
+}
 /*--------------------------------------------------------------
 # Hacktoberfest Page
 --------------------------------------------------------------*/
