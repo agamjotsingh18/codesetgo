@@ -295,17 +295,21 @@
         <div class="section-header">
           <h2>Contact Us</h2>
         </div>
-        <div class="row contact-info">
+     
+        <div class="row-contact-info">
           <div class="enquiry">
-            <form class="enquiry-form" id="enquiry-form">
+            <form class="enquiry-form" id="enquiry-form" name="my-form" >
+              
               <div class="title">GET IN <span>TOUCH</span></div>
-              <input type="text" id="name" placeholder="Your Name" required />
-              <input type="email" id="email" placeholder="Email id" required />
-              <input type="text" id="phone" placeholder="Phone no." required />
-              <textarea id="message" row="5" placeholder="How can we help you?" required></textarea>
-              <button type="button" onclick="sendMail(); reset();" class="hoverchanger">
+              
+              <input type="text" id="name" name = "Name" placeholder="Your Name" required />
+              <input type="email" id="email" name = "Email" placeholder="Email id" required />
+              <input type="text" id="phone" name = "mob" placeholder="Phone no." required />
+              <textarea id="message" row="5" name ="msg" placeholder="How can we help you?" required></textarea>
+              <button type="submit" id="submitButton"   class="hoverchanger" onsubmit="validate();validateEmail()">
                 Send
               </button>
+              <!-- onclick="sendMail(); reset();" -->
             </form>
           </div>
           <div class="col-md-12">
@@ -433,6 +437,43 @@
   <!-- JS -->
   <script defer src="./assets/js/darkmode_logic.js"></script>
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    function validate() {
+      const name = document.getElementById('name');
+      
+      if( document.myForm.Name.value == "" ) {
+         alert( "Please provide your name!" );
+         document.myForm.Name.focus() ;
+         return false;
+      }
+      else if( document.myForm.EMail.value == "" ) {
+         alert( "Please provide your Email!" );
+         document.myForm.EMail.focus() ;
+         return false;
+      }
+      
+      return( true );
+   }
+
+   function validateEmail() {
+         var emailID = document.myForm.EMail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+      document.getElementById("submitButton").addEventListener("click", function() {
+      if (validateForm()) {
+        alert("Message sent successfully!");
+       }
+    });
+      
+  </script>
 </body>
 
 </html>
