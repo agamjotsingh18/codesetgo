@@ -120,9 +120,7 @@ body.light .card-heading {
   background-image: linear-gradient(to right, #0c2e8a, #6da6db);
 }
 
-body.light .view-btn {
-    color: var(--footer);
-}
+
 
 body.light .viewRepo {
     background-color: #051b5a;

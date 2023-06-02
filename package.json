@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/sahilg861907/codesetgo-website#readme",
   "dependencies": {
-    "express": "^4.17.3",
+    "express": "^4.18.2",
     "nodemon": "^2.0.22"
   }
 }
