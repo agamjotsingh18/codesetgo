@@ -8,29 +8,35 @@ body.light{
     --hover-color1:#081e5b;
     --section-header: #0c2e8a;
     --border-color:rgba(0, 0, 0, 0.168);
-    --color1:rgba(249,24,128);
+    --color1:white;
     --color2:#2796FF;
-    --color3:rgba(255,122,0);
+    --color3:white;
     --color4:rgba(0,186,124);
     --bar:white;
     --footer:#f2f5f8;
+    --callcolor:#2796FF;
     --service: linear-gradient(#47A992, #98EECC);
     --icon : linear-gradient(45deg, #2796ff 30%, #0c2e8a 70%);
 }
 body.dark{
     --darkback:#243447;
     --textcolor:white;
-    --textcolor2:#2796FF;
+    --textcolor2:#2796FF; 
     --postborder:#657786;
     --box-anchor:#F5F8FA;
     --section-header: white;
     --textcolor3:white;
     --hover-color1:#c9d5f9;
+    --color1:#0c2e8a;
+    --color2:white;
+    --color3:#2796FF;
     --border-color:rgba(167, 165, 165, 0.168);
     --bar:#141d26;
     --footer:#141d26;
     --service: linear-gradient(black, #025464);
     --icon: linear-gradient(45deg, #2796ff 30%, #4d85b9 70%);
+    --callcolor:#0c2e8a;
+
 
 }
 
@@ -38,8 +44,10 @@ body{
     background-color: var(--darkback);
     transition: 500ms;
 }
-
-
+#call-to-action{
+  background-color: var(--callcolor);
+  transition: 500ms;
+}
 
 #about .content h2 {
     color: var(--textcolor2);
@@ -49,6 +57,16 @@ body{
 #about .content h3 {
     color:var(--textcolor);
     
+}
+#hero .hero-content .btn-get-started {
+  color: var(--section-header);
+  background-color: var(--color1);
+  border: 2px solid #0c2e8a;
+}
+#hero .hero-content .btn-projects {
+  color:var(--color2) ;
+  background-color:var(--color3) ;
+  border: 2px solid #2796ff;
 }
 
 /* Back To Top Button in dark mode */
