@@ -416,17 +416,24 @@
             <div class="enquiry">
               <form class="enquiry-form" id="enquiry-form">
                 <div class="title">GET IN TOUCH</div>
-                <input type="text" id="name" placeholder="Your Name" required />
+                <input 
+                  type="text" 
+                  id="name" 
+                  placeholder="Your Name" 
+                  pattern='[a-zA-Z]+'
+                  required />
                 <input
                   type="email"
                   id="email"
                   placeholder="Email id"
+                  pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
                   required
                 />
                 <input
-                  type="text"
+                  type="tel"
                   id="phone"
                   placeholder="Phone no."
+                  pattern="[0-9]{10}$"
                   required
                 />
                 <textarea
@@ -435,7 +442,7 @@
                   placeholder="How can we help you?"
                   required
                 ></textarea>
-                <button type="button" onclick="sendMail(); reset();" class="hoverchanger">
+                <button type="submit" onclick="sendMail()" class="hoverchanger">
                   Send
                 </button>
               </form>
