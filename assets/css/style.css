@@ -193,6 +193,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover > a {
   color: #2796ff;
+  transform: scale(1.05);
 }
 
 .darkmode {
@@ -304,6 +305,7 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
   color: #2796ff;
+  transform: scale(1.05);
 }
 
 .navbar-mobile .getstarted,
@@ -370,12 +372,13 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  animation: Dance 10s infinite;
 }
 
 #hero .hero-content h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 64px;
+  font-size: 94px;
   font-weight: 700;
 }
 
@@ -386,7 +389,7 @@ h6 {
 
 @media (max-width: 767px) {
   #hero .hero-content h2 {
-    font-size: 34px;
+    font-size: 54px;
   }
 }
 
@@ -405,25 +408,29 @@ h6 {
 }
 
 #hero .hero-content .btn-get-started {
-  color: #0c2e8a;
-  background-color: #fff;
+  color: #fff;
+  background-color: #0c2e8a;
   border: 2px solid #0c2e8a;
+  transition: 0.5s;
 }
 
 #hero .hero-content .btn-get-started:hover {
   background: none;
   color: #0c2e8a;
+  transform: scale(1.05);
 }
 
 #hero .hero-content .btn-projects {
-  color: #2796ff;
-  background-color: #fff;
+  color: #fff;
+  background-color: #2796FF;
   border: 2px solid #2796ff;
+  transition: 0.5s;
 }
 
 #hero .hero-content .btn-projects:hover {
   background: none;
   color: #2796ff;
+  transform: scale(1.05);
 }
 
 #hero .hero-slider {
@@ -507,6 +514,7 @@ section {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+  animation: Dance 10s infinite;
 }
 
 @media (max-width: 768px) {
@@ -518,6 +526,11 @@ section {
     margin-left: 0;
     padding-bottom: 30px;
   }
+}
+
+#about .content{
+  padding: 35px;
+  border-radius: 15px;
 }
 
 #about .content h2 {
@@ -534,6 +547,7 @@ section {
   line-height: 26px;
   padding: 0.5rem 0;
   line-height: 1.8;
+  /* box-shadow: 5px 5px 5px 5px ; */
   /* font-style: italic; */
 }
 
@@ -555,24 +569,29 @@ section {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 1s;
   transform-style: preserve-3d;
   padding: 40px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: var(--service);
   border: 4px solid var(--postborder);
+  border-radius: 10px;
 }
 
-#services .col-lg-6:hover .box {
+/* #services .col-lg-6:hover .box {
   transform: rotateY(180deg);
+} */
+
+.is-flipped{
+  transform: rotateY(.5turn);
 }
 
 #services .icon{
- 
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
+  transform: translateZ(6rem);
 }
 
 #services .flip-card-back {
@@ -582,7 +601,6 @@ section {
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  
 }
 
 #services .box .icon {
@@ -610,6 +628,12 @@ section {
   font-size: 22px;
   text-align: center;
   color: var(--textcolor);
+}
+
+#services .icon p{
+  text-align: center;
+  width: 100%;
+  transform: translate(-75px,-5px);
 }
 
 #services .box p {
@@ -656,6 +680,7 @@ section {
   background-color: #2796FF;
   border-radius: 12px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* animation: revDance 10s infinite; */
 }
 #testimonials .testimonial-item:hover {
   transform: scale(1.1);
@@ -736,9 +761,9 @@ section {
 
 #call-to-action .cta-title {
   color: #fff;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 700;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Kanit', sans-serif;
   text-shadow: 2px 2px 10px #07052c ;
   overflow: hidden;
   width: 0;
@@ -760,7 +785,7 @@ section {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 769px) {
@@ -788,8 +813,10 @@ section {
 #call-to-action .cta-btn:hover {
   background: white;
   /* border: 3px solid #2796FF; */
-  background-image: linear-gradient(to right, rgb(53, 160, 242),white);
+  /* background-image: linear-gradient(to right, rgb(53, 160, 242),white); */
+
   color: #081e5b;
+  transform: scale(1.07);  
   /* font-weight: 700; */
 }
 
@@ -798,6 +825,21 @@ section {
 
 #contact {
   padding: 30px 0;
+}
+
+.enquiry-form{
+  box-shadow: 1rem 1rem 1rem 1rem var(--sd);
+  animation: Dance 10s infinite;
+}
+
+.col-md-6 .contact-phone .bi:hover , .col-md-6 .contact-email .bi:hover{
+  box-shadow: 1rem 1rem 1rem 1rem var(--sd);
+  border-radius: 100px;
+}
+
+.col-md-6 .contact-phone .bi , .col-md-6 .contact-email .bi{
+  transition: 0.5s;
+  animation: Dance 8s infinite;
 }
 
 #contact .contact-info {
@@ -831,8 +873,14 @@ section {
 #contact .contact-info a:hover {
   color: #2796ff;
 }
+
+.hoverchanger{
+  transition: 0.5s;
+}
+
 .hoverchanger:hover {
-  background-color: #07052c;
+  background-color: #b1b7e1;
+  transform: scale(1.1);
 }
 #contact .contact-address,
 #contact .contact-phone,
@@ -1201,6 +1249,7 @@ section {
 /* New Footer Starts */
 .section{
   background-color: black;
+  height: 300px;
 }
 .wrapper{
   text-align: center;
@@ -1342,3 +1391,40 @@ color: #1d0f44ad;
 transition: all 0.3s ease;
 }
 /* New Footer Ends */
+
+/* Dancing animations */
+@keyframes Dance {
+  0%{
+    transform: translateY(0.5rem);
+}
+25%{
+    transform: translateY(-0.5rem);
+}
+50%{
+    transform: translateY(0.5rem);
+}
+75%{
+    transform: translateY(-0.5rem);
+}
+100%{
+    transform: translateY(0.5rem);
+}
+}
+
+@keyframes revDance {
+  0%{
+    transform: translateY(-0.5rem);
+}
+25%{
+    transform: translateY(0.5rem);
+}
+50%{
+    transform: translateY(-0.5rem);
+}
+75%{
+    transform: translateY(0.5rem);
+}
+100%{
+    transform: translateY(-0.5rem);
+}
+}
