@@ -484,6 +484,8 @@ section {
   font-weight: 700;
   position: relative;
   padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
 }
 
 .section-header h2::before {
@@ -493,14 +495,17 @@ section {
   width: 50px;
   height: 3px;
   background: #2796ff;
-  bottom: 0;
-  left: 0;
+  bottom: 15px;
+  left: 44%;
 }
 
 .section-header p {
   padding: 0;
   margin: 0;
   color: var(--textcolor);
+  width: 80%;
+  text-align: center;
+  margin-left: 11%;
 }
 
 /* About Section
