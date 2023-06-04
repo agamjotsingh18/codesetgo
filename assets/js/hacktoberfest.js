@@ -49,13 +49,13 @@ let allCards
 
 allCards = repodata.map(
   (card) =>
-    `<div class="card">
+    `<div class="card  m-lg-3 ">
           <h2 class="card-heading">${card.heading}</h2>
-          <p class="card-description">
+          <p class="card-description ">
             ${card.description}
           </p>
-          <a href="${card.link}" class="view-btn">View Repository</a>
+          <a href="${card.link}" class="view-btn  ">View Repository</a>
         </div>`
-)
+) 
 
 cardsContainer.innerHTML = allCards.join("")
