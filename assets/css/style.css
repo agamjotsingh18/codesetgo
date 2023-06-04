@@ -587,6 +587,7 @@ section {
 
 #services .box .icon {
   float: left;
+  transform: rotateX(0deg);
 }
 
 #services .box .icon i {
