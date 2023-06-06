@@ -219,3 +219,12 @@ function sendMail() {
         alert('Form Submission Faild! Try Again');
     })
 }
+
+// ONCLICK FLIP CARD FOR SERVICE SECTION
+const boxes = document.querySelectorAll('#services .col-lg-6 .box');
+
+[...boxes].forEach((box)=>{
+    box.addEventListener('click',function(){
+        box.classList.toggle('is-flipped');
+    })
+})
