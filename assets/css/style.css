@@ -371,12 +371,13 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   animation: Dance 10s infinite;
+  margin-left: 5%;
 }
 
 #hero .hero-content h2 {
-  color: black;
+  color: #0c2e8a;
   margin-bottom: 30px;
   font-size: 60px;
   font-weight: 700;
@@ -435,12 +436,12 @@ h6 {
 
 #hero .hero-slider {
   z-index: 8;
-  height: 60vh;
+  height: 90vh;
 }
 
 #hero .hero-slider::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0,0,0, 0.6); */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -456,6 +457,9 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   transition-property: opacity;
+}
+.cimg{
+  margin-left: 50%;
 }
 
 /*--------------------------------------------------------------
