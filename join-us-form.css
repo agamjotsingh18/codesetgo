@@ -1,0 +1,79 @@
+.contactpage {
+  display: flex;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 66px;
+  text-align: center;
+
+  color: #004a8e;
+}
+
+h1 span {
+  color: #0868c0;
+}
+
+input,
+textarea {
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  border-radius: 9px;
+  height: 50px;
+  width: 45%;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  outline: none;
+  padding-left: 14px;
+}
+
+form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: left;
+  margin-left: 20px;
+  color: #c2c2c2;
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  background: #004a8e;
+  border-radius: 11px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+  margin-left: 35%;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.11);
+}
