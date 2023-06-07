@@ -6,7 +6,7 @@
 
 body {
   background: #fff;
-  color: #444;
+  color: #2ecc71;
   font-family: "Poppins", sans-serif;
 }
 
@@ -40,6 +40,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+  color:  #3498db;
 }
 
 /*--------------------------------------------------------------
@@ -1428,4 +1429,25 @@ transition: all 0.3s ease;
 100%{
     transform: translateY(-0.5rem);
 }
+}
+
+.option-btn{
+  background-color:   #52c7b8;
+  border: none;
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  transition: color 0.15s;
+  margin-right: 7px;
+  margin-left: 6px;
+}
+
+.option-btn:hover{
+  color: white;
+}
+
+.option-description{
+  display: inline-block;
 }
