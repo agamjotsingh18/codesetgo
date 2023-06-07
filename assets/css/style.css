@@ -270,9 +270,12 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(8, 30, 91, 0.9);
+  /* background: rgba(8, 30, 91, 0.9); */
   transition: 0.3s;
   z-index: 999;
+  justify-content: flex-end;
+  
+
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -282,23 +285,28 @@ h6 {
 }
 
 .navbar-mobile ul {
-  display: block;
+  display:block;
+  
   position: absolute;
-  top: 55px;
+  top: 15px;
   right: 15px;
-  bottom: 15px;
-  left: 15px;
+  bottom: 15px; 
+   /* left: 15px; */
   padding: 10px 0;
-  background-color: #fff;
+  background-color: rgba(8, 30, 91, 0.9);
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 0.3s ;
+  width: 50%;
+  height:80%;
+ 
+
 }
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
-  color: #0c2e8a;
+  font-size: 17px;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover,
@@ -323,6 +331,7 @@ h6 {
   visibility: visible;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+
 }
 
 .navbar-mobile .dropdown ul li {
