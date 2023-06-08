@@ -1025,8 +1025,8 @@ section {
 /*--------------------------------------------------------------
 # Hacktoberfest Page
 --------------------------------------------------------------*/
-.main {
-  padding-top: 80px;
+* {
+  padding: 0;
   margin: 0;
 }
 .hacktoberfest-btn,
@@ -1052,7 +1052,6 @@ section {
 
 .cards-container {
   margin: 0 50px;
-  padding-bottom: 80px;
   display: flex;
   gap: 15px;
   justify-content: center;
@@ -1108,14 +1107,6 @@ section {
     color:#fff;
     box-shadow:0px 8px 15px #040d1b;
     
-  }
-  .contact-header h2{
-    font-size: 32px;
-  color: var(--section-header);
-  text-transform: uppercase;
-  font-weight: 700;
-  position: relative;
-  text-align: center;
   }
   
 
