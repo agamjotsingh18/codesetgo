@@ -50,3 +50,7 @@
     margin: 20px auto 0;
     border-radius: 10px;
 }
+.enquiry-form button:hover{
+    background-color: #2796ff;
+    color: white;
+}
