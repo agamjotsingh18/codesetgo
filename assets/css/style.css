@@ -364,7 +364,7 @@ h6 {
   position: absolute;
   bottom: 0;
   top: 0;
-  left: 0;
+  left: 80px;
   right: 0;
   z-index: 10;
   display: flex;
@@ -380,6 +380,55 @@ h6 {
 .cimg{
   margin-top: 100px;
 }
+
+.sticky-container{
+  padding:5px;
+  margin:0px;
+  position:fixed;
+  margin-right: 50px;
+  right:-1px;
+  top:230px;
+  width:70px;
+  z-index: 1100;
+  font-size: 35px;
+  /* border: 1px solid  #0c2e8a; */
+  /* border-radius: 2rem; */
+}
+.sticky li{
+  list-style-type:none;
+  /* background-color:#fff; */
+  color:#0c2e8a;
+  height:50px;
+  padding:0px;
+  margin:0px 0px 1px 0px;
+  -webkit-transition:all 0.25s ease-in-out;
+  -moz-transition:all 0.25s ease-in-out;
+  -o-transition:all 0.25s ease-in-out;
+  transition:all 0.25s ease-in-out;
+  cursor:pointer;
+}
+.sticky li:hover{
+  margin-left:-20px;
+}
+.sticky li img{
+  float:left;
+  margin:5px 4px;
+  margin-right:5px;
+}
+.sticky li p{
+  padding-top:5px;
+  margin:0px;
+  line-height:50px;
+  font-size:11px;
+}
+.sticky li p a{
+  text-decoration:none;
+  color:  #0c2e8a;
+}
+.sticky li p a:hover{
+  text-decoration:underline;
+}
+
 
 #hero .hero-content h2 {
   color: #0c2e8a;
