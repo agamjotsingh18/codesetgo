@@ -62,8 +62,6 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  /* identical to box height */
-
   text-align: center;
   margin-left: 35%;
   color: #ffffff;
@@ -71,9 +69,18 @@ button {
   border: none;
   padding-left: 30px;
   padding-right: 30px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002f5e;
 }
 
 input:focus,
 textarea:focus {
   box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.11);
+}
+
+button:hover{
+  cursor: pointer;
 }
