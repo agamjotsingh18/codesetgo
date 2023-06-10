@@ -661,31 +661,49 @@ section {
 
 /* Testimonials Section
 --------------------------------*/
-
+.swiper-slide{
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+.swiper-slide:hover{
+  transform: scale(0.8);
+}
+.section-header h2 {
+  font-size: 32px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
 #testimonials {
   padding: 30px 0;
+  /* background-image: linear-gradient(30deg,rgb(26, 66, 72),rgb(38, 85, 100),rgb(63, 127, 166),rgb(100, 210, 240),rgb(152, 229, 250)); */
+  background-image: linear-gradient(60deg,#1a4248,#276069,#071214);
 }
 
 #testimonials .testimonials-carousel,
 #testimonials .testimonials-slider {
   overflow: hidden;
+  
 }
 
 #testimonials .testimonial-item {
+  background-image: linear-gradient(30deg,black,rgb(26, 66, 72),rgb(38, 85, 100),rgb(54, 139, 145),rgb(78, 140, 158),rgb(128, 194, 212));
+
   box-sizing: content-box;
-  padding: 50px 50px 0 50px;
-  margin: 30px 15px;
+  padding: 40px 50px 0 50px;
+  margin: 0px 15px;
   text-align: center;
   min-height: fit-content;
-  box-shadow: 0px 2px 12px var(--border-color);
-  background-color: #2796FF;
-  border-radius: 12px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  /* animation: revDance 10s infinite; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   
+
 }
 #testimonials .testimonial-item:hover {
   transform: scale(1.1);
   box-shadow: 0px 10px 25px var(--border-color);
+
 }
 
 @media (max-width: 767px) {
@@ -693,11 +711,11 @@ section {
     margin: 30px 10px;
   }
 }
-
 #testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  /* border: 4px solid #fff; */
+ padding-bottom: 20px;
   margin: 0 auto;
 }
 
@@ -705,12 +723,13 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: var(--textcolor3);
+ color: #ab9c6b;
 }
 
 #testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: black;
+  color: #f9f6f6;
+
   margin: 0;
 }
 
@@ -731,7 +750,8 @@ section {
 
 #testimonials .testimonial-item p {
   margin: 0 auto 15px auto;
-  color: var(--textcolor3);
+  color: rgb(215, 214, 214);
+  padding-bottom: 10px;
 }
 
 #testimonials .swiper-pagination {
