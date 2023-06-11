@@ -87,7 +87,7 @@ h6 {
 }
 
 #header #logo h1 {
-  font-size: 42px;
+  font-size: 80px;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -113,11 +113,11 @@ h6 {
   }
 
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 70px;
   }
 
   #header #logo img {
-    max-height: 20px;
+    max-height: 200px;
   }
 }
 
@@ -180,9 +180,10 @@ h6 {
 }
 
 .darkmode {
-  margin-top: 1rem;
-  margin-left: auto;
-  font-size: 1.3em;
+  margin-top: 3.8rem;
+  margin-right: auto;
+  margin-left:100%;
+  font-size: 1.3rem;
   transform: translateY(3px) rotateZ(0deg);
   transition: 400ms;
   color: var(--box-anchor);
