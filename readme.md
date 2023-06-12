@@ -110,8 +110,8 @@ $ git commit -m "message"
 $ git push -u origin Branch_Name
 ```
 
-## Step 7: Pull Request
-- Go to your repository in the browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
+## Step 7: Create a Pull Request
+- Go to your repository in the browser and click on compare and pull request. Then add a title and description to your pull request that explains your contribution.
 
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
