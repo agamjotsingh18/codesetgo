@@ -16,7 +16,7 @@ a {
   transition: 0.5s;
 }
 
-a:hover, 
+a:hover,
 a:active,
 a:focus {
   color: #2796ff;
@@ -146,7 +146,7 @@ h6 {
 --------------------------------------------------------------*/
 
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 
 .navbar {
@@ -233,7 +233,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 
 .mobile-nav-toggle {
@@ -499,6 +499,33 @@ section {
   margin: 0;
   color: var(--textcolor);
 }
+/*FAQ Section*/
+#faq .faq-list{
+  color: white;
+}
+#faq .question:hover{
+  color: #3b4ef8;
+  cursor:pointer;
+}
+#faq .faq-list .icon-show {
+    display: none;
+}
+
+#faq .faq-list .collapsed:hover {
+    color: #3b4ef8;
+    cursor:pointer;
+}
+
+#faq .faq-list .collapsed .icon-show {
+    display: inline-block;
+    transition: .6s;
+}
+
+#faq .faq-list .collapsed .icon-close {
+    display: none;
+    transition: .6s;
+
+}
 
 /* About Section
 --------------------------------*/
@@ -594,7 +621,7 @@ section {
 #services .icon{
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translateZ(6rem);
 }
@@ -603,7 +630,7 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
@@ -822,7 +849,7 @@ section {
   /* background-image: linear-gradient(to right, rgb(53, 160, 242),white); */
 
   color: #081e5b;
-  transform: scale(1.07);  
+  transform: scale(1.07);
   /* font-weight: 700; */
 }
 
@@ -1102,7 +1129,7 @@ section {
   padding: 20px 20px;
   border-radius: 15px;
   transition: transform 0.4s, box-shadow 0.5s;
-  
+
 }
 .card:hover {
   transform: scale(1.07);
@@ -1152,7 +1179,7 @@ section {
   transform-origin: left;
   transform-origin:2cm;
   }
-  .view-btn:hover{ 
+  .view-btn:hover{
     transform:translateY(-4px);
     color:#fff;
     box-shadow:0px 8px 15px #040d1b;
@@ -1160,7 +1187,7 @@ section {
   .view-btn:hover::after{
     transform:scaleX(0.8);
   }
-  
+
 
 
 /* Responsive Website */
@@ -1364,7 +1391,7 @@ letter-spacing: .1em;
     background-color: #003288;
     color: #ffffff;
   }
-  
+
 .scrollToTopContainer {
 position: fixed;
 bottom: 0;
