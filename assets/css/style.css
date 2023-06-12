@@ -517,6 +517,11 @@ section {
   animation: Dance 10s infinite;
 }
 
+.row{
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   #about .about-img {
     height: auto;
