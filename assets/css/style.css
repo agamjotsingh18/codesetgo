@@ -1396,6 +1396,16 @@ color: rgba(229, 228, 232, 0.58);
 color: #1d0f44ad;
 transition: all 0.3s ease;
 }
+
+@media (max-width: 440px) {
+  .footer-section {
+    height: auto;
+  }
+
+  .footer-copyright {
+    padding-bottom: 20px;
+  }
+}
 /* New Footer Ends */
 
 /* Dancing animations */
