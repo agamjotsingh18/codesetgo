@@ -503,12 +503,17 @@ section {
 #faq .faq-list{
   color: white;
 }
+#faq .question:hover{
+  color: #3b4ef8;
+  cursor:pointer;
+}
 #faq .faq-list .icon-show {
     display: none;
 }
 
 #faq .faq-list .collapsed:hover {
     color: #3b4ef8;
+    cursor:pointer;
 }
 
 #faq .faq-list .collapsed .icon-show {
