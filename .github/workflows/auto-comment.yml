@@ -14,7 +14,7 @@ jobs:
           pullRequestOpened: |
             👋 @{{ author }}
             Your pull request is successfully submitted.
-            Please make sure you have followed our [contributing guidelines](https://github.com/agamjotsingh18/codesetgo/blob/0c86618939753cab5139539e7448fd19cc2ca33d/CONTRIBUTING.md). Our dedicated team will review it diligently.
+            Please make sure you have followed our [contributing guidelines](https://github.com/agamjotsingh18/codesetgo/blob/main/CONTRIBUTING.md). Our dedicated team will review it diligently.
 
           issuesClosed: |
             👋 @{{ author }}. This issue is closed.
