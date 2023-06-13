@@ -937,12 +937,26 @@ section {
 # Footer
 --------------------------------------------------------------*/
 
-#footer {
-  background: #050b1f;
+/* <<<<<<< footer-improved
+/* #footer {
+  background: var(--footer);
+  padding: 0 0 30px 0;
   font-size: 14px;
 }
 
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: var(--textcolor);
+} */
+=======
+/* #footer {
+  background: #050b1f;
+  font-size: 14px;
+} */
 
+
+/* >>>>>>> main */
 /* ----------------------------------------------------------
 # Social Icons in footer  */
 /* ------------------------------------------------------------ */
@@ -1284,7 +1298,7 @@ color: #ffffff;
 text-align: center;
 margin-bottom: 2.5rem;
 padding-top: 0.75rem;
-padding-bottom: 0.75rem;
+padding-bottom: 0rem;
 padding-left: 0px;
 padding-right: 0px;
 text-align: center;
@@ -1407,12 +1421,26 @@ box-shadow: 0px 0px 10px 1px #2980b9;
 
 .footer-copyright {
 text-align: center;
-margin-top: 20px;
-color: rgba(229, 228, 232, 0.58);
+margin-top: 0px;
+color: white;
 }
 .footer-copyright a {
 color: #1d0f44ad;
 transition: all 0.3s ease;
+}
+
+/* footer improvment */
+.footer-copyright p{
+  margin-top: 40px;
+  padding: 0;
+}
+   
+/* footer improvment */
+@media screen and (min-width: 320px) and (max-width: 820px) {
+  .footer-copyright p{
+    margin-top: 20px;
+    padding: 0;
+  }
 }
 /* New Footer Ends */
 
