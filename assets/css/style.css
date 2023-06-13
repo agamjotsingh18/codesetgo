@@ -517,6 +517,11 @@ section {
   animation: Dance 10s infinite;
 }
 
+.row{
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   #about .about-img {
     height: auto;
@@ -932,6 +937,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 
+/* <<<<<<< footer-improved
 /* #footer {
   background: var(--footer);
   padding: 0 0 30px 0;
@@ -943,6 +949,14 @@ section {
   padding-top: 30px;
   color: var(--textcolor);
 } */
+=======
+/* #footer {
+  background: #050b1f;
+  font-size: 14px;
+} */
+
+
+/* >>>>>>> main */
 /* ----------------------------------------------------------
 # Social Icons in footer  */
 /* ------------------------------------------------------------ */
@@ -1247,6 +1261,30 @@ section {
 }
 
 /* New Footer Starts */
+
+/* Footer Section */
+
+footer{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
+.top-footer-text{
+  padding-bottom: 10px;
+}
+
+.list-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.top-footer-text h1{
+  font-weight: 700;
+}
+
 .section{
   background-color: black;
   height: 300px;
@@ -1391,11 +1429,13 @@ color: #1d0f44ad;
 transition: all 0.3s ease;
 }
 
+/* footer improvment */
 .footer-copyright p{
   margin-top: 40px;
   padding: 0;
 }
-
+   
+/* footer improvment */
 @media screen and (min-width: 320px) and (max-width: 820px) {
   .footer-copyright p{
     margin-top: 20px;
