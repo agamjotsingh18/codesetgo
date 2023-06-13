@@ -1,3 +1,9 @@
+var loader = document.getElementById("preloader");
+
+function myFunction() {
+  preloader.style.display = "none";
+}
+
 (function() {
     "use strict";
 
