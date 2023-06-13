@@ -75,10 +75,21 @@
     <!-- Footer icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+    <style>
+      #preloader {
+        background:white url("assets/img/Rhombus.gif") no-repeat center center;
+        background-size: 10%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 999999;
+      }
+      </style>
+  
   </head>
 
-  <body>
+  <body onload="myFunction()">
+    <div id="preloader"></div>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex justify-content-between">
@@ -673,6 +684,14 @@
     <!-- JS -->
     <script defer src="./assets/js/darkmode_logic.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+
+      var loader = document.getElementById("preloader");
+  
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
   </body>
 </html>
 
