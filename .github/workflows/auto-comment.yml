@@ -1,0 +1,27 @@
+name: Auto Comment
+on: [issues, pull_request]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesOpened: |
+            👋 @{{ author }}
+            Thank you for creating an issue. We will look into the matter and get back to you as soon as possible. Keep up the great work!
+
+          pullRequestOpened: |
+            👋 @{{ author }}
+            Your pull request is successfully submitted.
+            Please make sure you have followed our [contributing guidelines](https://github.com/agamjotsingh18/codesetgo/blob/0c86618939753cab5139539e7448fd19cc2ca33d/CONTRIBUTING.md). Our dedicated team will review it diligently.
+
+          issuesClosed: |
+            👋 @{{ author }}. This issue is closed.
+
+          pullRequestMerged: |
+            Congratulations @${{ github.actor }}! 🎉 Your pull request is merged. We appreciate your efforts to improve our project and your contribution is valuable.
+
+          issuesAssigned: |
+            👋 @{{ author }}
+            I have assigned the issue to you. You can now start working on it. If you have any queries or require guidance, do not hesitate to ask.
