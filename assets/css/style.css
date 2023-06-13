@@ -829,6 +829,8 @@ section {
 /* Contact Section
 --------------------------------*/
 
+
+
 #contact {
   padding: 30px 0;
 }
@@ -836,14 +838,25 @@ section {
 .enquiry-form{
   box-shadow: 1rem 1rem 1rem 1rem var(--sd);
   animation: Dance 10s infinite;
+  margin-left: 0;
+  margin-right: 20px; 
+  min-width: 100%;
+ float: left;
+
+ 
 }
 
-.col-md-6 .contact-phone .bi:hover , .col-md-6 .contact-email .bi:hover{
+.contact-phone {
+  text-align: center; /* Align the contact phone section to the right */
+  padding-left: 50px;
+}
+
+.col-sm-6 .contact-phone .bi:hover , .col-sm-6 .contact-email .bi:hover{
   box-shadow: 1rem 1rem 1rem 1rem var(--sd);
   border-radius: 100px;
 }
 
-.col-md-6 .contact-phone .bi , .col-md-6 .contact-email .bi{
+.col-sm-6 .contact-phone .bi , .col-sm-6 .contact-email .bi{
   transition: 0.5s;
   animation: Dance 8s infinite;
 }
@@ -902,16 +915,7 @@ section {
   }
 }
 
-@media (min-width: 768px) {
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
 
-  #contact .contact-email {
-    border-right: 1px solid #ddd;
-  }
-}
 
 @-webkit-keyframes animate-loading {
   0% {
