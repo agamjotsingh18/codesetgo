@@ -38,6 +38,23 @@
     border-radius: 5px;
 }
 
+.enquiry-form input.error{
+    border: 2px solid #e74c3c;
+}
+.enquiry-form input.success{
+    border: 2px solid #2ecc71;
+}
+.enquiry-form textarea.error{
+    border: 2px solid #e74c3c;
+}
+.enquiry-form textarea.success{
+    border: 2px solid #2ecc71;
+}
+
+.enquiry-form .spandiv small {
+    color: #e74c3c;
+  }
+  
 .enquiry-form button{
     padding: 15px;
     background: #fff;

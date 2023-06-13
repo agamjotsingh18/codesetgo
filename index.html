@@ -429,32 +429,44 @@
             <div class="enquiry">
               <form class="enquiry-form" id="enquiry-form">
                 <div class="title">GET IN TOUCH</div>
-                <input 
-                  type="text" 
-                  id="name" 
-                  placeholder="Your Name" 
-                  pattern='[a-zA-Z]+'
-                  required />
+                    <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Your Name" 
+                    class=""
+                    pattern='[a-zA-Z]+'
+                    required />
+                    <div class="spandiv"><small class="small" id="nameerr"></small></div>
+              
                 <input
                   type="email"
                   id="email"
+                  class=""
                   placeholder="Email id"
                   pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
                   required
                 />
+                <div class="spandiv"><small class="small" id="mailerr"></small></div>
+              
                 <input
                   type="tel"
                   id="phone"
+                  class=""
                   placeholder="Phone no."
                   pattern="[0-9]{10}$"
                   required
                 />
+                <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+              
                 <textarea
                   id="message"
                   row="5"
+                  class=""
                   placeholder="How can we help you?"
                   required
                 ></textarea>
+                <div class="spandiv"><small class="small" id="msgerr"></small></div>
+              
                 <button type="submit" onclick="sendMail()" class="hoverchanger">
                   Send
                 </button>
