@@ -1,5 +1,8 @@
 name: Auto Comment
-on: [issues, pull_request]
+on:
+  issues:
+  pull_request_target:
+    types: [closed, opened]
 jobs:
   run:
     runs-on: ubuntu-latest
