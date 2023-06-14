@@ -1,3 +1,8 @@
+var loader = document.getElementById("preloader");
+  
+function myFunction() {
+  preloader.style.display = "none";
+} 
 const repodata = [
   {
     heading: "Poll it up",

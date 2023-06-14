@@ -578,6 +578,11 @@ section {
   animation: Dance 10s infinite;
 }
 
+.row{
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   #about .about-img {
     height: auto;
@@ -994,16 +999,10 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-  background: var(--footer);
-  padding: 0 0 30px 0;
+  background: #050b1f;
   font-size: 14px;
 }
 
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-  color: var(--textcolor);
-}
 
 /* ----------------------------------------------------------
 # Social Icons in footer  */
@@ -1312,6 +1311,30 @@ section {
 }
 
 /* New Footer Starts */
+
+/* Footer Section */
+
+footer{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
+.top-footer-text{
+  padding-bottom: 10px;
+}
+
+.list-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.top-footer-text h1{
+  font-weight: 700;
+}
+
 .section{
   background-color: black;
   height: 300px;
