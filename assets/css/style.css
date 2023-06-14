@@ -574,13 +574,31 @@ section {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1s;
+  transition: transform 1s, width 0.5s, height 0.5s;
   transform-style: preserve-3d;
   padding: 40px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: var(--service);
   border: 4px solid var(--postborder);
   border-radius: 10px;
+  cursor: pointer;
+}
+#services .box:hover {
+  width: 280px;
+  height: 203px;
+  animation: glowing 1s infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px rgba(73, 78, 92, 0.6), 0 0 20px rgba(73, 78, 92, 0.6), 0 0 40px rgba(73, 78, 92, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(73, 78, 92, 0.9), 0 0 30px rgba(73, 78, 92, 0.9), 0 0 60px rgba(73, 78, 92, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(73, 78, 92, 0.6), 0 0 20px rgba(73, 78, 92, 0.6), 0 0 40px rgba(73, 78, 92, 0.6);
+  }
 }
 
 /* #services .col-lg-6:hover .box {
