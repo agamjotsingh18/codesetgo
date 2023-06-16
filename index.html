@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>CodeSetGo</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>CodeSetGo | Best Students Community</title>
+    <meta content="CodeSetGo is a community made for the students and made by the students. Here you get free coding resources, online webinars, doubt support and guidance from the brilliant minds across the globe. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes!" name="description" />
+    <!-- Long tail keywords -->
+    <meta content="best coding resources, free webinars, coding resources for beginners students community, guidance, computer science portal" name="keywords" />
 
     <!-- Favicons -->
     <link href="assets/img/Light Blue.jpg" rel="icon" />
@@ -74,14 +75,21 @@
     <!-- Footer icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+    <style>
+      #preloader {
+        background:white url("assets/img/Rhombus.gif") no-repeat center center;
+        background-size: 10%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 999999;
+      }
+      </style>
+  
   </head>
+  <body onload="myFunction()">
+    <div id="preloader"></div>
 
-
-  <script></script>
-</head>
-
-  <body>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex justify-content-between">
@@ -89,7 +97,7 @@
           <a href="index.html"
             ><img
               src="assets/img/Banner - Light.png"
-              alt=""
+              alt="CodeSetGo Logo"
               height="50px"
               width="270px"
           /></a>
@@ -312,7 +320,7 @@
                     <img
                       src="assets/img/quote-sign-left - light.png"
                       class="quote-sign-left"
-                      alt=""
+                      alt="CodeSetGo-Left quotes"
                     />
                     The experience of being associated with CodeSetGo since past
                     few months has been a wonderful one. The various resources,
@@ -321,13 +329,13 @@
                     <img
                       src="assets/img/quote-sign-right - light.png"
                       class="quote-sign-right"
-                      alt=""
+                      alt="CodeSetGo-Right quotes"
                     />
                   </p>
                   <img
                     src="assets/img/1516365445572.jfif"
                     class="testimonial-img"
-                    alt=""
+                    alt="CodeSetGo-Testomonial"
                   />
                   <h3>Praveen Kumar</h3>
                   <h4>Speaker</h4>
@@ -339,7 +347,7 @@
                     <img
                       src="assets/img/quote-sign-left - light.png"
                       class="quote-sign-left"
-                      alt=""
+                      alt="CodeSetGo-Left quotes"
                     />
                     It's the perfect platform for beginners to get guidance from
                     not only guidance but through this platform we can easily
@@ -348,13 +356,13 @@
                     <img
                       src="assets/img/quote-sign-right - light.png"
                       class="quote-sign-right"
-                      alt=""
+                      alt="CodeSetGo-Right quotes"
                     />
                   </p>
                   <img
                     src="assets/img/1627730807968.jfif"
                     class="testimonial-img"
-                    alt=""
+                    alt="CodeSetGo-Testomonial"
                   />
                   <h3>Arth Nangia</h3>
                   <h4>Member</h4>
@@ -366,7 +374,7 @@
                     <img
                       src="assets/img/quote-sign-left - light.png"
                       class="quote-sign-left"
-                      alt=""
+                      alt="CodeSetGo-Left quotes"
                     />
                     It's awesome. If I ask one doubt then like atleast 10 of
                     them are ready to clear it at that moment. It doesn't matter
@@ -376,13 +384,13 @@
                     <img
                       src="assets/img/quote-sign-right - light.png"
                       class="quote-sign-right"
-                      alt=""
+                      alt="CodeSetGo-Right quotes"
                     />
                   </p>
                   <img
                     src="assets/img/1613580988884.jfif"
                     class="testimonial-img"
-                    alt=""
+                    alt="CodeSetGo-Testomonial"
                   />
                   <h3>Aastha Tripathi</h3>
                   <h4>Member</h4>
@@ -394,7 +402,7 @@
                     <img
                       src="assets/img/quote-sign-left - light.png"
                       class="quote-sign-left"
-                      alt=""
+                      alt="CodeSetGo-Left quotes"
                     />
                     FIVE STARS ⭐⭐⭐⭐⭐ I have been to many bootcamps and
                     workshops related to coding but none matches the level of
@@ -403,13 +411,13 @@
                     <img
                       src="assets/img/quote-sign-right - light.png"
                       class="quote-sign-right"
-                      alt=""
+                      alt="CodeSetGo-Right quotes"
                     />
                   </p>
                   <img
                     src="assets/img/1600361001868.jfif"
                     class="testimonial-img"
-                    alt=""
+                    alt="CodeSetGo-Testomonial"
                   />
                   <h3>Anishaa Choudhury</h3>
                   <h4>Member</h4>
@@ -432,32 +440,44 @@
             <div class="enquiry">
               <form class="enquiry-form" id="enquiry-form">
                 <div class="title">GET IN TOUCH</div>
-                <input 
-                  type="text" 
-                  id="name" 
-                  placeholder="Your Name" 
-                  pattern='[a-zA-Z]+'
-                  required />
+                    <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Your Name" 
+                    class=""
+                    pattern='[a-zA-Z]+'
+                    required />
+                    <div class="spandiv"><small class="small" id="nameerr"></small></div>
+              
                 <input
                   type="email"
                   id="email"
+                  class=""
                   placeholder="Email id"
                   pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
                   required
                 />
+                <div class="spandiv"><small class="small" id="mailerr"></small></div>
+              
                 <input
                   type="tel"
                   id="phone"
+                  class=""
                   placeholder="Phone no."
                   pattern="[0-9]{10}$"
                   required
                 />
+                <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+              
                 <textarea
                   id="message"
                   row="5"
+                  class=""
                   placeholder="How can we help you?"
                   required
                 ></textarea>
+                <div class="spandiv"><small class="small" id="msgerr"></small></div>
+              
                 <button type="submit" onclick="sendMail()" class="hoverchanger">
                   Send
                 </button>
@@ -468,7 +488,7 @@
                 <a href="index.html"
                   ><img
                     src="assets/img/Light Blue - White 2.png"
-                    alt=""
+                    alt="CodeSetGo Blue Logo"
                     height="90px"
                     width="260px"
                 /></a>
@@ -510,7 +530,24 @@
     <!-- End Footer -->
 
     <!-- New Footer Starts -->
-    <div class="section"><h3>Reach <span>US</span></h3>
+    <!-- <div class="section"><h3>Reach <span>US</span></h3> -->
+      
+      <footer id="footer" class="footer-section">
+        <div class="footer-content">
+          <div class="top-footer-text">
+            <center>
+            <h1>CodeSetGo</h1>
+            <span>a community made for the students and made by the students.</span>
+          </center>
+          </div>
+          <div class="list-footer">
+            <ul><a href="#about">About Us</a></ul>
+            <ul><a href="#contact">Contact</a></ul>
+            <ul><a href="#services">Services</a></ul>
+            <ul><a href="">Licenses</a></ul>
+          </div>
+        </div>
+
       <div class="wrapper">
           <a 
              href="https://discord.gg/yWhNysUEej" 
@@ -592,12 +629,15 @@
           </a>
         </div>
         <hr>
+
         <div>
           <div class="footer-copyright">
             <h4>Made with ❤️ by CodeSetGo Team</h4>
           </div>
         </div>
       </div>
+      
+    </footer>
 
       <!-- New Footer Ends -->
 
@@ -657,6 +697,14 @@
     <!-- JS -->
     <script defer src="./assets/js/darkmode_logic.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+
+      var loader = document.getElementById("preloader");
+  
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
   </body>
 </html>
 
