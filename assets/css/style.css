@@ -94,6 +94,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 
+/* Header */
 #header {
   height: 80px;
   transition: all 0.5s;
@@ -137,18 +138,7 @@ h6 {
   }
 }
 
-.scrolled-offset {
-  margin-top: 70px;
-}
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-
-/**
-* Desktop Navigation 
-*/
-
+/* Navigation Menu */
 .navbar {
   padding: 0;
 }
@@ -173,10 +163,8 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-
   font-weight: 600;
   color: var(--box-anchor);
-
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -198,7 +186,6 @@ h6 {
 
 .darkmode {
   margin-left: 1em;
-
   font-size: 1.3em;
   transform: translateY(3px) rotateZ(0deg);
   transition: 400ms;
@@ -214,28 +201,21 @@ h6 {
   0% {
     transform: translateY(3px) rotateZ(0deg);
   }
-
   25% {
     transform: translateY(3px) rotateZ(20deg);
   }
-
   50% {
     transform: translateY(3px) rotateZ(0deg);
   }
-
   75% {
     transform: translateY(3px) rotateZ(-20deg);
   }
-
   100% {
     transform: translateY(3px) rotateZ(0deg);
   }
 }
 
-/**
-* Mobile Navigation 
-*/
-
+/* Mobile Navigation */
 .mobile-nav-toggle {
   color: #0c2e8a;
   font-size: 28px;
@@ -346,6 +326,43 @@ h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
+/* Hacktoberfest Button */
+#navbar li:hover .hacktoberfest-btn {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(39, 150, 255, 0.5);
+}
+
+#navbar li:hover .hacktoberfest-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 150, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#navbar li:hover .hacktoberfest-btn:hover:before {
+  opacity: 1;
+}
+
+#navbar li:hover .hacktoberfest-btn span {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#navbar li:hover .hacktoberfest-btn:hover span {
+  opacity: 1;
+}
+
+/* Adjusting Padding for Nav Link */
+#navbar li:hover .nav-link {
+  padding-right: 20px;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
