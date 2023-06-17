@@ -664,6 +664,118 @@ section {
 
 }
 
+/* Cheatsheet Section */
+#cheatsheet {
+  padding: 40px;
+}
+
+#cheatsheet .option-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#cheatsheet .option {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  background-color: transparent;
+  margin: 20px;
+}
+
+#cheatsheet .box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: var(--cheatsheet-bg);
+  border: 4px solid var(--cheatsheet-border);
+  border-radius: 10px;
+}
+
+#cheatsheet .box:hover {
+  transform: none;
+}
+
+#cheatsheet .box .icon {
+  width: 100%;
+  height: 100%;
+}
+
+#cheatsheet .box .icon i {
+  color: var(--cheatsheet-icon-color);
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+}
+
+#cheatsheet .box .icon i:before {
+  background: var(--cheatsheet-icon-bg);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#cheatsheet .icon h3 {
+  margin-left: 10px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 22px;
+  text-align: center;
+  color: var(--cheatsheet-text-color);
+}
+
+#cheatsheet .icon p {
+  text-align: center;
+  width: 100%;
+  transform: translate(-75px, -5px);
+}
+
+#cheatsheet .box p {
+  margin-top: 0%;
+  margin-left: 80px;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--cheatsheet-text-color);
+}
+
+@media (max-width: 767px) {
+  #cheatsheet .option {
+    width: calc(50% - 40px);
+  }
+
+  #cheatsheet .box .box {
+    margin-bottom: 20px;
+  }
+
+  #cheatsheet .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+/* Dark mode */
+.dark-mode #cheatsheet .box {
+  background: var(--cheatsheet-dark-bg);
+  border-color: var(--cheatsheet-dark-border);
+  color: white;
+}
+
+.dark-mode #cheatsheet .icon h3,
+.dark-mode #cheatsheet .box p {
+  color: white;
+}
+
+.dark-mode #cheatsheet .box .icon i {
+  color: var(--cheatsheet-dark-icon-color);
+}
+
+
+
+
 /* Testimonials Section
 --------------------------------*/
 
