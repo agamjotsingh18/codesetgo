@@ -20,33 +20,72 @@
       </div>
       <div class="contactform">
         <h1>Registrations for <span>CodeSetGo</span> Captain Program</h1>
-        <form action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf"
+          method="POST"
+        >
           <div>
-            <input type="text" id="name" name="Name" placeholder="Your Name" />
-            <input type="email" id="email" placeholder="Your Email" name="Email"/>
-          </div>
-          <div>
-            <input type="text" id="college" placeholder="College (With City)" name="College" />
             <input
-              type="year"
-              id="year"
-              placeholder="Expected Graduation Year" name="Graduation Year"
+              type="text"
+              id="name"
+              name="Name"
+              placeholder="Your Name"
+              required
+              class="required-field"
+            />
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              name="Email"
             />
           </div>
           <div>
-            <input type="number" id="phone" placeholder="Phone (WhatsApp)" name="Phone Number (WhatsApp)"/>
-            <input type="text" id="country" placeholder="Country" name="Country"/>
+            <input
+              type="text"
+              id="college"
+              placeholder="College (With City)"
+              name="College"
+            />
+
+            <input
+              type="year"
+              id="year"
+              placeholder="Expected Graduation Year"
+              name="Graduation Year"
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              id="phone"
+              placeholder="Phone (WhatsApp)"
+              name="Phone Number (WhatsApp)"
+            />
+
+            <input
+              type="text"
+              id="country"
+              placeholder="Country"
+              name="Country"
+              required
+            />
           </div>
           <div>
             <textarea
               id="whycaptain"
               rows="4"
-              placeholder="Why do you want to become CodeSetGo Captain?" name="Why do you want to become CodeSetGo Captain?"
+              placeholder="Why do you want to become CodeSetGo Captain?"
+              name="Why do you want to become CodeSetGo Captain? "
             ></textarea>
+
             <textarea
               id="comment"
               rows="8"
-              placeholder="Any Comments or Questions? (Not Mandatory)" name="Any Comments or Questions? "
+              placeholder="Any Comments or Questions? (Not Mandatory)"
+              name="Any Comments or Questions? "
             ></textarea>
           </div>
           <button type="submit">SUBMIT FORM</button>
@@ -54,5 +93,6 @@
       </div>
     </section>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="join-us-form.js"></script>
   </body>
 </html>
