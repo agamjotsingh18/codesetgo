@@ -511,8 +511,10 @@ section {
 }
 
 #about .about-img img {
-  margin-left: -15px;
-  max-width: 100%;
+  margin-left: 60px;
+  margin-bottom: auto;
+  max-width: fit-content;
+  margin-top: 100px;
   animation: Dance 10s infinite;
 }
 
