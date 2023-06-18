@@ -22,16 +22,19 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 **1.** Fork the repository by clicking on the <a href="https://github.com/agamjotsingh18/codesetgo-website"><img src="https://img.icons8.com/ios/24/000000/code-fork.png" style="color:white;"></a> symbol at the top right corner.
 
 **2.** Clone the forked repository.
+
 ```
    git clone https://github.com/agamjotsingh18/codesetgo-website.git
 ```
 
 **3.** Navigate to the project directory.
+
 ```
    cd codesetgo-website
 ```
 
 **4.** Create a new branch:
+
 ```
    git checkout -b YourBranchName
 ```
@@ -56,26 +59,31 @@ We'd also love PRs. If you're thinking of a large PR, we advise opening up an is
 **Note** If anyone contributes to this repository, then the changes will not be reflected in your local repository. For that:
 
 **9.** Setup a reference(remote) to the original repository to get all the changes from the remote.
+
 ```
    git remote add upstream  https://github.com/agamjotsingh18/codesetgo-website.git
 ```
 
 **10.** Check the remotes for this repository.
+
 ```
    git remote -v
 ```
 
 **11.** Fetching from the remote repository will bring in its branches and their respective commits.
+
 ```
    git fetch upstream
 ```
 
 **12.** Make sure that you're on your master branch.
+
 ```
    git checkout master
 ```
 
 **13.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
+
 ```
    git merge upstream/master
 ```

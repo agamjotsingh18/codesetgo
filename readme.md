@@ -6,8 +6,7 @@
 
 <h1 align="center">Contributions Accepted under GSSoC '23</h1>
 
-
-CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed! 
+CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed!
 
 <h2>
 <a href="https://codesetgo.netlify.app/" target="_blank">Visit Our Website💻</a>
@@ -15,13 +14,11 @@ CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the 
 
 So, here you go! Contribute to the Open Source Website of CodeSetGo Community 🤩 Excited?
 
-
 <div align="center">
 
-<a href="https://github.com/agamjotsingh18/codesetgo-website">  <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
-<a href="https://github.com/agamjotsingh18/codesetgo-website">  <img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
-<a href="https://github.com/Amit366/">  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
-
+<a href="https://github.com/agamjotsingh18/codesetgo-website"> <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href="https://github.com/agamjotsingh18/codesetgo-website"> <img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href="https://github.com/Amit366/"> <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
 
 <a href="https://github.com/agamjotsingh18/codesetgo-website/graphs/contributors"><img src="https://img.shields.io/github/contributors/agamjotsingh18/codesetgo-website?color=brightgreen"></a>
 <a href="https://github.com/agamjotsingh18/codesetgo-website/stargazers"><img src="https://img.shields.io/github/stars/agamjotsingh18/codesetgo-website?color=0059b3"></a>
@@ -33,7 +30,6 @@ So, here you go! Contribute to the Open Source Website of CodeSetGo Community �
 
 </div>
 
-
 <p align="center">
 
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt=" forks"/>
@@ -44,65 +40,78 @@ So, here you go! Contribute to the Open Source Website of CodeSetGo Community �
 
 ### Tech Used
 
-<img alt="HTML" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white">  <img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white">  <img alt="Javascript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">  <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%#61DBFB"/> 
+<img alt="HTML" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"> <img alt="CSS" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"> <img alt="Javascript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"> <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap%20-%23323330.svg?&style=for-the-badge&logo=react&logoColor=%#61DBFB"/>
 
 ## Sneak Peek of the Website:
 
 ![codesetgo_ss](https://github.com/gulshanjakhon/codesetgo/assets/72978519/4e275569-8001-4fc4-98ad-b7e99d69f79e)
 
-
-
 ## Contribution Guidelines 🏗
+
 ## Step 1: Find an issue
+
 - Take a look at the Existing Issues or create your **own** Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
-- Note: Every change in this project should/must have an associated issue. 
-
+- Note: Every change in this project should/must have an associated issue.
 
 ## Step 2: Fork the Project
+
 - Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in the `upstream` remote.
+
 ```
 $ git clone https://github.com/<your-username>/codesetgo-website
 $ cd codesetgo-website
 $ git remote add upstream https://github.com/agamjotsingh18/codesetgo-website
 ```
 
-
 - If you have already forked the project, update your copy before working.
+
 ```
 $ git remote update
 $ git checkout <branch-name>
 $ git rebase upstream/<branch-name>
 ```
+
 ## Step 3: Branch
+
 Create a new branch. Use its name to identify the issue you addressing.
+
 ```
-# It will create a new branch with the name Branch_Name and switch to that branch 
+# It will create a new branch with the name Branch_Name and switch to that branch
 $ git checkout -b branch_name
 ```
+
 ## Step 4: Work on the issue assigned
-- Work on the issue(s) assigned to you. 
+
+- Work on the issue(s) assigned to you.
 - Add all the files/folders needed.
+
 ```
 # To start the server in development mode
 $ npm run dev
 ```
+
 ```
 # To start the server in production mode
 $ npm start
 ```
+
 - After you've made changes or made your contribution to the project add changes to the branch you've just created by:
+
 ```
 # To add all new files to branch Branch_Name
 $ git add.
 ```
+
 ## Step 5: Commit
 
 - To commit give a descriptive message for the convenience of the reviewer by:
+
 ```
 # This message gets associated with all files you have changed
 $ git commit -m "message"
 ```
+
 ## Step 6: Push the changes
 
 ```
@@ -111,10 +120,10 @@ $ git push -u origin Branch_Name
 ```
 
 ## Step 7: Create a Pull Request
+
 - Go to your repository in the browser and click on compare and pull request. Then add a title and description to your pull request that explains your contribution.
 
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
-
 
 ## Contributors ✨
 
@@ -197,4 +206,3 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ---
 
 <p align="right"><a href="#top">Back to top</a></p>
-
