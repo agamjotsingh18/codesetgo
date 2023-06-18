@@ -1,8 +1,8 @@
 var loader = document.getElementById("preloader");
-  
+
 function myFunction() {
   preloader.style.display = "none";
-} 
+}
 const repodata = [
   {
     heading: "Poll it up",
@@ -46,11 +46,11 @@ const repodata = [
       "Watch videos with your friends. The spiritual successor to TogetherTube, preserving the spirit of it's simple to use interface, while improving it's look, feel, and reliability. ",
     link: "https://github.com/dyc3/opentogethertube",
   },
-]
+];
 
-const cardsContainer = document.querySelector(".cards-container")
+const cardsContainer = document.querySelector(".cards-container");
 
-let allCards
+let allCards;
 
 allCards = repodata.map(
   (card) =>
@@ -61,6 +61,6 @@ allCards = repodata.map(
           </p>
           <a href="${card.link}" class="view-btn " rel="noreferrer" target="_blank">View Repository</a>
         </div>`
-) 
+);
 
-cardsContainer.innerHTML = allCards.join("")
+cardsContainer.innerHTML = allCards.join("");
