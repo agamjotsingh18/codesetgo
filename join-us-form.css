@@ -9,6 +9,7 @@ h1 {
   font-size: 44px;
   line-height: 66px;
   text-align: center;
+
   color: #004a8e;
 }
 
@@ -25,7 +26,7 @@ textarea {
   width: 45%;
   text-align: left;
   margin-bottom: 20px;
-  margin-right: 10px;
+  margin-left: 10px;
   outline: none;
   padding-left: 14px;
 }
@@ -34,8 +35,6 @@ form {
   display: block;
   justify-content: center;
   align-items: center;
-  flex: 8;
-  padding-right: 10px; /* Add left margin */
 }
 
 ::placeholder {
@@ -44,6 +43,8 @@ form {
   font-weight: 400;
   font-size: 15px;
   line-height: 27px;
+  /* identical to box height */
+
   text-align: left;
   margin-left: 20px;
   color: #c2c2c2;
@@ -61,7 +62,10 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
+  /* identical to box height */
+
   text-align: center;
+  margin-left: 35%;
   color: #ffffff;
   padding: 15px;
   border: none;
@@ -72,55 +76,4 @@ button {
 input:focus,
 textarea:focus {
   box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.11);
-}
-
-@media screen and (max-width: 985px) {
-  form {
-    flex: 1;
-    margin-top: 20px;
-    margin-left: -10px;
-    margin-right: 10px;
-}
-  }
-
-  input,
-  textarea {
- 
-    max-width: 100%;
-  }
-
-  button {
-    margin-left: 0;
-  }
-
-
-@media screen and (max-width: 742px) {
-  .contactpage {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  form {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-width: 100%;
-    
-  }
-}
-@media screen and (max-width: 400px) {
-  .contactpage {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  form {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-width: 100%;
-    
-  }
 }
