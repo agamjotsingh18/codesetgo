@@ -479,19 +479,35 @@ section {
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
+  width: max-content;
   padding-bottom: 20px;
+    cursor: pointer;
+}
+.section-header h2::after {
+  content: "";
+  height: 2px;
+  margin-top: 7px;
+  width: 0%;
+  display: block;
+  background-color: #1b8df8;
+  transition: .5s ease-in-out;
 }
 
-.section-header h2::before {
-  content: "";
-  position: absolute;
+
+.section-header h2:hover::after {
+  content: " ";
+  background-color: #188efc;
+  height: 2px;
+  width: 100%;
   display: block;
-  width: 50px;
-  height: 3px;
-  background: #2796ff;
-  bottom: 0;
-  left: 0;
+  margin-top: 7px;
+
 }
+
+.section-header h2:hover {
+  color: #2796ff;
+}
+
 
 .section-header p {
   padding: 0;
