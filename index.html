@@ -75,10 +75,21 @@
     <!-- Footer icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+    <style>
+      #preloader {
+        background:white url("assets/img/Rhombus.gif") no-repeat center center;
+        background-size: 10%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 999999;
+      }
+      </style>
+  
   </head>
 
-  <body>
+  <body onload="myFunction()">
+    <div id="preloader"></div>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex justify-content-between">
@@ -96,9 +107,8 @@
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#testimonials">Testimonials</a>
-            </li>
+            <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+            <li><a class="nav-link scrollto " href="Contributer.html">Our Contributors</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             <li>
               <a
@@ -107,6 +117,7 @@
                 >Hacktoberfest</a
               >
             </li>
+
             <li class="darkmode"></li>
           </ul>
 
@@ -429,32 +440,44 @@
             <div class="enquiry">
               <form class="enquiry-form" id="enquiry-form">
                 <div class="title">GET IN TOUCH</div>
-                <input 
-                  type="text" 
-                  id="name" 
-                  placeholder="Your Name" 
-                  pattern='[a-zA-Z]+'
-                  required />
+                    <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Your Name" 
+                    class=""
+                    pattern='[a-zA-Z]+'
+                    required />
+                    <div class="spandiv"><small class="small" id="nameerr"></small></div>
+              
                 <input
                   type="email"
                   id="email"
+                  class=""
                   placeholder="Email id"
                   pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
                   required
                 />
+                <div class="spandiv"><small class="small" id="mailerr"></small></div>
+              
                 <input
                   type="tel"
                   id="phone"
+                  class=""
                   placeholder="Phone no."
                   pattern="[0-9]{10}$"
                   required
                 />
+                <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+              
                 <textarea
                   id="message"
                   row="5"
+                  class=""
                   placeholder="How can we help you?"
                   required
                 ></textarea>
+                <div class="spandiv"><small class="small" id="msgerr"></small></div>
+              
                 <button type="submit" onclick="sendMail()" class="hoverchanger">
                   Send
                 </button>
@@ -661,6 +684,14 @@
     <!-- JS -->
     <script defer src="./assets/js/darkmode_logic.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+
+      var loader = document.getElementById("preloader");
+  
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
   </body>
 </html>
 
