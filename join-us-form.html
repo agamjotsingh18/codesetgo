@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/join-us.css">
-</head>
-<body>
-    <div class="joinuser">
-        <span class="joinUserTitle">Join Us!</span>
-        <form action="./forms/contact.php" method="POST" class="userUpdateForm">
-            <div class="userUpdateLeft">
-                <div class="joinUserInfo">
-                    <label >Name</label>
-                    <input type="text" placeholder="anna@42" class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >email</label>
-                    <input type="text" placeholder="anna@hotmail.com" class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >College (with city) </label>
-                    <input type="text" placeholder="Anna Joseph" class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >Expected Graduation year</label>
-                    <input type="text" placeholder="2024" class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >Whatsapp Phone Number (add country code)</label>
-                    <input type="text" placeholder="+91 88888 88888" class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >Country</label>
-                    <input type="text" placeholder="India" class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >Why do you want to become CodeSetGo Captain? (Three Lines)</label>
-                    <input type="text" rows="5" placeholder="..." class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >Any Other Comments or Questions?</label>
-                    <input type="text" placeholder="..." class="userUpdateInput" />
-                </div>
-                <div class="joinUserInfo">
-                    <label >Where we can improve?!</label>
-                    <input type="text" placeholder="..." class="userUpdateInput" />
-                </div>
-                <button type="submit" value="Send" class="btnsubmit">Submit</button>
-            </div>
+<html>
+  <head>
+    <link href="assets/img/Light Blue.jpg" rel="icon" />
+    <title>Registrations for CodeSetGo Captain Program</title>
+    <link rel="stylesheet" href="join-us-form.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="contactpage">
+      <div class="contactimg">
+        <img src="assets/img/contact_image.svg" alt="Contact Us Image" />
+      </div>
+      <div class="contactform">
+        <h1>Registrations for <span>CodeSetGo</span> Captain Program</h1>
+        <form action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
+          <div>
+            <input type="text" id="name" name="Name" placeholder="Your Name" />
+            <input type="email" id="email" placeholder="Your Email" name="Email"/>
+          </div>
+          <div>
+            <input type="text" id="college" placeholder="College (With City)" name="College" />
+            <input
+              type="year"
+              id="year"
+              placeholder="Expected Graduation Year" name="Graduation Year"
+            />
+          </div>
+          <div>
+            <input type="number" id="phone" placeholder="Phone (WhatsApp)" name="Phone Number (WhatsApp)"/>
+            <input type="text" id="country" placeholder="Country" name="Country"/>
+          </div>
+          <div>
+            <textarea
+              id="whycaptain"
+              rows="4"
+              placeholder="Why do you want to become CodeSetGo Captain?" name="Why do you want to become CodeSetGo Captain?"
+            ></textarea>
+            <textarea
+              id="comment"
+              rows="8"
+              placeholder="Any Comments or Questions? (Not Mandatory)" name="Any Comments or Questions? "
+            ></textarea>
+          </div>
+          <button type="submit">SUBMIT FORM</button>
         </form>
-    </div>
-</body>
+      </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
 </html>
