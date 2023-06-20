@@ -1685,3 +1685,64 @@ footer {
     transform: translateY(-0.5rem);
   }
 }
+
+.cheatsheet-heading{
+  color: #2796ff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.option-btn{
+  height: 35px;
+  width: 60px;
+  background-color: #198df9;
+  border: 2px solid #003288;
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  justify-content: center;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+.option-btn:hover {
+  background-color: #0c2e8a;
+  color: #fff;
+}
+
+.option-container{
+  margin: 0 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option{
+  background-color: transparent;
+  width: 350px;
+  border: 2px solid var(--box-anchor);
+  padding: 20px 20px;
+  border-radius: 15px;
+  transition: transform 0.4s, box-shadow 0.5s;
+}
+
+.option:hover {
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(0, 0, 0);
+}
+
+.option-heading {
+  color: var(--box-anchor);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.option-heading:hover {
+  color: #2796ff;
+  cursor: pointer;
+}
+.option-description {
+  color: var(--box-anchor);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
