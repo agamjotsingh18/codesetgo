@@ -71,6 +71,7 @@ button {
   border: none;
   padding-left: 30px;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 input:focus,
