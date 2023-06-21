@@ -577,17 +577,21 @@ section {
   transform-style: preserve-3d;
   padding: 40px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
-  background: var(--service);
+  background: #2796FF;
   border: 4px solid var(--postborder);
   border-radius: 10px;
+}
+
+.box:hover {
+  transform: scale(1.2); 
 }
 
 /* #services .col-lg-6:hover .box {
   transform: rotateY(180deg);
 } */
 
-.is-flipped {
-  transform: rotateY(0.5turn);
+.box.is-flipped {
+  transform: scale(1.2) rotateY(180deg);
 }
 
 #services .icon {
@@ -620,7 +624,7 @@ section {
 }
 
 #services .box .icon i:before {
-  background: var(--icon);
+  background: #444;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
