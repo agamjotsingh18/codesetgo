@@ -15,8 +15,9 @@ body.light{
     --bar:white;
     --footer:#f2f5f8;
     --callcolor:#2796FF;
-    --service: linear-gradient(#47A992, #98EECC);
+    --service: linear-gradient(#4770a9, #98b3ee);
     --icon : linear-gradient(45deg, #2796ff 30%, #0c2e8a 70%);
+    --sd: #d2e1f2;
 }
 body.dark{
     --darkback:#243447;
@@ -33,9 +34,10 @@ body.dark{
     --border-color:rgba(167, 165, 165, 0.168);
     --bar:#141d26;
     --footer:#141d26;
-    --service: linear-gradient(black, #025464);
+    --service: linear-gradient(rgb(45, 71, 99), #413b7a);
     --icon: linear-gradient(45deg, #2796ff 30%, #4d85b9 70%);
     --callcolor:#0c2e8a;
+    --sd : #1e2c3d;
 
 
 }
@@ -47,6 +49,10 @@ body{
 #call-to-action{
   background-color: var(--callcolor);
   transition: 500ms;
+}
+
+#about .content{
+  box-shadow: 5px 15px 25px 5px var(--sd);
 }
 
 #about .content h2 {
@@ -116,8 +122,8 @@ body{
   
 
 body.light .card-heading {
-  color: var(--footer);
-  background-image: linear-gradient(to right, #0c2e8a, #6da6db);
+  /* color: var(--footer); */
+  /* background-image: linear-gradient(to right, #0c2e8a, #6da6db); */
 }
 
 body.light .view-btn {
