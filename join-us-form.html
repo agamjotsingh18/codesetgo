@@ -22,28 +22,31 @@
         <h1>Registrations for <span>CodeSetGo</span> Captain Program</h1>
         <form action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
           <div>
-            <input type="text" id="name" name="Name" placeholder="Your Name" />
-            <input type="email" id="email" placeholder="Your Email" name="Email"/>
+            <input required type="text" id="name" name="Name" placeholder="Your Name" />
+            <input required type="email" id="email" placeholder="Your Email" name="Email"/>
           </div>
           <div>
-            <input type="text" id="college" placeholder="College (With City)" name="College" />
+            <input required type="text" id="college" placeholder="College (With City)" name="College" />
             <input
+            required
               type="year"
               id="year"
               placeholder="Expected Graduation Year" name="Graduation Year"
             />
           </div>
           <div>
-            <input type="number" id="phone" placeholder="Phone (WhatsApp)" name="Phone Number (WhatsApp)"/>
-            <input type="text" id="country" placeholder="Country" name="Country"/>
+            <input required type="number" id="phone" placeholder="Phone (WhatsApp)" name="Phone Number (WhatsApp)"/>
+            <input required type="text" id="country" placeholder="Country" name="Country"/>
           </div>
           <div>
             <textarea
+            required
               id="whycaptain"
               rows="4"
               placeholder="Why do you want to become CodeSetGo Captain?" name="Why do you want to become CodeSetGo Captain?"
             ></textarea>
             <textarea
+            required
               id="comment"
               rows="8"
               placeholder="Any Comments or Questions? (Not Mandatory)" name="Any Comments or Questions? "

@@ -57,6 +57,7 @@ textarea {
 button {
   background: #004a8e;
   border-radius: 11px;
+  cursor: pointer;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
