@@ -662,6 +662,29 @@ section {
   }
 }
 
+
+
+/*Gallery Section
+---------------------------*/
+.image-slideshow {
+max-width: 700px;
+position: relative;
+margin: auto;
+}
+.image-slideshow img {
+width: 100%
+}
+.fade {
+animation-name: fade;
+animation-duration: 2s;
+}
+@keyframes fade {
+from {opacity: .5}
+to {opacity: 1}
+}
+
+
+
 /* Testimonials Section
 --------------------------------*/
 
