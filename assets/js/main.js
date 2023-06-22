@@ -326,7 +326,6 @@ const boxes = document.querySelectorAll('#services .col-lg-6 .box');
     })
 })
 
-
 //Gallery
 
 let index = 0;
