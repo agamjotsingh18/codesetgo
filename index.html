@@ -75,6 +75,9 @@
     <!-- Footer icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- AOS Animation CDN Link - CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
       #preloader {
         background:white url("assets/img/Rhombus.gif") no-repeat center center;
@@ -237,7 +240,7 @@
             </p>
           </div>
           <div class="row gy-4 justify-content-center">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1000">
               <div class="box">
                 <div class="icon">
                   <i class="bi bi-journal-code"></i> 
@@ -252,7 +255,7 @@
               </div>
             </div>
   
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1000">
               <div class="box">
                 <div class="icon">
                   <i class="bi bi-megaphone"></i> 
@@ -267,7 +270,7 @@
               </div>
             </div>
   
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1000">
               <div class="box">
                 <div class="icon">
                   <i class="bi bi-question-square"></i>
@@ -282,7 +285,7 @@
               </div>
             </div>
   
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1000">
               <div class="box">
                 <div class="icon">
                   <i class="bi bi-book-half"></i>
@@ -633,6 +636,14 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+
+    <!-- AOS Animation CDN Link - JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize AOS Script -->
+    <script>
+      AOS.init();
+    </script>
 
     <!-- JS CDN -->
     <script
