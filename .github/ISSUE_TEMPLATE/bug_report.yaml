@@ -19,7 +19,7 @@ body:
   - type: textarea #reproduce
     attributes:
       label: How can we reproduce this bug?
-      description: Are there any specific steps you had to take in order to trigger the bug, and what is the expected behaviour we should expect?
+      description: Are there any specific steps you had to take in order to trigger the bug, and what is the expected behavior we should expect?
       placeholder: Kindly elaborate.
     validations:
       required: true
@@ -27,7 +27,7 @@ body:
   - type: textarea #desktop info
     attributes:
       label: Desktop Information (Optional)
-      description: Please provide the desktop configuration (OS,Browser, dependency version etc)
+      description: Please provide the desktop configuration (OS, Browser, dependency version, etc.)
       placeholder: Type here.
 
   - type: dropdown #urgent
@@ -39,14 +39,14 @@ body:
         - Medium priority
         - High priority
 
-   - type: checkboxes
-     id: terms
+  - type: checkboxes
+    id: terms
     attributes:
-    label: 'Record'
-    options:
-      - label: I agree to follow this project's Code of Conduct
-        required: true
-      - label: I have checked the existing issues 
-        required: true 
-      - label: I'm a GSSoC'23 contributor
-      - label: I want to work on this issue         
+      label: 'Record'
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I have checked the existing issues
+          required: true
+        - label: I'm a GSSoC'23 contributor
+        - label: I want to work on this issue
