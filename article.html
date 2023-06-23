@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Article Page</title>
+  <style>
+    
+    body {
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .category-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .category-buttons button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .category-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    .article {
+      background: rgb(238,174,202);
+      background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(166,184,227,1) 80%, rgba(162,185,228,1) 84%, rgba(152,186,231,1) 95%, rgba(148,187,233,1) 100%);
+      color: #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .article h3 {
+      color: #007bff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .article p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .article-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+
+    .like-comment-share span {
+      color: #999;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .like-comment-share span:hover {
+      color: #007bff;
+    }
+
+    .share-options span:not(:first-child) {
+      color: #999;
+      transition: color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .share-options span:not(:first-child):hover {
+      background-color: #007bff;
+    }
+    .social-button{
+        color: #fff;
+        background-color: #007bff;
+    }
+    .social-button:hover{
+        background-color: #0056b3;
+    }
+
+    .upload-form {
+      background: rgb(238,174,202);
+      background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(166,184,227,1) 80%, rgba(162,185,228,1) 84%, rgba(152,186,231,1) 95%, rgba(148,187,233,1) 100%);
+      color: #333;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    .upload-form h3 {
+      color: #007bff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .upload-form form {
+      margin-top: 10px;
+    }
+
+    .upload-form input[type="text"],
+    .upload-form input[type="file"],
+    .upload-form button {
+      display: block;
+      margin-bottom: 10px;
+      margin-right: 20px;
+      padding: 10px;
+      width: 50%;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .upload-form button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .upload-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Article Page</h1>
+
+  <!-- Category Buttons -->
+  <div class="category-buttons">
+    <button id="btn-all">All</button>
+    <button id="btn-trending">Trending</button>
+    <button id="btn-latest">Latest</button>
+  </div>
+
+  <!-- Article 1 -->
+  <div class="article">
+    <h3>Article Title</h3>
+    <p>Article content goes here.</p>
+    <div class="article-actions">
+      <div class="like-comment-share">
+        <span>Like</span>
+        <span>Comment</span>
+      </div>
+      <div class="share-options">
+        <span>Share:</span>
+        <span><a href=""><button class="social-button">LinkedIn</button></a></span></span>
+        <span><a href=""><button class="social-button">Facebook</button></a></span>
+        <span><a href=""><button class="social-button">Instagram</button></a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more articles here -->
+
+  <!-- Upload Form -->
+  <div class="upload-form">
+    <h3>Upload Article</h3>
+    <form>
+      <input type="text" placeholder="Title" required><br>
+      <input type="text" placeholder="Content" required><br>
+      <input type="file" accept=".pdf,.doc,.docx" required><br>
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+
+
+  <script src="assets/js/article.js"></script>
+</body>
+</html>
