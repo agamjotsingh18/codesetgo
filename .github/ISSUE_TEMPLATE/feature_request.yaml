@@ -33,6 +33,7 @@ body:
       description: Any miscellaneous suggestions you'd like to give.
 
   - type: checkboxes
+    id: terms
     attributes:
     label: 'Record'
     options:
