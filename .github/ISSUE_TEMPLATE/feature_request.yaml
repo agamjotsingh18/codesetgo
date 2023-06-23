@@ -31,3 +31,14 @@ body:
     attributes:
       label: Add any other context or screenshots about the feature request here.
       description: Any miscellaneous suggestions you'd like to give.
+
+  - type: checkboxes
+    attributes:
+    label: 'Record'
+    options:
+      - label: I agree to follow this project's Code of Conduct
+        required: true
+      - label: I have checked the existing issues 
+        required: true 
+      - label: I'm a GSSoC'23 contributor
+      - label: I want to work on this issue    
