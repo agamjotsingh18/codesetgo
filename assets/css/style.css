@@ -935,6 +935,27 @@ transition: 0.8s;
   }
 }
 
+@media (max-width: 1024px) and (min-width:901px){
+  
+  /* Adjust the navbar according the the tablet screen size*/
+  .navbar ul {
+    align-items: start;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .navbar a i,
+  .navbar a:focus i {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
   #hexGrid{
     padding-bottom: 7.4%;
