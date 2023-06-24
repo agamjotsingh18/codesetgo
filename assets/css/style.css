@@ -666,22 +666,130 @@ section {
 
 /*Gallery Section
 ---------------------------*/
-.image-slideshow {
-max-width: 700px;
-position: relative;
-margin: auto;
+
+:root{
+  --white-c: #fff;
+  --black-c: #000;
+  --body-background-c: #FD7AC0;
+  --wrapper-background-c: #D4F1F4;
+  --wrapper-shadow-c: rgba(0, 0, 0, 0.219);
+  --buttons-background-c: rgba(255, 255, 255, 0.219);
+  --buttons-active-background-c: rgba(135, 207, 235, 0.493);
 }
-.image-slideshow img {
-width: 100%
+
+/* End Main Rules */
+.gallery{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px 0;
 }
-.fade {
-animation-name: fade;
-animation-duration: 2s;
+
+.slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@keyframes fade {
-from {opacity: .5}
-to {opacity: 1}
+
+.gallery .section-header{
+  margin-left: 115px;
 }
+/* Wrapper */
+.wrapper{
+  width: 600px;
+  height: 480px;
+  position: relative;
+  background-color: var(--wrapper-background-c);
+  box-shadow: 0 0 80px var(--wrapper-shadow-c);
+}
+
+/* Images Area */
+.images-area{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.images-area img{
+  width: 100%;
+  transition: 0.3s cubic-bezier(.79,.03,0,.99);
+}
+
+/* Buttons Area  */
+.buttons-area{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.buttons-area > div{
+  color: var(--white-c);
+  background-color: var(--buttons-background-c);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+/* Buttons | Previous And Next */
+.buttons-area > div:first-child{
+  border-radius: 0 5px 5px 0;
+  margin-left: -100px;
+}
+.buttons-area > div:last-child{
+  border-radius: 5px 0 0 5px;
+  margin-right: -100px;
+}
+/* Show The Buttons */
+.wrapper:hover .buttons-area > div:first-child{
+  margin-left: 0;
+}
+.wrapper:hover .buttons-area > div:last-child{
+  margin-right: 0;
+}
+.buttons-area div:hover:not(div.disabled){
+  background-color: var(--buttons-active-background-c);
+}
+.buttons-area div:not(div.disabled):active{
+  opacity: 0.7;
+}
+/* Disabled Button */
+.buttons-area > div.disabled{
+  cursor: no-drop;
+  opacity: 0.3;
+}
+.buttons-area div i{
+  font-size: 70px;
+}
+
+/* Pagination Area */
+.pagination-area{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+/* Pagination Spans */
+.pagination-area span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white-c);
+  margin-right: 5px;
+  transform: scale(0.5);
+  transition: 0.3s ease-in-out;
+  opacity: 0.4;
+}
+/* Current Active Span */
+.pagination-area span.active{
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* End Wrapper */
 
 
 
