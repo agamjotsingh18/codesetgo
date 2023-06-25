@@ -70,9 +70,21 @@
     <link rel="stylesheet" href="./assets/css/darkmode.css" />
 
     <script src=""></script>
+    <style>
+      #preloader {
+        background: white url("assets/img/Rhombus.gif") no-repeat center center;
+     
+        background-size: 10%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 999999;
+      }
+  </style>
   </head>
 
-  <body>
+  <body onload="myFunction()">
+    <div id="preloader"></div>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex justify-content-between">
@@ -250,9 +262,34 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
 
+
     <!-- JS -->
-    <script defer src="./assets/js/darkmode_logic.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="./assets/js/hacktoberfest.js"></script>
+    <script src="./assets/js/darkmode_logic.js">
+      
+      var loader = document.getElementById("preloader");
+  
+      function myFunction() {
+        preloader.style.display = "none";
+      }
+    </script>
+    <script src="assets/js/main.js">
+      var loader = document.getElementById("preloader");
+  
+      function myFunction() {
+        preloader.style.display = "none";
+      } 
+      </script>
+    <script src="./assets/js/hacktoberfest.js">
+
+var loader = document.getElementById("preloader");
+  
+  function myFunction() {
+    preloader.style.display = "none";
+    window.addEventListener('load', function() {
+  // Code to be executed when all resources are loaded
+  console.log('Page fully loaded');
+});
+  } 
+    </script>
   </body>
 </html>

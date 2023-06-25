@@ -122,8 +122,8 @@ body{
   
 
 body.light .card-heading {
-  color: var(--footer);
-  background-image: linear-gradient(to right, #0c2e8a, #6da6db);
+  /* color: var(--footer); */
+  /* background-image: linear-gradient(to right, #0c2e8a, #6da6db); */
 }
 
 body.light .view-btn {

@@ -12,7 +12,7 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 
 //* fire window load event
-window.onload = function(e){
+
     if(localStorage.getItem("theme") == null){
         if(prefersDarkScheme){
             //* if OS has dark theme then set web page to dark theme also
@@ -71,7 +71,7 @@ window.onload = function(e){
         backToTopBtn.classList.remove("back-to-top-dark");
         }
     }
-}
+
 
 //* toggle theme using button
 
