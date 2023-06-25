@@ -1,0 +1,97 @@
+
+/* CSS Code for Article Page */
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,169,253,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Article Writing Section Styles */
+
+.article-writing-section {
+  margin-bottom: 20px;
+}
+
+/* Article Cards Section Styles */
+
+.article-cards-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  width: calc(50% - 20px);
+  padding: 10px;
+  margin: 10px;
+  background-color: #e8f5fe;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-card h2 {
+  margin-top: 0;
+}
+
+.article-card p {
+  margin-bottom: 10px;
+}
+
+.article-card .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-card button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  color: #ffffff;
+}
+
+.article-card button:hover {
+  background-color: #0056b3;
+}
+
+.btn-like {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 5px 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
