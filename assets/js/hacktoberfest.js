@@ -1,3 +1,8 @@
+var loader = document.getElementById("preloader");
+  
+function myFunction() {
+  preloader.style.display = "none";
+} 
 const repodata = [
   {
     heading: "Poll it up",
@@ -54,7 +59,7 @@ allCards = repodata.map(
           <p class="card-description ">
             ${card.description}
           </p>
-          <a href="${card.link}" class="view-btn  ">View Repository</a>
+          <a href="${card.link}" class="view-btn " rel="noreferrer" target="_blank">View Repository</a>
         </div>`
 ) 
 
