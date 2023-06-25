@@ -55,17 +55,27 @@ function myFunction() {
     onscroll(document, navbarlinksActive)
 
     // Scroll To
-    const scrollto = (el) => {
-        let header = select('#header')
-        let offset = header.offsetHeight
+    // const scrollto = (el) => {
+    //     let header = select('#header')
+    //     let offset = header.offsetHeight
 
+    //     let elementPos = select(el).offsetTop
+    //     window.scrollTo({
+    //         top: elementPos - offset,
+    //         behavior: 'smooth'
+    //     })
+    // }
+    const scrollTo = (el) => {
+        let header = select('#header')
+        let offset = header.offsetHeight - 50 // Adjusted offset value
+    
         let elementPos = select(el).offsetTop
         window.scrollTo({
             top: elementPos - offset,
-            behavior: 'smooth'
+            behavior: 'auto' // Changed behavior to auto
         })
     }
-
+    
     // Header Fixed to top
     let selectHeader = select('#header')
     if (selectHeader) {
@@ -85,18 +95,41 @@ function myFunction() {
     }
 
     //  Back to Top
+    // let backtotop = select('.back-to-top')
+    // if (backtotop) {
+    //     const toggleBacktotop = () => {
+    //         if (window.scrollY > 100) {
+    //             backtotop.classList.add('active')
+    //         } else {
+    //             backtotop.classList.remove('active')
+    //         }
+    //     }
+    //     window.addEventListener('load', toggleBacktotop)
+    //     onscroll(document, toggleBacktotop)
+    // }
     let backtotop = select('.back-to-top')
     if (backtotop) {
-        const toggleBacktotop = () => {
-            if (window.scrollY > 100) {
-                backtotop.classList.add('active')
-            } else {
-                backtotop.classList.remove('active')
-            }
+      const toggleBacktotop = () => {
+        if (window.scrollY > 100) {
+            backtotop.classList.add('active')
+        } else {
+            backtotop.classList.remove('active')
         }
-        window.addEventListener('load', toggleBacktotop)
-        onscroll(document, toggleBacktotop)
     }
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Changed behavior to smooth
+        })
+    }
+
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+
+    backtotop.addEventListener('click', scrollToTop)
+}
+
 
     // Mobile Nav
     on('click', '.mobile-nav-toggle', function (e) {
