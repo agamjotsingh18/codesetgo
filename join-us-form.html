@@ -14,19 +14,31 @@
     />
   </head>
   <body>
+    <h1 class="h-title">Registrations for <span>CodeSetGo</span> Captain Program</h1>
     <section class="contactpage">
       <div class="contactimg">
-        <img src="assets/img/contact_image.svg" alt="Contact Us Image" />
+        
+        <img  class="cntctimg" src="assets/img/contact_image.svg" alt="Contact Us Image" />
+        
       </div>
       <div class="contactform">
-        <h1>Registrations for <span>CodeSetGo</span> Captain Program</h1>
-        <form action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
+        <form  class="form-1" action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
           <div>
-            <input type="text" id="name" name="Name" placeholder="Your Name" />
-            <input type="email" id="email" placeholder="Your Email" name="Email"/>
+         
+            <input type="text" id="name" name="Name" placeholder="Name" />
+            
           </div>
           <div>
+           
+            <input type="email" id="email" placeholder="email@example.com" name="Email" required/>
+          </div>
+          <div>
+            
             <input type="text" id="college" placeholder="College (With City)" name="College" />
+            
+          </div>
+          <div>
+         
             <input
               type="year"
               id="year"
@@ -34,22 +46,31 @@
             />
           </div>
           <div>
-            <input type="number" id="phone" placeholder="Phone (WhatsApp)" name="Phone Number (WhatsApp)"/>
+            
+            <input  type="number" id="phone" placeholder="+91777xxxxxxx(WhatsApp)" name="Phone Number (WhatsApp)"/>
+            
+          </div>
+          <div>
+           
             <input type="text" id="country" placeholder="Country" name="Country"/>
+          </div>
+          
+          <button type="submit" class="Subtn">SUBMIT FORM</button>
+        </form>
+        <form class="form-2" required>
+          <div>
+            <textarea required              id="whycaptain"
+              rows="4"
+              placeholder=" * Why do you want to become CodeSetGo Captain?" name="Why do you want to become CodeSetGo Captain?" 
+              required></textarea>
           </div>
           <div>
             <textarea
-              id="whycaptain"
-              rows="4"
-              placeholder="Why do you want to become CodeSetGo Captain?" name="Why do you want to become CodeSetGo Captain?"
-            ></textarea>
-            <textarea
               id="comment"
               rows="8"
-              placeholder="Any Comments or Questions? (Not Mandatory)" name="Any Comments or Questions? "
-            ></textarea>
+              placeholder=" * Any Comments or Questions? (Not Mandatory)" name="Any Comments or Questions? "
+            required></textarea>
           </div>
-          <button type="submit">SUBMIT FORM</button>
         </form>
       </div>
     </section>
