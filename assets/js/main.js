@@ -1,4 +1,10 @@
-(function() {
+var loader = document.getElementById("preloader");
+
+function myFunction() {
+    preloader.style.display = "none";
+}
+
+(function () {
     "use strict";
 
     // Selector Function
@@ -93,13 +99,13 @@
     }
 
     // Mobile Nav
-    on('click', '.mobile-nav-toggle', function(e) {
+    on('click', '.mobile-nav-toggle', function (e) {
         select('#navbar').classList.toggle('navbar-mobile')
         this.classList.toggle('bi-list')
         this.classList.toggle('bi-x')
     })
 
-    on('click', '.navbar .dropdown > a', function(e) {
+    on('click', '.navbar .dropdown > a', function (e) {
         if (select('#navbar').classList.contains('navbar-mobile')) {
             e.preventDefault()
             this.nextElementSibling.classList.toggle('dropdown-active')
@@ -107,7 +113,7 @@
     }, true)
 
     // Scroll with offset
-    on('click', '.scrollto', function(e) {
+    on('click', '.scrollto', function (e) {
         if (select(this.hash)) {
             e.preventDefault()
 
@@ -144,7 +150,7 @@
 
     new Swiper('.testimonials-slider', {
         speed: 600,
-        loop: true,
+        loop: false,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false
@@ -203,19 +209,105 @@ window.addEventListener('resize', () => {
 
 //send the content of enquiry form to the email
 function sendMail() {
-    var tempParams = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        message: document.getElementById('message').value,
-    };
-    emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',tempParams)
-    .then(function(responce){
-        console.log('SUCCESS!',response.status);
-        alert('Form Submitted Successfully');
-    },
-    function(error){
-        console.log('FAILED!',response.status,response.text);
-        alert('Form Submission Faild! Try Again');
-    })
+    if (checkInputs()) {
+        var tempParams = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value,
+        };
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', tempParams)
+            .then(function (responce) {
+                console.log('SUCCESS!', response.status);
+                alert('Form Submitted Successfully');
+            },
+                function (error) {
+                    console.log('FAILED!', response.status, response.text);
+                    alert('Form Submission Faild! Try Again');
+                })
+    }
+    else
+        return false;
+};
+
+function checkInputs() {
+    const username = document.getElementById('name');
+    const useremail = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const message = document.getElementById('message');
+
+    //get values from input fields
+    const emailval = useremail.value.trim();
+    const usernameval = username.value.trim();
+    const phoneval = phone.value.trim();
+    const messageval = message.value.trim();
+
+    if (usernameval === '') {
+        document.getElementById('nameerr').innerText = 'Please enter your Name !';
+        username.classList.remove('success');
+        username.classList.add('error');
+    }
+    else {
+        document.getElementById('nameerr').innerText = '';
+        username.classList.remove('error');
+        username.classList.add('success');
+    }
+
+    if (emailval === '') {
+        document.getElementById('mailerr').innerText = 'Please enter your E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+    }
+    else if (!validateEmail(emailval)) {
+        document.getElementById('mailerr').innerText = 'Please enter valid E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+    }
+    else {
+        document.getElementById('mailerr').innerHTML = '';
+        useremail.classList.remove('error');
+        useremail.classList.add('success');
+    }
+    if (phoneval === '') {
+        document.getElementById('phoneerr').innerText = 'Please enter Phone No !';
+        phone.classList.remove('success');
+        phone.classList.add('error');
+    }
+    else {
+        document.getElementById('phoneerr').innerText = '';
+        phone.classList.remove('error');
+        phone.classList.add('success');
+    }
+    if (messageval === '') {
+        document.getElementById('msgerr').innerText = 'Please enter any Message !';
+        message.classList.remove('success');
+        message.classList.add('error');
+    }
+    else {
+        document.getElementById('msgerr').innerText = '';
+        message.classList.remove('error');
+        message.classList.add('success');
+    }
+
+    if (emailval !== '' && usernameval !== '' && phoneval !== '' && messageval !== '') {
+        console.log("complete");
+        return true;
+    }
+
 }
+
+function validateEmail(mail) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+        return true;
+    }
+    return false;
+}
+
+// ONCLICK FLIP CARD FOR SERVICE SECTION
+const boxes = document.querySelectorAll('#services .col-lg-6 .box');
+
+[...boxes].forEach((box) => {
+    box.addEventListener('click', function () {
+        box.classList.toggle('is-flipped');
+    })
+})

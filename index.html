@@ -5,9 +5,14 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>CodeSetGo</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+  <title>CodeSetGo | Best Students Community</title>
+  <meta
+    content="CodeSetGo is a community made for the students and made by the students. Here you get free coding resources, online webinars, doubt support and guidance from the brilliant minds across the globe. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes!"
+    name="description" />
+  <!-- Long tail keywords -->
+  <meta
+    content="best coding resources, free webinars, coding resources for beginners students community, guidance, computer science portal"
+    name="keywords" />
 
   <!-- Favicons -->
   <link href="assets/img/Light Blue.jpg" rel="icon" />
@@ -17,6 +22,16 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
     rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
 
   <!-- CSS CDNs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -39,43 +54,50 @@
     integrity="sha512-+S5HQ2Ix/L84uhBLMimQiJlFjqR/Unnord77MEDNpWtK99i2Tk212EPb3/ahEjgaPRBKkKtTzMHIdO2HQXT3dQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-
   <!-- CSS  -->
   <link href="assets/css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/darkmode.css" />
   <link href="./assets/css/enquiry-form.css" rel="stylesheet" />
 
-  <script src=""></script>
-</head>
-<style>
-  footer {
-        background-color: #021424;
-        color: #fff;
-        padding: 1px;
-        text-align: center;
+  <!-- Footer icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-       }
-</style>
-<body>
+  <style>
+    #preloader {
+      background: white url("assets/img/Rhombus.gif") no-repeat center center;
+      background-size: 10%;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 999999;
+    }
+  </style>
+
+</head>
+
+<body onload="myFunction()">
+  <div id="preloader"></div>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex justify-content-between">
       <div id="logo">
-        <a href="index.html"><img src="assets/img/Banner - Light.png" alt="" height="50px" width="270px" /></a>
+        <a href="index.html"><img src="assets/img/Banner - Light.png" alt="CodeSetGo Logo" height="50px"
+            width="270px" /></a>
       </div>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li>
-            <a class="nav-link scrollto" href="#testimonials">Testimonials</a>
-          </li>
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto " href="Contributer.html">Our Contributors</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li>
             <a href="./hacktoberfest.html" class="btn-get-started scrollto hacktoberfest-btn">Hacktoberfest</a>
           </li>
+
           <li class="darkmode"></li>
         </ul>
 
@@ -91,7 +113,7 @@
       <h2>Make <span>Learning</span><br />Fun!</h2>
       <div>
         <a href="#about" class="btn-get-started scrollto">Know More</a>
-        <a href="https://forms.gle/7KViepY21qBSvdRUA" class="btn-projects scrollto">Join Us</a>
+        <a href="join-us-form.html" class="btn-projects scrollto">Join Us</a>
       </div>
     </div>
     <div class="hero-slider swiper">
@@ -113,6 +135,27 @@
   </section>
   <!-- End Hero Section -->
 
+  <!-- ======= Call To Action Section ======= -->
+  <section id="call-to-action">
+    <div class="container" data-aos="zoom-out">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-start">
+          <h3 id="cta-title" class="cta-title">Call For Speaker!!</h3>
+          <p class="cta-text">
+            <!--You are more than welcome to present your research or skills
+              with us. CodeSetGo invites you to serve as our speaker.-->
+            Want to present your research or skills?<br>
+            CodeSetGo is the right place for you. CodeSetGo invites you to serve as our speaker.
+          </p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" href="https://forms.gle/HfDMg1Xuh7KnJPyu6">Call For Speaker</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Call To Action Section -->
+
   <!-- ======= Main Section ======= -->
   <main id="main">
     <!-- ======= About Section ======= -->
@@ -120,7 +163,7 @@
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-6 about-img">
-            <img src="assets/img/About us.png" alt="" />
+            <img src="assets/img/About us.png" alt="About Us image" />
           </div>
           <div class="col-lg-6 content">
             <h2>About Us</h2>
@@ -157,55 +200,61 @@
             open-source and opportunities.
           </p>
         </div>
-      </section>
-      <!-- End About Section -->
-
-      <!-- ======= Services Section ======= -->
-      <section id="services">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Services</h2>
-            <p>
-              We aim to provide a real world practical learning experience and
-              keep students informed about the latest trends in technology,
-              open-source and opportunities.
-            </p>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <div class="icon">
+                <i class="bi bi-journal-code"></i>
+                <h4 class="title">Coding Resources</h4>
+                <p>click to know more</p>
+              </div>
+              <div class="flip-card-back">
+                <p id="des" class="description">
+                  We provide Tutorials, articles, videos, cheatsheets and other educational materials to excel.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="row gy-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="box">
-                <div class="icon"><i class="bi bi-journal-code"></i></div>
-                <h4 class="title"><a href="cheatsheets.html">Coding Resources</a></h4>
-                <p class="description">
-                  We provide Tutorials, articles, videos, cheatsheets and other
-                  educational materials to excel.
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <div class="icon">
+                <i class="bi bi-megaphone"></i>
+                <h4 class="title">Online Webinars</h4>
+                <p>click to know more</p>
+              </div>
+              <div class="flip-card-back">
+                <p id="des" class="description">
+                  We conduct online webinars for every field in Computer Science.
                 </p>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="box">
-                <div class="icon"><i class="bi bi-megaphone"></i></div>
-                <h4 class="title"><a href="">Online Webinars</a></h4>
-                <p class="description">
-                  We conduct online webinars for every field in Computer
-                  Science.
-                </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <div class="icon">
+                <i class="bi bi-question-square"></i>
+                <h4 class="title">Doubt Support</h4>
+                <p>click to know more</p>
               </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="box">
-                <div class="icon"><i class="bi bi-question-square"></i></div>
-                <h4 class="title"><a href="">Doubt Support</a></h4>
-                <p class="description">
+              <div class="flip-card-back">
+                <p id="des" class="description">
                   Clear all your doubts through LIVE discord support.
                 </p>
               </div>
             </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="box">
-                <div class="icon"><i class="bi bi-book-half"></i></div>
-                <h4 class="title"><a href="">Guidance</a></h4>
-                <p class="description">
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <div class="icon">
+                <i class="bi bi-book-half"></i>
+                <h4 class="title">Guidance</h4>
+                <p>click to know more</p>
+              </div>
+              <div class="flip-card-back">
+                <p id="des" class="description">
                   Get expert guidance with career, open source and internships,
                   jobs around the world.
                 </p>
@@ -213,81 +262,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Services Section -->
-
-      <!-- ======= Call To Action Section ======= -->
-      <section id="call-to-action">
-        <div class="container" data-aos="zoom-out">
-          <div class="row">
-            <div class="col-lg-9 text-center text-lg-start">
-              <h3 class="cta-title">Call For Speaker</h3>
-              <p class="cta-text">
-                You are more than welcome to present your research or skills
-                with us. CodeSetGo invites you to serve as our speaker.
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <div class="icon"><i class="bi bi-journal-code"></i></div>
-              <h4 class="title"><a href="">Coding Resources</a></h4>
-              <p class="description">
-                We provide Tutorials, articles, videos, cheatsheets and other
-                educational materials to excel.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <div class="icon"><i class="bi bi-megaphone"></i></div>
-              <h4 class="title"><a href="">Online Webinars</a></h4>
-              <p class="description">
-                We conduct online webinars for every field in Computer
-                Science.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <div class="icon"><i class="bi bi-question-square"></i></div>
-              <h4 class="title"><a href="">Doubt Support</a></h4>
-              <p class="description">
-                Clear all your doubts through LIVE discord support.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <div class="icon"><i class="bi bi-book-half"></i></div>
-              <h4 class="title"><a href="">Guidance</a></h4>
-              <p class="description">
-                Get expert guidance with career, open source and internships,
-                jobs around the world.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <!-- End Services Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action">
-      <div class="container" data-aos="zoom-out">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">Call For Speaker</h3>
-            <p class="cta-text">
-              You are more than welcome to present your research or skills
-              with us. CodeSetGo invites you to serve as our speaker.
-            </p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://forms.gle/HfDMg1Xuh7KnJPyu6">Call For Speaker</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Call To Action Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials">
@@ -300,14 +277,16 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="" />
+                  <img src="assets/img/quote-sign-left - light.png" class="quote-sign-left"
+                    alt="CodeSetGo-Left quotes" />
                   The experience of being associated with CodeSetGo since past
                   few months has been a wonderful one. The various resources,
                   scholarship, events and new opportunities to participate in
                   have proven to be successful team efforts.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                  <img src="assets/img/quote-sign-right - light.png" class="quote-sign-right"
+                    alt="CodeSetGo-Right quotes" />
                 </p>
-                <img src="assets/img/1516365445572.jfif" class="testimonial-img" alt="" />
+                <img src="assets/img/1516365445572.jfif" class="testimonial-img" alt="CodeSetGo-Testomonial" />
                 <h3>Praveen Kumar</h3>
                 <h4>Speaker</h4>
               </div>
@@ -315,14 +294,16 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="" />
+                  <img src="assets/img/quote-sign-left - light.png" class="quote-sign-left"
+                    alt="CodeSetGo-Left quotes" />
                   It's the perfect platform for beginners to get guidance from
                   not only guidance but through this platform we can easily
                   interact and talk freely about the common problem which we
                   as a student face during this period of time.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                  <img src="assets/img/quote-sign-right - light.png" class="quote-sign-right"
+                    alt="CodeSetGo-Right quotes" />
                 </p>
-                <img src="assets/img/1627730807968.jfif" class="testimonial-img" alt="" />
+                <img src="assets/img/1627730807968.jfif" class="testimonial-img" alt="CodeSetGo-Testomonial" />
                 <h3>Arth Nangia</h3>
                 <h4>Member</h4>
               </div>
@@ -330,15 +311,34 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="" />
+                  <img src="assets/img/quote-sign-left - light.png" class="quote-sign-left"
+                    alt="CodeSetGo-Left quotes" />
+                  CodeSetGo is an exceptional community that provides online webinars, doubt
+                  support, and guidance
+                  from brilliant minds worldwide. It's the perfect platform for tech enthusiasts to learn the latest
+                  technology comfortably from home.
+                  <img src="assets/img/quote-sign-right - light.png" class="quote-sign-right"
+                    alt="CodeSetGo-Right quotes" />
+                </p>
+                <img src="assets/img/ds.jpeg" class="testimonial-img" alt="CodeSetGo-Testomonial" />
+                <h3>Divyansh Saxena</h3>
+                <h4>Member</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left - light.png" class="quote-sign-left"
+                    alt="CodeSetGo-Left quotes" />
                   It's awesome. If I ask one doubt then like atleast 10 of
                   them are ready to clear it at that moment. It doesn't matter
                   how silly is my doubt. This gives me confidence to ask
                   anything which I think is one of the most important and
                   unique feature of CSG Community.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                  <img src="assets/img/quote-sign-right - light.png" class="quote-sign-right"
+                    alt="CodeSetGo-Right quotes" />
                 </p>
-                <img src="assets/img/1613580988884.jfif" class="testimonial-img" alt="" />
+                <img src="assets/img/1613580988884.jfif" class="testimonial-img" alt="CodeSetGo-Testomonial" />
                 <h3>Aastha Tripathi</h3>
                 <h4>Member</h4>
               </div>
@@ -346,15 +346,34 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="" />
+                  <img src="assets/img/quote-sign-left - light.png" class="quote-sign-left"
+                    alt="CodeSetGo-Left quotes" />
                   FIVE STARS ⭐⭐⭐⭐⭐ I have been to many bootcamps and
                   workshops related to coding but none matches the level of
                   professional quality mentorship I got here from the CSG
                   Team. Thank you Code Set Go
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="" />
+                  <img src="assets/img/quote-sign-right - light.png" class="quote-sign-right"
+                    alt="CodeSetGo-Right quotes" />
                 </p>
-                <img src="assets/img/1600361001868.jfif" class="testimonial-img" alt="" />
+                <img src="assets/img/1600361001868.jfif" class="testimonial-img" alt="CodeSetGo-Testomonial" />
                 <h3>Anishaa Choudhury</h3>
+                <h4>Member</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <img src="assets/img/quote-sign-left - light.png" class="quote-sign-left"
+                    alt="CodeSetGo-Left quotes" />
+                  This thriving community offers a convenient learning environment, enabling students to
+                  stay up-to-date
+                  with the latest technology trends and develop their skills from the comfort of their homes. CodeSetGo
+                  serves as a beacon of inspiration on their coding journey.
+                  <img src="assets/img/quote-sign-right - light.png" class="quote-sign-right"
+                    alt="CodeSetGo-Right quotes" />
+                </p>
+                <img src="assets/img/ks.jpeg" class="testimonial-img" alt="CodeSetGo-Testomonial" />
+                <h3>Kushagra Saxena</h3>
                 <h4>Member</h4>
               </div>
             </div>
@@ -366,7 +385,7 @@
     <!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
- <section id="contact">
+    <section id="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Contact Us</h2>
@@ -374,77 +393,129 @@
         <div class="row contact-info">
           <div class="enquiry">
             <form class="enquiry-form" id="enquiry-form">
-              <div class="title">GET IN <span>TOUCH</span></div>
-              <input type="text" id="name" placeholder="Your Name" required />
-              <input type="email" id="email" placeholder="Email id" required />
-              <input type="text" id="phone" placeholder="Phone no." required />
-              <textarea id="message" row="5" placeholder="How can we help you?" required></textarea>
-              <button type="button" onclick="sendMail(); reset();" class="hoverchanger">
+              <div class="title">GET IN TOUCH</div>
+              <input type="text" id="name" placeholder="Your Name" class="" pattern='[a-zA-Z]+' required />
+              <div class="spandiv"><small class="small" id="nameerr"></small></div>
+
+              <input type="email" id="email" class="" placeholder="Email id"
+                pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' required />
+              <div class="spandiv"><small class="small" id="mailerr"></small></div>
+
+              <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required />
+              <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+
+              <textarea id="message" row="5" class="" placeholder="How can we help you?" required></textarea>
+              <div class="spandiv"><small class="small" id="msgerr"></small></div>
+
+              <button type="submit" onclick="sendMail()" class="hoverchanger">
                 Send
               </button>
             </form>
           </div>
+          <div class="col-md-12">
+            <div class="contact-phone">
+              <a href="index.html"><img src="assets/img/Light Blue - White 2.png" alt="CodeSetGo Blue Logo"
+                  height="90px" width="260px" /></a>
+            </div>
           </div>
+          <div class="col-md-6">
+            <div class="contact-phone">
+              <i class="bi bi-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+919319042075">+91 9319042075</a></p>
+            </div>
           </div>
-
-          
-          </section>
-      
+          <div class="col-md-6">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:codesetgo@gmail.com">codesetgo@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- End Contact Section -->
 
   </main>
   <!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright text-center">
-        Made with <i class="bi bi-heart-fill" style="color: red"></i> by
-        <strong style="color: #2796ff">CodeSetGo Team</strong>
-        <div class="wrapper"><br>
-          <a href="https://discord.gg/yWhNysUEej" class="icon facebook">
-            <div class="tooltip">Discord</div>
-            <span><i class="fab fa-discord"></i></span>
-          </a>
-          <a href="https://t.me/Code_Set_Go" class="icon twitter">
-            <div class="tooltip">Telegram</div>
-            <span><i class="fab fa-telegram"></i></span>
-          </a>
-          <a href="https://instagram.com/codesetgo/" class="icon instagram">
-            <div class="tooltip">Instagram</div>
-            <span><i class="fab fa-instagram"></i></span>
-          </a>
-          <a href="https://github.com/CodeSetGo" class="icon github">
-            <div class="tooltip">Github</div>
-            <span><i class="fab fa-github"></i></span>
-          </a>
-          <a href="https://www.youtube.com/channel/UC4dJIsV1bWwCwPFHFI6sY7Q?sub_confirmation=1" class="icon youtube">
-            <div class="tooltip">Youtube</div>
-            <span><i class="fab fa-youtube"></i></span>
-          </a>
-          <a href="https://www.linkedin.com/company/codesetgo/" class="icon linkedin">
-            <div class="tooltip">Linkedin</div>
-            <span><i class="fab fa-linkedin"></i></span>
-          </a>
-          <br>
-          <div class="copyright text-center">
-<!--             Call us on <i style="color: #2796ff"></i><a href="tel:+91 9319042075">9319042075</a> -->
-            <!-- <strong style="color: #2796ff">CodeSetGo Team</strong> -->
-            <div class="wrapper">
-              <div class="copyright text-center">
-                Write an E-mail <i style="color: #2796ff"></i><a href="mailto:codesetgo@gmail.com">codesetgo@gmail.com</a>
-                <!-- <strong style="color: #2796ff">CodeSetGo Team</strong> -->
-                <div class="wrapper">
-                  
-                </div>
-              </div>
-            </div>      
-  </footer>
-  <!-- copy right footer -->
-  <footer >
-    <p style="margin: 15px;">&copy; [2023] [codesetgo]. All rights reserved.</p>
-</footer>
+  <!-- <footer id="footer">
+      <div class="container">
+        <div class="copyright text-center">
+          Made with <i class="bi bi-heart-fill" style="color: red"></i> by
+          <strong style="color: #2796ff">CodeSetGo Team</strong>
+        </div>
+      </div>
+    </footer> -->
   <!-- End Footer -->
+
+  <!-- New Footer Starts -->
+  <!-- <div class="section"><h3>Reach <span>US</span></h3> -->
+
+  <footer id="footer" class="footer-section">
+    <div class="footer-content">
+      <div class="top-footer-text">
+        <center>
+          <h1>CodeSetGo</h1>
+          <span>a community made for the students and made by the students.</span>
+        </center>
+      </div>
+      <div class="list-footer">
+        <ul><a href="#about">About Us</a></ul>
+        <ul><a href="#contact">Contact</a></ul>
+        <ul><a href="#services">Services</a></ul>
+        <ul><a href="">Licenses</a></ul>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <a href="https://discord.gg/yWhNysUEej" class="icon facebook" target="_blank" aria-label="Join with us on Discord"
+        title="Discord (External Link)" rel="noopener noreferrer">
+        <div class="tooltip">Discord</div>
+        <span><i class="fab fa-discord"></i></span>
+      </a>
+      <a href="https://www.youtube.com/channel/UC4dJIsV1bWwCwPFHFI6sY7Q?sub_confirmation=1" class="icon twitter"
+        target="_blank" aria-label="Visit us on Youtube" title="Youtube (External Link)" rel="noopener noreferrer">
+        <div class="tooltip">YouTube</div>
+        <span><i class='fab fa-youtube'></i></span>
+      </a>
+      <a href="https://instagram.com/codesetgo/" class="icon instagram" target="_blank"
+        aria-label="Visit us on Instagram" title="Instagram (External Link)" rel="noopener noreferrer">
+        <div class="tooltip">Instagram</div>
+        <span><i class="fab fa-instagram"></i></span>
+      </a>
+      <a href="https://github.com/CodeSetGo" class="icon github" target="_blank" aria-label="Visit us on Github"
+        title="Github (External Link)" rel="noopener noreferrer">
+        <div class="tooltip">Github</div>
+        <span><i class="fab fa-github"></i></span>
+      </a>
+      <a href="https://www.linkedin.com/company/codesetgo/" class="icon linkedin" target="_blank"
+        aria-label="Visit us on Linkedin" title="Linkedin (External Link)" rel="noopener noreferrer">
+        <div class="tooltip">Linkedin</div>
+        <span><i class="fab fa-linkedin"></i></span>
+      </a>
+      <a href="https://t.me/Code_Set_Go" class="icon linkedin" target="_blank" aria-label="Join us on Telegram"
+        title="Twitter (External Link)" rel="noopener noreferrer">
+        <div class="tooltip">Telegram</div>
+        <span><i class='fab fa-telegram-plane'></i></span>
+      </a>
+    </div>
+    <hr>
+
+    <div>
+      <div class="footer-copyright">
+        <h4>Made with ❤️ by CodeSetGo Team</h4>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+
+  <!-- New Footer Ends -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -476,6 +547,14 @@
   <!-- JS -->
   <script defer src="./assets/js/darkmode_logic.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+
+    var loader = document.getElementById("preloader");
+
+    function myFunction() {
+      preloader.style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
