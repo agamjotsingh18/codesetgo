@@ -47,27 +47,30 @@ h6 {
 
 .back-to-top {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 9px;
-  bottom: 80px;
-  z-index: 996;
-  background: #2796ff;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
+  background-color: #2796ff;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 28px;
+  z-index: 996;
+  visibility: hidden;
+  opacity: 0;
   transition: opacity 0.3s ease;
-  animation: slideUp 0.8s infinite;
 }
 
 .back-to-top i {
-  font-size: 28px;
-  color: #fff;
   line-height: 0;
   transition: opacity 0.3s ease;
 }
 
 .back-to-top:hover {
-  background: #8ec2f4;
+  background-color: #8ec2f4;
   color: #fff;
 }
 
@@ -75,7 +78,15 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
-@keyframes slideUp {
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/*@keyframes slideUp {
   20% {
     transform: translateY(40px);
   }
@@ -88,7 +99,7 @@ h6 {
   50% {
     transform: translateY(70px);
   }
-}
+}*/
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
