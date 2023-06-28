@@ -100,6 +100,10 @@ h6 {
   background: var(--bar);
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
+#header.navbar{
+  transition: 0.5s;
+
+}
 
 #header #logo h1 {
   font-size: 42px;
