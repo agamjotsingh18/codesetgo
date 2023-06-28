@@ -1767,3 +1767,21 @@ footer {
   font-size: 14px;
   margin-bottom: 15px;
 }
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 62.5%;
+  }
+}
+.hero-content h2 span.typewriter {
+  display: inline-block;
+  animation: typewriter 3.8s steps(20)  forwards infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  vertical-align: bottom;
+}
+
+
