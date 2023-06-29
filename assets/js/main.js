@@ -311,3 +311,21 @@ const boxes = document.querySelectorAll('#services .col-lg-6 .box');
         box.classList.toggle('is-flipped');
     })
 })
+const words = ["Learning  ", "Exploring  ", "Growing  "]; 
+    let currentWordIndex = 0;
+
+    function typeNextWord() {
+      const typewriterSpan = document.getElementById('typewriter');
+      typewriterSpan.textContent = words[currentWordIndex];
+
+      currentWordIndex++;
+      if (currentWordIndex === words.length) {
+        currentWordIndex = 0;
+      }
+
+      setTimeout(typeNextWord, 2990); 
+    }
+
+    typeNextWord();
+
+  
