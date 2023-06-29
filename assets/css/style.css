@@ -1706,11 +1706,16 @@ footer {
     transform: translateY(-0.5rem);
   }
 }
-
+.cheatsheet-heading-main{
+  color: #2796ff;
+  text-align: center;
+  padding-top: 30px;
+}
 .cheatsheet-heading{
   color: #2796ff;
   text-align: center;
   padding-top: 30px;
+  display: inline-block;
 }
 
 .option-btn{
@@ -1766,4 +1771,9 @@ footer {
   color: var(--box-anchor);
   font-size: 14px;
   margin-bottom: 15px;
+}
+.option-image{
+  height: 70px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
