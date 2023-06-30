@@ -1317,7 +1317,7 @@ transition: 0.8s;
 }
 
 .cards-container {
-  margin: 0 50px;
+  margin: 0 20px 50px;
   display: flex;
   gap: 15px;
   justify-content: center;
