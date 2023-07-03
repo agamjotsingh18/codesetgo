@@ -1,5 +1,6 @@
 .contactpage {
   display: flex;
+  background-color: green;
 }
 
 h1 {
@@ -76,4 +77,31 @@ button {
 input:focus,
 textarea:focus {
   box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.11);
+}
+@media (max-width: 720px) {
+ 
+  .contactpage{
+    background-color: red;
+   }
+  
+}
+ 
+@media screen and (max-width: 1220px) {
+ 
+  input{
+    width: 80%;
+  }
+  textarea {
+    height: 100px;
+    width: 80%;
+  }
+  
+  
+}
+@media screen and (max-width: 1080px) {
+ .contactform > h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 800;
+  }
 }
