@@ -504,6 +504,7 @@ section {
 
 #about {
   padding: 60px 0 30px 0;
+  background-color: #141d26;
 }
 
 #about .about-img {
@@ -535,6 +536,7 @@ section {
 #about .content {
   padding: 35px;
   border-radius: 15px;
+  background-color: #050b1f;
 }
 
 #about .content h2 {
@@ -667,6 +669,7 @@ section {
 
 #testimonials {
   padding: 30px 0;
+  background-color: #141d26;
 }
 
 #testimonials .testimonials-carousel,
