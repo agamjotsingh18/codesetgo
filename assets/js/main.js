@@ -303,6 +303,99 @@ function validateEmail(mail) {
     return false;
 }
 
+//join-us form validation start here
+function validateJoinUs() {
+    
+    const username = document.getElementById('name');
+    const useremail = document.getElementById('email');
+    const college = document.getElementById('college');
+    const year = document.getElementById('year');
+    const phone = document.getElementById('phone');
+    const country = document.getElementById('country');
+    const whycaptain = document.getElementById('whycaptain');
+
+    //get values from input fields
+    const emailval = useremail.value.trim();
+    const usernameval = username.value.trim();
+    const collegeval = college.value.trim();
+    const yearval = year.value.trim();
+    const phoneval = phone.value.trim();
+    const countryval = country.value.trim();
+    const whycaptainval = whycaptain.value.trim();
+
+    if (usernameval === '') {
+        document.getElementById('nameerr').innerText = 'Please enter your Name !';
+        username.classList.remove('success');
+        username.classList.add('error');
+        return false;
+    }
+     else if (emailval === '') {
+        document.getElementById('nameerr').innerText = '';
+        username.classList.remove('error');
+        username.classList.add('success');
+        document.getElementById('mailerr').innerText = 'Please enter your E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+        return false;
+    }
+    else if (!validateEmail(emailval)) {
+        document.getElementById('mailerr').innerText = 'Please enter valid E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+        return false;
+    }
+    else if (collegeval === '') {
+        document.getElementById('mailerr').innerHTML = '';
+        useremail.classList.remove('error');
+        useremail.classList.add('success');
+
+        document.getElementById('collegeerr').innerText = 'Please enter College with City !';
+        college.classList.remove('success');
+        college.classList.add('error');
+        return false;
+    }
+    else if (yearval === '') {
+        document.getElementById('collegeerr').innerText = '';
+        college.classList.remove('error');
+        college.classList.add('success');
+        document.getElementById('yearerr').innerText = 'Please enter graduation year!';
+        year.classList.remove('success');
+        year.classList.add('error');
+        return false;
+    }
+    else if (phoneval === '') {
+        document.getElementById('yearerr').innerText = '';
+        year.classList.remove('error');
+        year.classList.add('success');
+        document.getElementById('phoneerr').innerText = 'Please enter Phone No !';
+        phone.classList.remove('success');
+        phone.classList.add('error');
+        return false;
+    }
+    else if (countryval === '') {
+        document.getElementById('phoneerr').innerText = '';
+        phone.classList.remove('error');
+        phone.classList.add('success');
+        document.getElementById('countryerr').innerText = 'Please enter country !';
+        country.classList.remove('success');
+        country.classList.add('error');
+        return false;
+    }
+    else if (whycaptainval === '') {
+        document.getElementById('countryerr').innerText = '';
+        country.classList.remove('error');
+        country.classList.add('success');
+        document.getElementById('whycaptainerr').innerText = 'Required field !';
+        whycaptain.classList.remove('success');
+        whycaptain.classList.add('error');
+        return false;
+    }
+    else {
+        console.log("complete");
+        return true;
+    }
+}
+
 // ONCLICK FLIP CARD FOR SERVICE SECTION
 const boxes = document.querySelectorAll('#services .col-lg-6 .box');
 

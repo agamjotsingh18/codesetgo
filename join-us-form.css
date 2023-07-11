@@ -47,6 +47,31 @@ animation: up-down 3.24s .5s infinite alternate-reverse;
 color: rgb(234, 226, 226);
 font-size: 15px;
 }
+.form-1 input.error{
+  border-bottom: 2px solid #e74c3c;
+}
+.form-1 input.success{
+  border-bottom: 2px solid #2ecc71;
+}
+
+.form-1 .spandiv{
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+.form-1 .spandiv small {
+  color: #e74c3c;
+  margin-left: 10px;
+}
+
+.form-2 .spandiv{
+  margin-top: -20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.form-2 .spandiv small {
+  color: #e74c3c;
+}
+
 .label{
   padding-left: 10px;
   color: white;
@@ -58,6 +83,14 @@ font-size: 15px;
 font-size: 15px;
   background-color: transparent;
 }
+
+.form-2 textarea.error{
+  border: 2px solid #e74c3c;
+}
+.form-2 textarea.success{
+  border: 2px solid #2ecc71;
+}
+
 
 h1 {
   font-family: "Poppins";
