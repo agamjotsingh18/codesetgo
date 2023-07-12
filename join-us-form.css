@@ -19,6 +19,7 @@
 }
 .contactform{
   display: flex;
+
 }
 .cntctimg{
  width: 20rem;
@@ -112,6 +113,7 @@ form {
   display: block;
   justify-content: center;
   align-items: center;
+  
 }
 
 ::placeholder {

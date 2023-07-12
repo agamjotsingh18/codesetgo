@@ -1065,11 +1065,25 @@ transition: 0.8s;
 
 #contact {
   padding: 30px 0;
+  
 }
 
+.legend{
+  color: white;
+}
+.legend:hover{
+  color: grey;
+}
 .enquiry-form {
   box-shadow: 1rem 1rem 1rem 1rem var(--sd);
   animation: Dance 10s infinite;
+  cursor: pointer;
+}
+#contact .title{
+  text-align: center;
+}
+#contact .title:hover{
+color: gray;
 }
 
 .col-md-6 .contact-phone .bi:hover,
