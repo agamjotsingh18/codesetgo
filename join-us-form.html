@@ -105,7 +105,7 @@
       <form class="form-1" action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
         <div>
 
-          <input type="text" id="name" name="Name" placeholder="Name" />
+          <input type="text" id="name" name="Name" placeholder="Name" required/>
 
         </div>
         <div>
@@ -114,21 +114,21 @@
         </div>
         <div>
 
-          <input type="text" id="college" placeholder="College (With City)" name="College" />
+          <input type="text" id="college" placeholder="College (With City)" name="College" required/>
 
         </div>
         <div>
 
-          <input type="year" id="year" placeholder="Expected Graduation Year" name="Graduation Year" />
+          <input type="year" id="year" placeholder="Expected Graduation Year" name="Graduation Year" required />
         </div>
         <div>
 
-          <input type="number" id="phone" placeholder="+91777xxxxxxx(WhatsApp)" name="Phone Number (WhatsApp)" />
+          <input type="tel" id="phone" placeholder="777xxxxxxx(WhatsApp)" name="Phone Number (WhatsApp)" pattern="[0-9]{10}" required/>
 
         </div>
         <div>
 
-          <input type="text" id="country" placeholder="Country" name="Country" />
+          <input type="text" id="country" placeholder="Country" name="Country" required/>
         </div>
 
         <button type="submit" class="Subtn">SUBMIT FORM</button>
