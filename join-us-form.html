@@ -103,9 +103,9 @@
     </div>
     <div class="contactform">
       <form class="form-1" action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
-        <div>
-
-          <input type="text" id="name" name="Name" placeholder="Name" />
+        <div class="form1">
+         <div>
+          <input type="text" id="name" name="Name" placeholder="Name" required/>
 
         </div>
         <div>
@@ -114,35 +114,36 @@
         </div>
         <div>
 
-          <input type="text" id="college" placeholder="College (With City)" name="College" />
+          <input type="text" id="college" placeholder="College (With City)" name="College" required/>
 
         </div>
         <div>
 
-          <input type="year" id="year" placeholder="Expected Graduation Year" name="Graduation Year" />
+          <input type="year" id="year" placeholder="Expected Graduation Year" name="Graduation Year" required />
         </div>
         <div>
 
-          <input type="number" id="phone" placeholder="+91777xxxxxxx(WhatsApp)" name="Phone Number (WhatsApp)" />
+          <input type="tel" id="phone" placeholder="777xxxxxxx(WhatsApp)" name="Phone Number (WhatsApp)" pattern="[0-9]{10}" required/>
 
         </div>
         <div>
 
-          <input type="text" id="country" placeholder="Country" name="Country" />
+          <input type="text" id="country" placeholder="Country" name="Country" required/>
         </div>
-
-        <button type="submit" class="Subtn">SUBMIT FORM</button>
-      </form>
-      <form class="form-2" required>
-        <div>
-          <textarea required id="whycaptain" rows="4" placeholder=" * Why do you want to become CodeSetGo Captain?"
+        </div>
+       <div classname="form2">
+        <div class="textarea">
+          <textarea required id="whycaptain" class="textarea1" placeholder=" * Why do you want to become CodeSetGo Captain?"
             name="Why do you want to become CodeSetGo Captain?" required></textarea>
         </div>
-        <div>
+        <div class="textarea">
           <textarea id="comment" rows="8" placeholder=" * Any Comments or Questions? (Not Mandatory)"
             name="Any Comments or Questions? " required></textarea>
         </div>
+        <button type="submit" class="Subtn">SUBMIT FORM</button>
+      </div>
       </form>
+    </div>
     </div>
   </section>
 
