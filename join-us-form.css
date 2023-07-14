@@ -116,7 +116,7 @@ input:focus,
 textarea:focus {
   box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.11);}
 
-  @keyframes up-down {
+@keyframes up-down {
     0%{
   transform: translateY(-5px);
     }
@@ -124,11 +124,157 @@ textarea:focus {
       transform: translateY(5px);
     }}
 
-  @media screen and (max-width:1300px) {
-    .form-1{
-      padding-top: 0px;
+@media (max-width:900px) {
+  
+  
+  .form-1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+   }
+   .contactpage {
+    max-width: 78%;
+        height: 80vh;
+        grid-template-columns: 1fr 1fr;
+      }
+      input,
+  textarea {
+  
+  border: 1px solid #c2c2c2;
+  height: 2rem;
+  width: 15rem;
+  text-align: left;
+  margin-bottom: 1.2vw;
+  outline: none;
+}
+textarea{
+  width: 15rem;
+  height: 4rem;
+ 
+}
+.form1{
+  margin-left: 0rem;
+}
+.textarea1{
+
+  width: 15rem;
+  height: 4rem;
+}
+
     }
+@media (max-width:750px) {
+.contactpage{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+.cntctimg{
+  width: 30rem;
+  height: 35rem;
+}
+.form-1{
+  margin-top: 2rem;
+}
+input,
+textarea {
+
+border: 1px solid #c2c2c2;
+height: 2rem;
+width: 20rem;
+text-align: left;
+margin-bottom: 1rem;
+}
+.textarea1{
+  width: 20rem;
+  height: 4rem;
+}
+textarea{
+  width: 20rem;
+  height: 4rem;
+ 
+}
+}
+@media (max-width:500px){
+  .cntctimg{
+    width: 15rem;
+    height: 30rem;
   }
+  .h-title{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+}
+input,
+textarea {
+
+border: 1px solid #c2c2c2;
+height: 2rem;
+width: 15rem;
+text-align: left;
+margin-bottom: 0.7rem;
+}
+.textarea1{
+  width: 15rem;
+  height: 4rem;
+}
+textarea{
+  width: 15rem;
+  height: 4rem;
+ 
+}
+  }
+@media (max-width:320px){
+    .cntctimg{
+      width: 15rem;
+      height: 30rem;
+    }
+    .h-title{
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-left: 2rem;
+  }
+  .contactpage{
+    width: 95%;
+  }
+   input,
+   textarea {
+  width: 12rem;
+  margin-bottom: 0.7rem;
+  }
+  .textarea1{
+    width: 12rem;
+  }
+  textarea{
+    width: 12rem;
+  }
+    }
+      
+@media (max-width:1200px) {
+  .form-1{
+    padding-top: 0rem;
+  }
+::placeholder {
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 20px;
+      padding-left: 10px;
+    }
+.Subtn{
+      font-weight: 350;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      margin-left: 5px;
+      margin-left: 10%;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+
+
 /* {
   margin: 0;
   padding: 0;
@@ -352,4 +498,4 @@ width: 12rem;
   }
 } 
 
- */  */
+ */ 
