@@ -140,5 +140,6 @@ body.light .hacktober-heading {
 }
 
 body.light .card {
-    background-color: #eff2f5;
+    /* background-color: #eff2f5; */
+    background-color: rgba(0, 15, 15, 0.5); 
 }

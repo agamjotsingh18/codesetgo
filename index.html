@@ -73,6 +73,7 @@
       position: fixed;
       z-index: 999999;
     }
+
   </style>
 
 </head>
@@ -554,6 +555,24 @@
     function myFunction() {
       preloader.style.display = "none";
     }
+ 
+   var prevScrollpos = window.pageYOffset;
+  var header = document.getElementById("header");
+  var navbarHeight = header.offsetHeight;
+  var scrollThreshold = 200;
+
+  
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+  
+    if (window.scrollY > 200) {
+      if (window.scrollY > prevScrollpos) {
+        header.style.top = '-100px';
+      }        
+      }else{
+        header.style.top='0px'
+      }
+      };
   </script>
 </body>
 
