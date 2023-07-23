@@ -1786,3 +1786,6 @@ footer {
     font-size: 25px;
   }
 }
+ul{
+  padding-left: 0;
+}
