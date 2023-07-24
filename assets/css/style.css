@@ -1070,20 +1070,26 @@ transition: 0.8s;
 
 .legend{
   color: white;
+  font-weight: bold;
+  font-size: 35px;
+ 
+  
 }
 .legend:hover{
-  color: grey;
+  color: rgb(12, 94, 237);
 }
 .enquiry-form {
   box-shadow: 1rem 1rem 1rem 1rem var(--sd);
   animation: Dance 10s infinite;
   cursor: pointer;
+  
 }
+
 #contact .title{
   text-align: center;
 }
 #contact .title:hover{
-color: gray;
+color: rgb(60, 127, 241);
 }
 
 .col-md-6 .contact-phone .bi:hover,
