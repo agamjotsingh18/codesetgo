@@ -424,20 +424,20 @@
         </div>
         <div class="row contact-info">
           <div class="enquiry">
-            <form class="enquiry-form" id="enquiry-form">
+            <form class="enquiry-form" id="enquiry-form" aria-label="Contact us form">
               <div class="title">GET IN TOUCH</div>
-              <input type="text" id="name" placeholder="Your Name" class="" pattern='[a-zA-Z]+' required />
-              <div class="spandiv"><small class="small" id="nameerr"></small></div>
+              <input type="text" id="name" placeholder="Your Name" class="" pattern='[a-zA-Z]+' required aria-required="true" aria-label="Enter you name" aria-describedby="nameerr"/>
+              <div class="spandiv"><small class="small" id="nameerr" role="alert"></small></div>
 
               <input type="email" id="email" class="" placeholder="Email id"
-                pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' required />
-              <div class="spandiv"><small class="small" id="mailerr"></small></div>
+                pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' required aria-required="true" aria-label="Enter you email" aria-describedby="mailerr"/>
+              <div class="spandiv"><small class="small" id="mailerr" role="alert"></small></div>
 
-              <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required />
-              <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+              <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required aria-required="true" aria-label="Enter you phone number" aria-describedby="phoneerr"/>
+              <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
 
-              <textarea id="message" row="5" class="" placeholder="How can we help you?" required></textarea>
-              <div class="spandiv"><small class="small" id="msgerr"></small></div>
+              <textarea id="message" row="5" class="" placeholder="How can we help you?" required aria-required="true" aria-label="Enter you message" aria-describedby="msgerr"></textarea>
+              <div class="spandiv"><small class="small" id="msgerr" role="alert"></small></div>
 
               <button type="submit" onclick="sendMail()" class="hoverchanger">
                 Send
