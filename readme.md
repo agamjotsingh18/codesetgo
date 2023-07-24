@@ -116,6 +116,11 @@ $ git push -u origin Branch_Name
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
 
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Terms and conditions for use, reproduction and distribution are under the [MIT License](https://opensource.org/license/mit/).
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people :
