@@ -8,6 +8,12 @@
 
 
 CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed! 
+<h2>
+  About Us
+</h2>
+CodeSetGo is a community made for the students and made by the students. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations!
+The Tech interested students and professionals are all welcomed! We provide the best learning experience and the latest trends of the tech world at your doorsteps from the minds of highly qualified industry professionals. <br>
+We organise webinars, workshops, boot camps to further spread the learning environment to aspiring students and professionals around us. So JOIN US! and LEARN AND INCREASE YOUR SKILL SET AT EASE!
 
 <h2>
 <a href="https://codesetgo.netlify.app/" target="_blank">Visit Our Website💻</a>
