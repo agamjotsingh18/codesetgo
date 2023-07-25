@@ -1,3 +1,24 @@
+//ai bot
+
+
+var alanBtnInstance = alanBtn({
+    key: "c226c81396723ecd64a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+
+    onCommand: function (commandData) {
+        if (commandData && commandData.command === 'openURL') {
+            if (commandData.target === '_blank') {
+                window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+            } else {
+                window.location.href = commandData.url;
+            }
+        }
+
+    },
+
+    rootEl: document.getElementById("alan-btn"),
+});
+//
+
 var loader = document.getElementById("preloader");
 
 function myFunction() {
@@ -305,7 +326,7 @@ function validateEmail(mail) {
 
 //join-us form validation start here
 function validateJoinUs() {
-    
+
     const username = document.getElementById('name');
     const useremail = document.getElementById('email');
     const college = document.getElementById('college');
@@ -329,7 +350,7 @@ function validateJoinUs() {
         username.classList.add('error');
         return false;
     }
-     else if (emailval === '') {
+    else if (emailval === '') {
         document.getElementById('nameerr').innerText = '';
         username.classList.remove('error');
         username.classList.add('success');

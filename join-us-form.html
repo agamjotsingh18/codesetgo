@@ -3,8 +3,8 @@
 
 <head>
   <!-- Favicons -->
-  <link href="assets/img/Light Blue.jpg" rel="icon" />
-  <link href="assets/img/Light Blue.jpg" rel="apple-touch-icon" />
+  <link href="assets/img/Light Blue.webp" rel="icon" />
+  <link href="assets/img/Light Blue.webp" rel="apple-touch-icon" />
 
   <!-- Google Fonts -->
   <link
@@ -71,7 +71,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex justify-content-between">
       <div id="logo">
-        <a href="index.html"><img src="assets/img/Banner - Light.png" alt="CodeSetGo Logo" height="50px"
+        <a href="index.html"><img src="assets/img/Banner - Light.webp" alt="CodeSetGo Logo" height="50px"
             width="270px" /></a>
       </div>
       <nav id="navbar" class="navbar">
@@ -102,37 +102,37 @@
 
     </div>
     <div class="contactform">
-      <form class="form-1" id="form-1" onclick="return validateJoinUs()" action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST">
+      <form class="form-1" id="form-1" onclick="return validateJoinUs()" action="https://formsubmit.co/9e960606c0805e44e7aec5a93537b0cf" method="POST" aria-label="Registration form">
         <div>
 
-          <input type="text" id="name" name="Name" placeholder="Name" />
-          <div class="spandiv"><small class="small" id="nameerr"></small></div>
+          <input type="text" id="name" name="Name" placeholder="Name" required aria-required="true" aria-label="Enter you name" aria-describedby="nameerr"/>
+          <div class="spandiv"><small class="small" id="nameerr" role="alert"></small></div>
         </div>
         <div>
 
-          <input type="email" id="email" placeholder="email@example.com" name="Email" required />
-          <div class="spandiv"><small class="small" id="mailerr"></small></div>
+          <input type="email" id="email" placeholder="email@example.com" name="Email" required aria-required="true" aria-label="Enter you email" aria-describedby="mailerr"/>
+          <div class="spandiv"><small class="small" id="mailerr" role="alert"></small></div>
         </div>
         <div>
 
-          <input type="text" id="college" placeholder="College (With City)" name="College" />
-          <div class="spandiv"><small class="small" id="collegeerr"></small></div>
+          <input type="text" id="college" placeholder="College (With City)" name="College" required aria-required="true" aria-label="Enter you college" aria-describedby="collegeerr"/>
+          <div class="spandiv"><small class="small" id="collegeerr" role="alert"></small></div>
         </div>
         <div>
 
-          <input type="year" id="year" placeholder="Expected Graduation Year" name="Graduation Year" />
-          <div class="spandiv"><small class="small" id="yearerr"></small></div>
+          <input type="year" id="year" placeholder="Expected Graduation Year" name="Graduation Year"  required aria-required="true" aria-label="Enter you Graduation Year" aria-describedby="yearerr"/>
+          <div class="spandiv"><small class="small" id="yearerr" role="alert"></small></div>
         </div>
         <div>
 
-          <input type="number" id="phone" placeholder="+91777xxxxxxx(WhatsApp)" name="Phone Number (WhatsApp)" />
-          <div class="spandiv"><small class="small" id="phoneerr"></small></div>
+          <input type="number" id="phone" placeholder="+91777xxxxxxx(WhatsApp)" name="Phone Number (WhatsApp)" required aria-required="true" aria-label="Enter you Phone Number" aria-describedby="phoneerr"/>
+          <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
 
         </div>
         <div>
 
-          <input type="text" id="country" placeholder="Country" name="Country" />
-          <div class="spandiv"><small class="small" id="countryerr"></small></div>
+          <input type="text" id="country" placeholder="Country" required aria-required="true" aria-label="Enter you country" aria-describedby="countryerr"/>
+          <div class="spandiv"><small class="small" id="countryerr" role="alert"></small></div>
         </div>
 
         <button type="submit" class="Subtn">SUBMIT FORM</button>
@@ -140,12 +140,12 @@
       <form class="form-2" required>
         <div>
           <textarea required id="whycaptain" rows="4" placeholder=" * Why do you want to become CodeSetGo Captain?"
-            name="Why do you want to become CodeSetGo Captain?" required></textarea>
-            <div class="spandiv"><small class="small" id="whycaptainerr"></small></div>
+            name="Why do you want to become CodeSetGo Captain?" aria-required="true" aria-label="Enter you email" aria-describedby="mailerr"></textarea>
+            <div class="spandiv"><small class="small" id="whycaptainerr" role="alert"></small></div>
         </div>
         <div>
           <textarea id="comment" rows="8" placeholder=" * Any Comments or Questions? (Not Mandatory)"
-            name="Any Comments or Questions? " required></textarea>
+            name="Any Comments or Questions? " required aria-required="true" aria-label="Enter you email" aria-describedby="mailerr"></textarea>
         </div>
       </form>
     </div>
@@ -239,7 +239,9 @@
 
   <!-- JS -->
   <script defer src="./assets/js/darkmode_logic.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script type="text/javascript"
+  src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+   <script src="assets/js/main.js"></script>
   
   <script>
     var loader = document.getElementById("preloader");
