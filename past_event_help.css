@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie);
+
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  background: rgb(38, 38, 60);
+  margin: 5%;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5em;
+  
+}
+
+ 
+.heading h1 {
+  font-size:50px; 
+  font-weight:3000;  
+  letter-spacing:1px;
+  text-transform:uppercase;
+  width:100px;
+  position: absolute;right: 1000;bottom: 600;
+  margin:auto;
+  white-space:nowrap;
+  padding-bottom:10px;
+  font-family: sans-serif;
+  
+} 
+
+.heading:after {
+  background-color: #2796ff;
+  content: '';
+  display: block;
+position:absolute; right:980; bottom:570;
+  height: 4px;
+  width: 110px;
+  margin-bottom: 0.25em;
+  ;
+}
+
+
+
+img {
+  width: 100%; 
+   
+}
+
+p,h1 ,h2{
+  color: white;
+}
+
+.caption,
+h1{
+  margin: 0;
+  text-align: center;
+}
+
+.caption,
+h1 {
+  font-family: "Reenie Beanie", sans-serif;
+  font-size: 2em;
+  padding: 10px 10px 0 10px;
+}
+
+.date {
+  font-size: 0.75em;
+}
+
+.description {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+}
+
+.container {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 3%;
+}
+
+.container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.container,
+.front,
+.back {
+  width: 250px;
+  height: 250px;
+  
+}
+
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 251, 251, 0.19);
+}
+
+.front {
+  z-index: 2;
+  box-shadow: 0px 0px 10px 1px #f5ff6f;
+}
+
+.back {
+  transform: rotateY(180deg);
+  box-shadow: 0px 0px 10px 1px #f5ff6f;
+  background-color: #2980b9;
+}
+
+#content {
+  text-align: center;
+}
+
+
