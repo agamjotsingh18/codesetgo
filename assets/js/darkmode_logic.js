@@ -40,10 +40,10 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
         //* change the testimonials comments Quotes color
         quote_Left.forEach(el=>{
-            el.src = "./assets/img/quote-sign-left - light.png"
+            el.src = "./assets/img/quote-sign-left - light.webp"
         })
        quote_Right.forEach(el=>{
-           el.src = "./assets/img/quote-sign-right - light.png"
+           el.src = "./assets/img/quote-sign-right - light.webp"
        })
        
        //* store the theme in local storage
@@ -59,10 +59,10 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
         document.body.classList.contains("dark")? document.body.classList.remove("dark"):""
         document.body.classList.add("light")
         quote_Left.forEach(el=>{
-            el.src = "./assets/img/quote-sign-left.png"
+            el.src = "./assets/img/quote-sign-left.webp"
         })
         quote_Right.forEach(el=>{
-            el.src = "./assets/img/quote-sign-right.png"
+            el.src = "./assets/img/quote-sign-right.webp"
         })
         localStorage.setItem("theme","light");
 
@@ -84,10 +84,10 @@ darkmodeBtn.addEventListener("click",(e)=>{
         document.body.classList.add("light")
 
         quote_Left.forEach(el=>{
-            el.src = "./assets/img/quote-sign-left.png"
+            el.src = "./assets/img/quote-sign-left.webp"
         })
         quote_Right.forEach(el=>{
-            el.src = "./assets/img/quote-sign-right.png"
+            el.src = "./assets/img/quote-sign-right.webp"
         })
         localStorage.setItem("theme","light")
 
@@ -105,10 +105,10 @@ darkmodeBtn.addEventListener("click",(e)=>{
         document.body.classList.add("dark")
 
         quote_Left.forEach(el=>{
-            el.src = "./assets/img/quote-sign-left - light.png"
+            el.src = "./assets/img/quote-sign-left - light.webp"
         })
         quote_Right.forEach(el=>{
-            el.src = "./assets/img/quote-sign-right - light.png"
+            el.src = "./assets/img/quote-sign-right - light.webp"
         })
         localStorage.setItem("theme","dark")
 
