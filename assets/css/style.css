@@ -108,7 +108,7 @@ h6 {
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
-  background: var(--bar);
+  background: #070d18;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -130,7 +130,7 @@ h6 {
 
 #header #logo img {
   padding: 0;
-  margin: 0;
+  margin-left: -100px;
 }
 
 @media (max-width: 768px) {
@@ -151,6 +151,15 @@ h6 {
   margin-top: 70px;
 }
 
+/*  These two classes support the function in Changing navbar color when user scrolls   */
+.nav-active {
+  background-color: #fff !important;
+}
+
+.color-change {
+  color: black !important;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -161,6 +170,7 @@ h6 {
 
 .navbar {
   padding: 0;
+  margin-right: -90px;
 }
 
 .navbar ul {
@@ -180,13 +190,11 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px 10px 20px;
-  font-family: "Poppins", sans-serif;
+  padding: 10px 0 10px 30px;
+  font-family: 'Raleway';
   font-size: 15px;
-
   font-weight: 600;
-  color: var(--box-anchor);
-
+  color: #607d8b;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -491,6 +499,8 @@ section {
   font-weight: 700;
   position: relative;
   padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
 }
 
 .section-header h2::before {
@@ -500,14 +510,17 @@ section {
   width: 50px;
   height: 3px;
   background: #2796ff;
-  bottom: 0;
-  left: 0;
+  bottom: 15px;
+  left: 44%;
 }
 
 .section-header p {
   padding: 0;
   margin: 0;
   color: var(--textcolor);
+  width: 80%;
+  text-align: center;
+  margin-left: 11%;
 }
 
 /* About Section
@@ -581,6 +594,7 @@ section {
 }
 
 #services .box {
+  border-radius: 15px;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -643,7 +657,7 @@ section {
   margin-bottom: 5px;
   font-size: 22px;
   text-align: center;
-  color: var(--textcolor);
+  color: #030d16c7;
 }
 
 #services .icon p {
@@ -655,10 +669,10 @@ section {
 #services .box p {
   margin-top: 0%;
   margin-left: 80px;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
-  color: var(--textcolor);
+  color: #030b12b0;
 }
 
 @media (max-width: 767px) {
@@ -1179,6 +1193,7 @@ section {
   transition: 0.5s;
 }
 
+
 .hoverchanger:hover {
   background-color: #b1b7e1;
   transform: scale(1.1);
@@ -1364,6 +1379,8 @@ section {
 
 .hacktoberfest-btn:hover {
   transform: translateY(-5px);
+  background-color: transparent;
+  color: #2d65ff !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -1380,7 +1397,7 @@ section {
 
 .navbar ul> :nth-child(6) a {
   padding: 10px 12px;
-  margin: 0 8px;
+  margin: 0px 24px;
 }
 
 /* Main secion */
@@ -1419,6 +1436,7 @@ section {
 }
 
 .card-heading:hover {
+
   color: #2796ff;
   cursor: pointer;
 }

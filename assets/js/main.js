@@ -1,3 +1,19 @@
+
+//This code implies the feature of changing navbar color when user scrolls
+
+const navbar = document.querySelector('#header');
+
+window.onscroll = () => {
+    if (window.scrollY > 420) {
+        navbar.classList.add('nav-active');
+
+    } else {
+        navbar.classList.remove('nav-active');
+    }
+};
+
+
+(function () {
 //ai bot
 
 
@@ -19,13 +35,18 @@ var alanBtnInstance = alanBtn({
 });
 //
 
+
 var loader = document.getElementById("preloader");
 
 function myFunction() {
     preloader.style.display = "none";
 }
+ main
+(function() {
 
+=======
 (function () {
+ main
     "use strict";
 
     // Selector Function
@@ -230,7 +251,29 @@ window.addEventListener('resize', () => {
 
 //send the content of enquiry form to the email
 function sendMail() {
+ main
+
+    var tempParams = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        message: document.getElementById('message').value,
+    };
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', tempParams)
+        .then(function (responce) {
+            console.log('SUCCESS!', response.status);
+            alert('Form Submitted Successfully');
+        },
+            function (error) {
+                console.log('FAILED!', response.status, response.text);
+                alert('Form Submission Faild! Try Again');
+            })
+
+    if(checkInputs())
+    {
+
     if (checkInputs()) {
+ main
         var tempParams = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,

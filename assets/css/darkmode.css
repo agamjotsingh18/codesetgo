@@ -15,7 +15,7 @@ body.light{
     --bar:white;
     --footer:#f2f5f8;
     --callcolor:#2796FF;
-    --service: linear-gradient(#4770a9, #98b3ee);
+    --service: #2796ffd9;
     --icon : linear-gradient(45deg, #2796ff 30%, #0c2e8a 70%);
     --sd: #d2e1f2;
 }
