@@ -96,10 +96,16 @@
         display: grid;
         place-items: center;
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 500 !important;
         word-break: break-word;
         padding: 9%;
         text-transform: capitalize
+      }
+
+      @media (min-width: 1201px) {
+        .hexUserName {
+          font-size: .7rem;
+        }
       }
     </style>
   </head>
