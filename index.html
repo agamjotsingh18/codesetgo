@@ -424,46 +424,25 @@
         </div>
         <div class="row contact-info">
           <div class="enquiry">
-            <form class="enquiry-form" id="enquiry-form" aria-label="Contact us form" action="https://getform.io/f/6bf0e11e-5d36-4815-a180-2dfb17bdf613" method="POST" novalidate>
+            <form class="enquiry-form" id="enquiry-form" aria-label="Contact us form">
               <div class="title">GET IN TOUCH</div>
-              <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" aria-label="Enter your name" aria-describedby="nameerr">
+              <input type="text" id="name" placeholder="Your Name" class="" pattern='[a-zA-Z]+' required aria-required="true" aria-label="Enter you name" aria-describedby="nameerr"/>
               <div class="spandiv"><small class="small" id="nameerr" role="alert"></small></div>
-            
-              <input type="email" name="email" id="email" placeholder="Email id" required aria-required="true" aria-label="Enter your email" aria-describedby="mailerr">
+
+              <input type="email" id="email" class="" placeholder="Email id"
+                pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' required aria-required="true" aria-label="Enter you email" aria-describedby="mailerr"/>
               <div class="spandiv"><small class="small" id="mailerr" role="alert"></small></div>
-            
-              <input type="tel" name="phone" id="phone" placeholder="Phone no." required aria-required="true" aria-label="Enter your phone number" aria-describedby="phoneerr">
+
+              <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required aria-required="true" aria-label="Enter you phone number" aria-describedby="phoneerr"/>
               <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
-            
-              <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required aria-required="true" aria-label="Enter your message" aria-describedby="msgerr"></textarea>
+
+              <textarea id="message" row="5" class="" placeholder="How can we help you?" required aria-required="true" aria-label="Enter you message" aria-describedby="msgerr"></textarea>
               <div class="spandiv"><small class="small" id="msgerr" role="alert"></small></div>
-            
-              <button type="submit" class="hoverchanger">Send</button>
+
+              <button type="submit" onclick="sendMail()" class="hoverchanger">
+                Send
+              </button>
             </form>
-            <script>
-              const form = document.getElementById('enquiry-form');
-            
-              form.addEventListener('submit', function (event) {
-                event.preventDefault();
-            
-                if (form.checkValidity()) {
-                  // Submit the form if it's valid
-                  form.submit();
-                } else {
-                  // Display error messages for invalid fields
-                  const inputs = form.querySelectorAll('input, select, textarea');
-                  inputs.forEach((input) => {
-                    if (!input.checkValidity()) {
-                      const errorElement = input.parentElement.querySelector('.small');
-                      errorElement.textContent = input.validationMessage;
-                    }
-                  });
-                }
-              });
-            </script>
-                        
-          
-          
           </div>
           <div class="col-md-12">
             <div class="contact-phone">

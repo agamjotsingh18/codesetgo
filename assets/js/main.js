@@ -1,27 +1,6 @@
 //ai bot
 
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
-
 var alanBtnInstance = alanBtn({
     key: "c226c81396723ecd64a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
 
@@ -250,27 +229,27 @@ window.addEventListener('resize', () => {
 });
 
 //send the content of enquiry form to the email
-// function sendMail() {
-//     if (checkInputs()) {
-//         var tempParams = {
-//             name: document.getElementById('name').value,
-//             email: document.getElementById('email').value,
-//             phone: document.getElementById('phone').value,
-//             message: document.getElementById('message').value,
-//         };
-//         emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', tempParams)
-//             .then(function (responce) {
-//                 console.log('SUCCESS!', response.status);
-//                 alert('Form Submitted Successfully');
-//             },
-//                 function (error) {
-//                     console.log('FAILED!', response.status, response.text);
-//                     alert('Form Submission Faild! Try Again');
-//                 })
-//     }
-//     else
-//         return false;
-// };
+function sendMail() {
+    if (checkInputs()) {
+        var tempParams = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value,
+        };
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', tempParams)
+            .then(function (responce) {
+                console.log('SUCCESS!', response.status);
+                alert('Form Submitted Successfully');
+            },
+                function (error) {
+                    console.log('FAILED!', response.status, response.text);
+                    alert('Form Submission Faild! Try Again');
+                })
+    }
+    else
+        return false;
+};
 
 function checkInputs() {
     const username = document.getElementById('name');
