@@ -593,6 +593,11 @@ section {
   border-radius: 10px;
 }
 
+#services .box:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* #services .col-lg-6:hover .box {
   transform: rotateY(180deg);
 } */
@@ -650,6 +655,12 @@ section {
   text-align: center;
   width: 100%;
   transform: translate(-75px, -5px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#services .box:hover .icon p {
+  opacity: 1;
 }
 
 #services .box p {
