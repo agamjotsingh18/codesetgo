@@ -1,22 +1,22 @@
 //ai bot
 
 
-// var alanBtnInstance = alanBtn({
-//     key: "c226c81396723ecd64a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+var alanBtnInstance = alanBtn({
+    key: "c226c81396723ecd64a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
 
-//     onCommand: function (commandData) {
-//         if (commandData && commandData.command === 'openURL') {
-//             if (commandData.target === '_blank') {
-//                 window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
-//             } else {
-//                 window.location.href = commandData.url;
-//             }
-//         }
+    onCommand: function (commandData) {
+        if (commandData && commandData.command === 'openURL') {
+            if (commandData.target === '_blank') {
+                window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+            } else {
+                window.location.href = commandData.url;
+            }
+        }
 
-//     },
+    },
 
-//     rootEl: document.getElementById("alan-btn"),
-// });
+    rootEl: document.getElementById("alan-btn"),
+});
 //
 
 var loader = document.getElementById("preloader");
