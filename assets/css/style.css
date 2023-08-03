@@ -664,11 +664,11 @@ section {
   text-align: center;
   color: var(--textcolor);
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   #services .box  {
     margin-bottom: 10px;
   }
-  #services .box .description{
+  #services .box #des{
     font-size: 14px;
     float: left;
     text-align: center;
