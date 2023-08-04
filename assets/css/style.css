@@ -568,13 +568,50 @@ section {
 --------------------------------*/
 
 #services {
-  padding: 40px;
+  padding: 50px;
+}
+@media (max-width: 767px) {
+  #services .box .box {
+    margin-bottom: 20px;
+  }
+  #services .box .icon .title{
+    width: 100%;
+    font-size: 18px;
+  }
+  #services .box .icon p{
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+  }
+  #services .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #services .box .flip-card-back .description{
+    font-size: 14px;
+    text-align: center;
+    margin-left: 60px;
+  }
+}
+@media (max-width: 320px){
+  #services .box .flip-card-back .description{
+    font-size: 57%;
+    margin: 21px 5px auto;
+    margin-left: 33px;
+    text-align: center;
+  }
+  #services .box .icon .title{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
-#services .col-lg-6 {
+#services .col-lg-6 {  
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: 305px;
+  height: 205px;
   perspective: 1000px;
 }
 
@@ -582,22 +619,22 @@ section {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1s;
+  transition: transform 1.5s;
   transform-style: preserve-3d;
-  padding: 40px;
+  padding: 30px;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: var(--service);
   border: 4px solid var(--postborder);
-  border-radius: 10px;
+  border-radius: 19px;
 }
-
-/* #services .col-lg-6:hover .box {
+#services .col-lg-6:hover .box {
   transform: rotateY(180deg);
-} */
-
-.is-flipped {
-  transform: rotateY(0.5turn);
+  transition: transform 1.5s ease;
 }
+
+/* .is-flipped {
+  /* transform: rotateY(0.5turn); */
+/* } */
 
 #services .icon {
   width: 100%;
@@ -623,7 +660,7 @@ section {
 
 #services .box .icon i {
   color: #444;
-  font-size: 64px;
+  font-size: 62px;
   transition: 0.5s;
   line-height: 0;
 }
@@ -633,12 +670,14 @@ section {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 7px;
 }
 
 #services .icon h4 {
-  margin-left: 10px;
-  font-weight: 700;
-  margin-bottom: 5px;
+  margin-left: 0px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 2px;
   font-size: 22px;
   text-align: center;
   color: var(--textcolor);
@@ -652,16 +691,16 @@ section {
 
 #services .box p {
   margin-top: 0%;
-  margin-left: 80px;
+  margin-left: 72px;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 450;
   text-align: center;
   color: var(--textcolor);
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   #services .box .box {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
   }
 
   #services .icon {
@@ -669,7 +708,7 @@ section {
     text-align: center;
     padding-bottom: 15px;
   }
-}
+} */
 
 /* Testimonials Section
 --------------------------------*/
