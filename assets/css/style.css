@@ -566,6 +566,41 @@ section {
 
 /* Services Section
 --------------------------------*/
+@media (max-width: 767px) {
+  #services .box .box {
+    margin-bottom: 20px;
+  }
+  #services .box .icon .title{
+    width: 100%;
+    font-size: 18px;
+  }
+  #services .box .icon p{
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+  }
+  #services .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #services .box .flip-card-back .description{
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media (max-width: 360px){
+  #services .box .flip-card-back .description{
+    font-size: 55%;
+    margin: 21px 5px auto;
+    margin-left: 80px;
+    text-align: center;
+  }
+  #services .box .icon .title{
+    width: 100%;
+    font-size: 18px;
+  }
+}
 
 #services {
   padding: 50px;
@@ -664,35 +699,7 @@ section {
   text-align: center;
   color: var(--textcolor);
 }
-@media (max-width: 767px) {
-  #services .box  {
-    margin-bottom: 10px;
-  }
-  #services .box #des{
-    font-size: 14px;
-    float: left;
-    text-align: center;
-    min-height: fit-content;
-    box-sizing: border-box;
-    position: absolute;
-  }
-  #services .icon {
-    float: left;
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  #services .icon h4 {
-    margin-left: 0px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    width: 100%;
-    padding-left: 0px;
-    padding-top: 9.75px;
-    font-size: 18px;
-    text-align: center;
-    color: var(--textcolor);
-  }
-}
+
 
 /* Testimonials Section
 --------------------------------*/
