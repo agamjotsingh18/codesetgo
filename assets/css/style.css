@@ -180,15 +180,17 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px 10px 20px;
+  padding: 10px;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
-
+  font-size: 13px;
   font-weight: 600;
   color: var(--box-anchor);
-
   white-space: nowrap;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .navbar a i,
@@ -204,42 +206,70 @@ h6 {
 .navbar li:hover>a {
   color: #2796ff;
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 .darkmode {
   margin-left: 1em;
-
   font-size: 1.3em;
   transform: translateY(3px) rotateZ(0deg);
   transition: 400ms;
   color: var(--box-anchor);
   cursor: pointer;
+  -webkit-transform: translateY(3px) rotateZ(0deg);
+  -moz-transform: translateY(3px) rotateZ(0deg);
+  -ms-transform: translateY(3px) rotateZ(0deg);
+  -o-transform: translateY(3px) rotateZ(0deg);
 }
 
 .darkmode:hover {
   animation: anim-one 2s linear infinite forwards;
+  -webkit-animation: anim-one 2s linear infinite forwards;
 }
 
 @keyframes anim-one {
   0% {
     transform: translateY(3px) rotateZ(0deg);
-  }
+    -webkit-transform: translateY(3px) rotateZ(0deg);
+    -moz-transform: translateY(3px) rotateZ(0deg);
+    -ms-transform: translateY(3px) rotateZ(0deg);
+    -o-transform: translateY(3px) rotateZ(0deg);
+}
 
   25% {
     transform: translateY(3px) rotateZ(20deg);
-  }
+    -webkit-transform: translateY(3px) rotateZ(20deg);
+    -moz-transform: translateY(3px) rotateZ(20deg);
+    -ms-transform: translateY(3px) rotateZ(20deg);
+    -o-transform: translateY(3px) rotateZ(20deg);
+}
 
   50% {
     transform: translateY(3px) rotateZ(0deg);
-  }
+    -webkit-transform: translateY(3px) rotateZ(0deg);
+    -moz-transform: translateY(3px) rotateZ(0deg);
+    -ms-transform: translateY(3px) rotateZ(0deg);
+    -o-transform: translateY(3px) rotateZ(0deg);
+}
 
   75% {
     transform: translateY(3px) rotateZ(-20deg);
-  }
+    -webkit-transform: translateY(3px) rotateZ(-20deg);
+    -moz-transform: translateY(3px) rotateZ(-20deg);
+    -ms-transform: translateY(3px) rotateZ(-20deg);
+    -o-transform: translateY(3px) rotateZ(-20deg);
+}
 
   100% {
     transform: translateY(3px) rotateZ(0deg);
-  }
+    -webkit-transform: translateY(3px) rotateZ(0deg);
+    -moz-transform: translateY(3px) rotateZ(0deg);
+    -ms-transform: translateY(3px) rotateZ(0deg);
+    -o-transform: translateY(3px) rotateZ(0deg);
+}
 }
 
 /**
@@ -253,13 +283,17 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .mobile-nav-toggle.bi-x {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -270,7 +304,8 @@ h6 {
 
   .darkmode:hover {
     animation: none;
-  }
+    -webkit-animation: none;
+}
 }
 
 .navbar-mobile {
@@ -283,6 +318,10 @@ h6 {
   background: rgba(8, 30, 91, 0.9);
   transition: 0.3s;
   z-index: 999;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -298,10 +337,14 @@ h6 {
   right: 15px;
   bottom: 15px;
   left: 15px;
-  padding: 10px 0;
+  padding: 10px ;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 .navbar-mobile a,
@@ -316,6 +359,10 @@ h6 {
 .navbar-mobile li:hover>a {
   color: #2796ff;
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 .navbar-mobile .getstarted,
@@ -439,6 +486,10 @@ h6 {
   background: none;
   color: #2796ff;
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 #hero .hero-slider {
@@ -986,9 +1037,7 @@ section {
   .navbar a,
   .navbar a:focus {
     align-items: start;
-    justify-content: space-evenly;
-    padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .navbar a i,
@@ -1490,7 +1539,6 @@ section {
 
 
 /* Responsive Website */
-
 @media (max-width: 320px) {
   #header #logo img {
     max-height: 24px;
