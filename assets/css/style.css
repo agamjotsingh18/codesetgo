@@ -1141,6 +1141,10 @@ section {
   animation: Dance 8s infinite;
 }
 
+.inputContainer{
+  position: relative;
+}
+
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
@@ -1150,6 +1154,16 @@ section {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
+  color: #2796ff;
+}
+
+.inputContainer i{
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  font-size: 20px !important;
+  margin-bottom: 0px;
+  margin: 2px;
   color: #2796ff;
 }
 
