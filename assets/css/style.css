@@ -1994,3 +1994,16 @@ footer {
   font-size: 14px;
   margin-bottom: 15px;
 }
+
+.heading-contri{
+  font-size: 50px;
+}
+@media (max-width: 450px){
+  .heading-contri{
+    padding-top: 20px;
+    font-size: 25px;
+  }
+}
+ul{
+  padding-left: 0;
+}
