@@ -46,6 +46,12 @@ animation: up-down 3.24s .5s infinite alternate-reverse;
   background-color: transparent;
 color: rgb(234, 226, 226);
 font-size: 15px;
+padding-left: 40px;
+}
+
+.form-1 .inputContainer i{
+  top: 15px;
+  left: 17px;
 }
 .form-1 input.error{
   border-bottom: 2px solid #e74c3c;
