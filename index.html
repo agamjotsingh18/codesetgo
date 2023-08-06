@@ -416,6 +416,8 @@
     <!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
+
+
     <section id="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -423,49 +425,60 @@
         </div>
         <div class="row contact-info">
           <div class="enquiry">
-            <form class="enquiry-form" id="enquiry-form" aria-label="Contact us form" action="https://getform.io/f/6bf0e11e-5d36-4815-a180-2dfb17bdf613" method="POST" novalidate>
+           
+            <form class="enquiry-form" id="enquiry-form" aria-label="Contact us form" action="https://getform.io/f/0125a310-c60b-492d-ab54-476717dbf671" method="POST" novalidate>
               <div class="title">GET IN TOUCH</div>
-
-              <div>
-                <div class="inputContainer">
-                  <input type="text" id="name" placeholder="Your Name" class="" pattern='[a-zA-Z]+' required aria-required="true"
-                    aria-label="Enter you name" aria-describedby="nameerr" />
+            
+         <div>
+          <div>
+          <div class="inputContainer">
+          <input type="text" id="name" name="name" placeholder="Your Name" class="" pattern="[a-zA-Z]+" required aria-required="true"
+                    aria-label="Enter your name" aria-describedby="nameerr" />
                   <i class="fa fa-user"></i>
                 </div>
-                <div class="spandiv"><small class="small" id="nameerr" role="alert"></small></div>
               </div>
-              
-            <div>
-              <div class="inputContainer">
-                <input type="email" id="email" class="" placeholder="Email id" pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
-                  required aria-required="true" aria-label="Enter you email" aria-describedby="mailerr" />
-                <i class="fa fa-envelope"></i>
-              </div>
-              <div class="spandiv"><small class="small" id="mailerr" role="alert"></small></div>
-            </div>
-              
-             <div>
-              <div class="inputContainer">
-                <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required aria-required="true" aria-label="Enter you phone number" aria-describedby="phoneerr"/>
-               <i class="fa fa-phone"></i>
-              </div>
-              <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
-             </div>
-            
+               
+                <div class="spandiv"  name="name"><small class="small" id="nameerr"  role="alert"></small></div>
+          
               <div>
                 <div class="inputContainer">
-                  <textarea id="message" row="5" class="" placeholder="How can we help you?" required aria-required="true" aria-label="Enter you message" aria-describedby="msgerr"></textarea>
+                  <input type="email" id="email" name="email" class="" placeholder="Email id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required aria-required="true" aria-label="Enter your email" aria-describedby="mailerr" />
+                  <i class="fa fa-envelope"></i>
+                  </div>
+              </div>
+              
+
+ 
+                <div class="spandiv"><small class="small" id="mailerr" role="alert"></small></div>
+         
+                <div>
+                <div class="inputContainer">
+                  <input type="tel" id="phone" name="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required aria-required="true" aria-label="Enter your phone number" aria-describedby="phoneerr"/>
+                  <i class="fa fa-phone"></i>
+                </div>
+                </div>
+            
+                <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
+    
+              
+                <div class="inputContainer">
+                  <textarea id="message" name="message" rows="5" class="" placeholder="How can we help you?" required aria-required="true" aria-label="Enter your message" aria-describedby="msgerr"></textarea>
                   <i class="fa fa-comment"></i>
                 </div>
-                <div class="spandiv"><small class="small" id="msgerr" role="alert"></small></div>
               </div>
              
-
-              <button type="submit" onclick="sendMail()" class="hoverchanger">
+                <div class="spandiv"><small class="small" id="msgerr" role="alert"></small></div>
+            
+              
+              <button type="submit" class="hoverchanger">
                 Send
               </button>
-
+         </div>
+               
+                  
             </form>
+            
             <script>
               const form = document.getElementById('enquiry-form');
             
