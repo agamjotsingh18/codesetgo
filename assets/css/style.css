@@ -1,6 +1,10 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/**
+ * --------------------------------------------------------------
+ * # General
+ * --------------------------------------------------------------
+ *
+ * @format
+ */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 
@@ -203,7 +207,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #2796ff;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -237,7 +241,7 @@ h6 {
     -moz-transform: translateY(3px) rotateZ(0deg);
     -ms-transform: translateY(3px) rotateZ(0deg);
     -o-transform: translateY(3px) rotateZ(0deg);
-}
+  }
 
   25% {
     transform: translateY(3px) rotateZ(20deg);
@@ -245,7 +249,7 @@ h6 {
     -moz-transform: translateY(3px) rotateZ(20deg);
     -ms-transform: translateY(3px) rotateZ(20deg);
     -o-transform: translateY(3px) rotateZ(20deg);
-}
+  }
 
   50% {
     transform: translateY(3px) rotateZ(0deg);
@@ -253,7 +257,7 @@ h6 {
     -moz-transform: translateY(3px) rotateZ(0deg);
     -ms-transform: translateY(3px) rotateZ(0deg);
     -o-transform: translateY(3px) rotateZ(0deg);
-}
+  }
 
   75% {
     transform: translateY(3px) rotateZ(-20deg);
@@ -261,7 +265,7 @@ h6 {
     -moz-transform: translateY(3px) rotateZ(-20deg);
     -ms-transform: translateY(3px) rotateZ(-20deg);
     -o-transform: translateY(3px) rotateZ(-20deg);
-}
+  }
 
   100% {
     transform: translateY(3px) rotateZ(0deg);
@@ -269,7 +273,7 @@ h6 {
     -moz-transform: translateY(3px) rotateZ(0deg);
     -ms-transform: translateY(3px) rotateZ(0deg);
     -o-transform: translateY(3px) rotateZ(0deg);
-}
+  }
 }
 
 /**
@@ -305,7 +309,7 @@ h6 {
   .darkmode:hover {
     animation: none;
     -webkit-animation: none;
-}
+  }
 }
 
 .navbar-mobile {
@@ -337,7 +341,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   left: 15px;
-  padding: 10px ;
+  padding: 10px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
@@ -356,7 +360,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #2796ff;
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
@@ -396,11 +400,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #2796ff;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -625,11 +629,11 @@ section {
   #services .box .box {
     margin-bottom: 20px;
   }
-  #services .box .icon .title{
+  #services .box .icon .title {
     width: 100%;
     font-size: 18px;
   }
-  #services .box .icon p{
+  #services .box .icon p {
     font-size: 13px;
     text-align: center;
     width: 100%;
@@ -639,27 +643,27 @@ section {
     text-align: center;
     padding-bottom: 15px;
   }
-  #services .box .flip-card-back .description{
+  #services .box .flip-card-back .description {
     font-size: 14px;
     text-align: center;
     margin-left: 60px;
   }
 }
-@media (max-width: 320px){
-  #services .box .flip-card-back .description{
+@media (max-width: 320px) {
+  #services .box .flip-card-back .description {
     font-size: 57%;
     margin: 21px 5px auto;
     margin-left: 33px;
     text-align: center;
   }
-  #services .box .icon .title{
+  #services .box .icon .title {
     width: 100%;
     font-size: 18px;
     text-align: center;
   }
 }
 
-#services .col-lg-6 {  
+#services .col-lg-6 {
   background-color: transparent;
   width: 305px;
   height: 205px;
@@ -878,7 +882,7 @@ section {
 }
 
 .hex::after {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: 86.602%;
   /* =  100 / tan(60) * 1.5 */
@@ -919,9 +923,6 @@ section {
   transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
 }
 
-
-
-
 /*** HEX CONTENT **********************************************************************/
 .hex img {
   left: -100%;
@@ -941,7 +942,7 @@ section {
 }
 
 #demo1 {
-  color: #F5CE95;
+  color: #f5ce95;
   text-transform: capitalize;
   text-align: center;
   bottom: 50%;
@@ -957,7 +958,7 @@ section {
   width: 0.25em;
   height: 0.03em;
   background: #ffffff;
-  content: '';
+  content: "";
   vertical-align: middle;
   transition: all 0.3s;
   text-align: center;
@@ -967,7 +968,6 @@ section {
   top: 50%;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .img {
@@ -979,7 +979,14 @@ section {
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
@@ -990,22 +997,25 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
-  content: '';
+  content: "";
   opacity: 0;
   transition: opacity 0.5s;
 }
 
 .img:before {
-  background: rgba(22, 103, 137, 0.3)
+  background: rgba(22, 103, 137, 0.3);
 }
 
 .img:after {
-  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
+  background: linear-gradient(
+    to top,
+    transparent,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
 }
 
 /*** HOVER EFFECT  **********************************************************************/
-
-
 
 .hexLink:hover h1,
 .hexLink:focus h1,
@@ -1015,23 +1025,17 @@ section {
   transition: 0.8s;
 }
 
-
 .hexIn:hover .img:before,
 .hexIn:hover .img:after,
 .hexIn:hover .hexLink {
   opacity: 1;
 }
 
-
-
-
-
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
-@media (min-width:1201px) {
-
+@media (min-width: 1201px) {
   /* <- 5-4  hexagons per row */
   #hexGrid {
-    padding-bottom: 5%
+    padding-bottom: 5%;
   }
 
   .hex {
@@ -1039,15 +1043,14 @@ section {
     /* = 100 / 5 */
   }
 
-  .hex:nth-child(19n+11) {
+  .hex:nth-child(19n + 11) {
     /* first hexagon of even rows */
     margin-left: 5%;
     /* = width of .hex / 2  to indent even rows */
   }
 }
 
-@media (max-width: 1200px) and (min-width:901px) {
-
+@media (max-width: 1200px) and (min-width: 901px) {
   /* <- 4-3  hexagons per row */
   #hexGrid {
     padding-bottom: 5.5%;
@@ -1059,15 +1062,14 @@ section {
     /* = 100 / 4 */
   }
 
-  .hex:nth-child(17n+10) {
+  .hex:nth-child(17n + 10) {
     /* first hexagon of even rows */
     margin-left: 12.5%;
     /* = width of .hex / 2  to indent even rows */
   }
 }
 
-@media (max-width: 1024px) and (min-width:901px) {
-
+@media (max-width: 1024px) and (min-width: 901px) {
   /* Adjust the navbar according the the tablet screen size*/
   .navbar ul {
     align-items: start;
@@ -1085,8 +1087,7 @@ section {
   }
 }
 
-@media (max-width: 900px) and (min-width:601px) {
-
+@media (max-width: 900px) and (min-width: 601px) {
   /* <- 3-2  hexagons per row */
   #hexGrid {
     padding-bottom: 7.4%;
@@ -1098,7 +1099,7 @@ section {
     /* = 100 / 3 */
   }
 
-  .hex:nth-child(5n+4) {
+  .hex:nth-child(5n + 4) {
     /* first hexagon of even rows */
     margin-left: 16.666%;
     /* = width of .hex / 2  to indent even rows */
@@ -1106,7 +1107,6 @@ section {
 }
 
 @media (max-width: 600px) {
-
   /* <- 2-1  hexagons per row */
   #hexGrid {
     padding-bottom: 11.2%;
@@ -1118,7 +1118,7 @@ section {
     /* = 100 / 3 */
   }
 
-  .hex:nth-child(3n+3) {
+  .hex:nth-child(3n + 3) {
     /* first hexagon of even rows */
     margin-left: 25%;
     /* = width of .hex / 2  to indent even rows */
@@ -1229,7 +1229,7 @@ section {
   animation: Dance 8s infinite;
 }
 
-.inputContainer{
+.inputContainer {
   position: relative;
 }
 
@@ -1245,7 +1245,7 @@ section {
   color: #2796ff;
 }
 
-.inputContainer i{
+.inputContainer i {
   position: absolute;
   top: 25px;
   left: 5px;
@@ -1291,7 +1291,6 @@ section {
 }
 
 @media (min-width: 768px) {
-
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1478,7 +1477,7 @@ section {
   color: #2d65ff !important;
 }
 
-.navbar ul> :nth-child(6) a {
+.navbar ul > :nth-child(6) a {
   padding: 10px 12px;
   margin: 0 8px;
 }
@@ -1589,7 +1588,6 @@ section {
 .view-btn:hover::after {
   transform: scaleX(0.8);
 } */
-
 
 /* Responsive Website */
 @media (max-width: 320px) {
@@ -1848,7 +1846,7 @@ footer {
 .wrapper .telegram:hover,
 .wrapper .telegram:hover .tooltip,
 .wrapper .telegram:hover .tooltip::before {
-  background-color: #229ED9;
+  background-color: #229ed9;
   color: #ffffff;
 }
 
@@ -1993,4 +1991,22 @@ footer {
   color: var(--box-anchor);
   font-size: 14px;
   margin-bottom: 15px;
+}
+
+#Gitbtn {
+  display: inline-flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-right: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  height: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  background: #24292f;
+  color: white;
 }
