@@ -51,8 +51,17 @@ body{
   transition: 500ms;
 }
 
+#about {
+  background-color: var(--footer);
+}
+
+#testimonials {
+  background-color: var(--footer);
+}
+
 #about .content{
   box-shadow: 5px 15px 25px 5px var(--sd);
+  background-color: var(--color1);
 }
 
 #about .content h2 {
