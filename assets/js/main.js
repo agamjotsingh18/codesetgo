@@ -1,4 +1,31 @@
-(function() {
+//ai bot
+
+
+var alanBtnInstance = alanBtn({
+    key: "c226c81396723ecd64a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+
+    onCommand: function (commandData) {
+        if (commandData && commandData.command === 'openURL') {
+            if (commandData.target === '_blank') {
+                window.open(commandData.url, '_newtab' + Math.floor(Math.random() * 999999));
+            } else {
+                window.location.href = commandData.url;
+            }
+        }
+
+    },
+
+    rootEl: document.getElementById("alan-btn"),
+});
+//
+
+var loader = document.getElementById("preloader");
+
+function myFunction() {
+    preloader.style.display = "none";
+}
+
+(function () {
     "use strict";
 
     // Selector Function
@@ -93,13 +120,13 @@
     }
 
     // Mobile Nav
-    on('click', '.mobile-nav-toggle', function(e) {
+    on('click', '.mobile-nav-toggle', function (e) {
         select('#navbar').classList.toggle('navbar-mobile')
         this.classList.toggle('bi-list')
         this.classList.toggle('bi-x')
     })
 
-    on('click', '.navbar .dropdown > a', function(e) {
+    on('click', '.navbar .dropdown > a', function (e) {
         if (select('#navbar').classList.contains('navbar-mobile')) {
             e.preventDefault()
             this.nextElementSibling.classList.toggle('dropdown-active')
@@ -107,7 +134,7 @@
     }, true)
 
     // Scroll with offset
-    on('click', '.scrollto', function(e) {
+    on('click', '.scrollto', function (e) {
         if (select(this.hash)) {
             e.preventDefault()
 
@@ -144,7 +171,7 @@
 
     new Swiper('.testimonials-slider', {
         speed: 600,
-        loop: true,
+        loop: false,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false
@@ -203,19 +230,189 @@ window.addEventListener('resize', () => {
 
 //send the content of enquiry form to the email
 function sendMail() {
-    var tempParams = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        message: document.getElementById('message').value,
-    };
-    emailjs.send('YOUR_SERVICE_ID','YOUR_TEMPLATE_ID',tempParams)
-    .then(function(responce){
-        console.log('SUCCESS!',response.status);
-        alert('Form Submitted Successfully');
-    },
-    function(error){
-        console.log('FAILED!',response.status,response.text);
-        alert('Form Submission Faild! Try Again');
-    })
+    if (checkInputs()) {
+        var tempParams = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value,
+        };
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', tempParams)
+            .then(function (responce) {
+                console.log('SUCCESS!', response.status);
+                alert('Form Submitted Successfully');
+            },
+                function (error) {
+                    console.log('FAILED!', response.status, response.text);
+                    alert('Form Submission Faild! Try Again');
+                })
+    }
+    else
+        return false;
+};
+
+function checkInputs() {
+    const username = document.getElementById('name');
+    const useremail = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const message = document.getElementById('message');
+
+    //get values from input fields
+    const emailval = useremail.value.trim();
+    const usernameval = username.value.trim();
+    const phoneval = phone.value.trim();
+    const messageval = message.value.trim();
+
+    if (usernameval === '') {
+        document.getElementById('nameerr').innerText = 'Please enter your Name !';
+        username.classList.remove('success');
+        username.classList.add('error');
+    }
+    else {
+        document.getElementById('nameerr').innerText = '';
+        username.classList.remove('error');
+        username.classList.add('success');
+    }
+
+    if (emailval === '') {
+        document.getElementById('mailerr').innerText = 'Please enter your E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+    }
+    else if (!validateEmail(emailval)) {
+        document.getElementById('mailerr').innerText = 'Please enter valid E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+    }
+    else {
+        document.getElementById('mailerr').innerHTML = '';
+        useremail.classList.remove('error');
+        useremail.classList.add('success');
+    }
+    if (phoneval === '') {
+        document.getElementById('phoneerr').innerText = 'Please enter Phone No !';
+        phone.classList.remove('success');
+        phone.classList.add('error');
+    }
+    else {
+        document.getElementById('phoneerr').innerText = '';
+        phone.classList.remove('error');
+        phone.classList.add('success');
+    }
+    if (messageval === '') {
+        document.getElementById('msgerr').innerText = 'Please enter any Message !';
+        message.classList.remove('success');
+        message.classList.add('error');
+    }
+    else {
+        document.getElementById('msgerr').innerText = '';
+        message.classList.remove('error');
+        message.classList.add('success');
+    }
+
+    if (emailval !== '' && usernameval !== '' && phoneval !== '' && messageval !== '') {
+        console.log("complete");
+        return true;
+    }
+
+}
+
+function validateEmail(mail) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+        return true;
+    }
+    return false;
+}
+
+//join-us form validation start here
+function validateJoinUs() {
+
+    const username = document.getElementById('name');
+    const useremail = document.getElementById('email');
+    const college = document.getElementById('college');
+    const year = document.getElementById('year');
+    const phone = document.getElementById('phone');
+    const country = document.getElementById('country');
+    const whycaptain = document.getElementById('whycaptain');
+
+    //get values from input fields
+    const emailval = useremail.value.trim();
+    const usernameval = username.value.trim();
+    const collegeval = college.value.trim();
+    const yearval = year.value.trim();
+    const phoneval = phone.value.trim();
+    const countryval = country.value.trim();
+    const whycaptainval = whycaptain.value.trim();
+
+    if (usernameval === '') {
+        document.getElementById('nameerr').innerText = 'Please enter your Name !';
+        username.classList.remove('success');
+        username.classList.add('error');
+        return false;
+    }
+    else if (emailval === '') {
+        document.getElementById('nameerr').innerText = '';
+        username.classList.remove('error');
+        username.classList.add('success');
+        document.getElementById('mailerr').innerText = 'Please enter your E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+        return false;
+    }
+    else if (!validateEmail(emailval)) {
+        document.getElementById('mailerr').innerText = 'Please enter valid E-mail !';
+        useremail.classList.remove('success');
+        useremail.classList.add('error');
+        return false;
+    }
+    else if (collegeval === '') {
+        document.getElementById('mailerr').innerHTML = '';
+        useremail.classList.remove('error');
+        useremail.classList.add('success');
+
+        document.getElementById('collegeerr').innerText = 'Please enter College with City !';
+        college.classList.remove('success');
+        college.classList.add('error');
+        return false;
+    }
+    else if (yearval === '') {
+        document.getElementById('collegeerr').innerText = '';
+        college.classList.remove('error');
+        college.classList.add('success');
+        document.getElementById('yearerr').innerText = 'Please enter graduation year!';
+        year.classList.remove('success');
+        year.classList.add('error');
+        return false;
+    }
+    else if (phoneval === '') {
+        document.getElementById('yearerr').innerText = '';
+        year.classList.remove('error');
+        year.classList.add('success');
+        document.getElementById('phoneerr').innerText = 'Please enter Phone No !';
+        phone.classList.remove('success');
+        phone.classList.add('error');
+        return false;
+    }
+    else if (countryval === '') {
+        document.getElementById('phoneerr').innerText = '';
+        phone.classList.remove('error');
+        phone.classList.add('success');
+        document.getElementById('countryerr').innerText = 'Please enter country !';
+        country.classList.remove('success');
+        country.classList.add('error');
+        return false;
+    }
+    else if (whycaptainval === '') {
+        document.getElementById('countryerr').innerText = '';
+        country.classList.remove('error');
+        country.classList.add('success');
+        document.getElementById('whycaptainerr').innerText = 'Required field !';
+        whycaptain.classList.remove('success');
+        whycaptain.classList.add('error');
+        return false;
+    }
+    else {
+        console.log("complete");
+        return true;
+    }
 }

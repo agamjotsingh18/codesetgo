@@ -8,11 +8,22 @@
 
 
 CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed! 
+<h2>
+  About Us
+</h2>
+CodeSetGo is a community made for the students and made by the students. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations!
+The Tech interested students and professionals are all welcomed! We provide the best learning experience and the latest trends of the tech world at your doorsteps from the minds of highly qualified industry professionals. <br>
+
+# Webinars, Workshops, and Boot Camps
+We don't stop at just learning; we actively engage our community through webinars, workshops, and boot camps. These events foster an environment of collaboration, enabling aspiring students and professionals to come together, share ideas, and take their skills to new heights.So JOIN US! and LEARN AND INCREASE YOUR SKILL SET AT EASE!
+
+
 
 <h2>
 <a href="https://codesetgo.netlify.app/" target="_blank">Visit Our Website💻</a>
 </h2>
 
+# Join Us in Our Journey
 So, here you go! Contribute to the Open Source Website of CodeSetGo Community 🤩 Excited?
 
 
@@ -110,11 +121,16 @@ $ git commit -m "message"
 $ git push -u origin Branch_Name
 ```
 
-## Step 7: Pull Request
-- Go to your repository in the browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
+## Step 7: Create a Pull Request
+- Go to your repository in the browser and click on compare and pull request. Then add a title and description to your pull request that explains your contribution.
 
 - Voila! Your Pull Request has been submitted and will be reviewed by the moderators and merged.🥳
 
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Terms and conditions for use, reproduction and distribution are under the [MIT License](https://opensource.org/license/mit/).
 
 ## Contributors ✨
 
@@ -195,6 +211,8 @@ Thanks goes to these wonderful people :
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ---
+
+Join us today at CodeSetGo and unlock the door to boundless technological possibilities. Let's learn, create, and shape the future together! 🌟
 
 <p align="right"><a href="#top">Back to top</a></p>
 

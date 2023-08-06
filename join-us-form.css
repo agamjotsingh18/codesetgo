@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.h-title{
+  margin-top: 100px;
+}
+.contactpage {
+  max-width: 78%;
+  border-radius: 10px;
+  height: 80vh;
+  margin: 10px;
+  padding: 10px 15px;
+  margin-inline:auto ;
+  display: flex;
+  background-color: #243447;
+  box-shadow: 10px 15px 35px rgba(0, 0, 0, 0.462);
+}
+.contactform{
+  display: flex;
+}
+.cntctimg{
+ width: 20rem;
+height: 100%; 
+z-index: 2;
+position: relative;
+animation: up-down 3.24s .5s infinite alternate-reverse;
+}
+
+.form-1{
+  width: 30rem;
+  margin-top: 30px;
+ 
+}
+.form-2{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin-top: 20px;
+  margin-left: -66px;
+}
+.form-1 input{
+  width:90%;
+  margin-top: 5px;
+  background-color: transparent;
+color: rgb(234, 226, 226);
+font-size: 15px;
+padding-left: 40px;
+}
+
+.form-1 .inputContainer i{
+  top: 15px;
+  left: 17px;
+}
+.form-1 input.error{
+  border-bottom: 2px solid #e74c3c;
+}
+.form-1 input.success{
+  border-bottom: 2px solid #2ecc71;
+}
+
+.form-1 .spandiv{
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+.form-1 .spandiv small {
+  color: #e74c3c;
+  margin-left: 10px;
+}
+
+.form-2 .spandiv{
+  margin-top: -20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.form-2 .spandiv small {
+  color: #e74c3c;
+}
+
+.label{
+  padding-left: 10px;
+  color: white;
+}
+
+.form-2 textarea{
+  width: 150%;
+  color: rgb(236, 225, 225);
+font-size: 15px;
+  background-color: transparent;
+}
+
+.form-2 textarea.error{
+  border: 2px solid #e74c3c;
+}
+.form-2 textarea.success{
+  border: 2px solid #2ecc71;
+}
+
+
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 66px;
+  text-align: center;
+
+  color: #004a8e;
+}
+
+h1 span {
+  color: #0868c0;
+  font-size: larger;
+  transition: .7s;
+}
+h1 span:hover{
+  font-size: 60px;
+  color: #024584;
+  cursor: pointer;
+}
+.Subtn{
+  transition: .6s;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+.Subtn:hover{
+  background-color: rgb(24, 219, 24);
+  transform-origin: right;
+}
+
+input,
+textarea {
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  height: 50px;
+  width: 45%;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  outline: none;
+  padding-left: 14px;
+  
+}
+.form{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: left;
+  margin-left: 20px;
+  color: #8e8c8cb9;
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  background: #004a8e;
+  border-radius: 11px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  /* identical to box height */
+
+  text-align: center;
+  margin-left: 35%;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+input{
+  border-left: none;
+  border-top:  none;
+  border-right:none ;
+  border-radius: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.11);
+}
+.contactimg{
+  max-width: 100vh;
+}
+@keyframes up-down {
+  0%{
+transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(5px);
+  }
+  
+}
+ 
+.contactpage{height: fit-content;}
+
+@media screen and (max-width:14651px) {
+  
+  .form-1{
+  
+    width: 120%;
+  }
+  .form-2{
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width:1240px) {
+  .form-2{
+  width: 240px;
+  }
+  .form-1{
+    width: 130%;
+  }
+}
+@media screen and (max-width:1100px) {
+  .cntctimg{
+    width: 15rem;
+  }
+  .form-2{
+    width: 100%;
+  }
+  .contactpage{height: fit-content;}
+}
+@media screen and (max-width:999px) {
+  
+  
+  .form-1{
+    max-width:22rem ;
+    
+  }
+  .form-2{
+width: 12rem;
+  }
+}
+ 
