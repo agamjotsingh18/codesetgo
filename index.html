@@ -427,7 +427,8 @@
               <div class="title">GET IN TOUCH</div>
               <div>
                 <div class="inputContainer">
-                  <input type="text" id="name" placeholder="Your Name" class="" pattern='[a-zA-Z]+' required aria-required="true"
+                  <label for="name" class="sr-only-labels">Enter Your Name: </label>
+                  <input type="text" name="name" id="name" placeholder="Your Name" class="" pattern='[a-zA-Z]+' required aria-required="true"
                     aria-label="Enter you name" aria-describedby="nameerr" />
                   <i class="fa fa-user"></i>
                 </div>
@@ -436,7 +437,8 @@
               
             <div>
               <div class="inputContainer">
-                <input type="email" id="email" class="" placeholder="Email id" pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
+                <label for="email" class="sr-only-labels">Enter Your Mail: </label>
+                <input type="email" name="email" id="email" class="" placeholder="Email id" pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
                   required aria-required="true" aria-label="Enter you email" aria-describedby="mailerr" />
                 <i class="fa fa-envelope"></i>
               </div>
@@ -445,7 +447,8 @@
               
              <div>
               <div class="inputContainer">
-                <input type="tel" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required aria-required="true" aria-label="Enter you phone number" aria-describedby="phoneerr"/>
+                 <label for="phone" class="sr-only-labels">Enter Your Phone Number: </label>
+                <input type="tel" name="phone" id="phone" class="" placeholder="Phone no." pattern="[0-9]{10}$" required aria-required="true" aria-label="Enter you phone number" aria-describedby="phoneerr"/>
                <i class="fa fa-phone"></i>
               </div>
               <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
@@ -453,14 +456,15 @@
             
               <div>
                 <div class="inputContainer">
-                  <textarea id="message" row="5" class="" placeholder="How can we help you?" required aria-required="true" aria-label="Enter you message" aria-describedby="msgerr"></textarea>
+                  <label for="message" class="sr-only-labels">How can we help you? </label>
+                  <textarea id="message" name="message" row="5" class="" placeholder="How can we help you?" required aria-required="true" aria-label="Enter you message" aria-describedby="msgerr"></textarea>
                   <i class="fa fa-comment"></i>
                 </div>
                 <div class="spandiv"><small class="small" id="msgerr" role="alert"></small></div>
               </div>
              
 
-              <button type="submit" onclick="sendMail()" class="hoverchanger">
+              <button type="submit" role="button" aria-describedby="Submit button" onclick="sendMail()" class="hoverchanger">
                 Send
               </button>
             </form>
