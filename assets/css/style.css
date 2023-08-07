@@ -731,7 +731,7 @@ section {
   margin-top: 2px;
   font-size: 22px;
   text-align: center;
-  color: var(--textcolor);
+  color: var(--textcolor3);
 }
 
 #services .icon p {
@@ -746,7 +746,7 @@ section {
   font-size: 17px;
   font-weight: 450;
   text-align: center;
-  color: var(--textcolor);
+  color: var(--textcolor3);
 }
 
 /* @media (max-width: 767px) {
