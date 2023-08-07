@@ -99,7 +99,8 @@ padding-left: 40px;
 .form-2 textarea{
   width: 250%;
   height: auto;
-  color: rgb(236, 225, 225);
+  color:#2797ff;
+  font-weight: 500;
 font-size: 15px;
   background-color: rgb(255, 255, 255);
   border: 2px solid black;
