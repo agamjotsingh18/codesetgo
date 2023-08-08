@@ -294,7 +294,7 @@ width: 7rem;
   }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:960px) {
   
   
   .form-1{
@@ -302,14 +302,14 @@ width: 7rem;
     
   }
   .form-2{
-width: 7rem;
+/* width: 7rem; */
   }
   .form-2 textarea{
-    max-width: 10rem;
-    margin-right: 10px;
+    max-width: 20rem;
+    /* margin-right: 10px; */
   }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:840px) {
   
   
   .form-1{
@@ -320,7 +320,7 @@ width: 7rem;
 width: 7rem;
   }
   .form-2 textarea{
-    max-width: 4rem;
+    max-width: 7rem;
     margin-right: 10px;
   }
 }
