@@ -1814,14 +1814,24 @@ footer {
 }
 
 .top-footer-text {
-  padding-bottom: 10px;
+  padding: 0 10px 10px;
 }
 
 .list-footer {
+  padding: 0;
+  width: 90%;
+  margin: 10px auto 0;
+  list-style-type:none ;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width:300px) {
+  .list-footer {
+    flex-wrap: wrap;
+  }
 }
 
 .top-footer-text h1 {
@@ -1984,6 +1994,7 @@ footer {
 }
 
 .footer-copyright {
+  padding: 10px;
   text-align: center;
   margin-top: 20px;
   color: rgba(229, 228, 232, 0.58);
