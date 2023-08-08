@@ -107,6 +107,7 @@ font-size: 15px;
   border-radius: 15px;
   /* margin-right: 50px; */
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.462);
+  margin-right: 0px;
 }
 
 .form-2 textarea.error{
@@ -188,7 +189,7 @@ form {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 11px;
   line-height: 27px;
   /* identical to box height */
 
@@ -226,11 +227,6 @@ input{
   border-right:none ;
   border-radius: none;
 }
-input:focus,
-textarea:focus {
-  /* box-shadow: 3px 4px 23px rgba(0, 0, 0, 0.11); */
-  /* background-color: #000000; */
-}
 .contactimg{
   max-width: 100vh;
 }
@@ -253,8 +249,8 @@ transform: translateY(-5px);
 @media screen and (max-width:14651px) {
   
   .form-1{
-  
-    width: 120%;
+    
+    width: 150%;
   }
   .form-2{
     margin-left: 5%;
@@ -262,7 +258,10 @@ transform: translateY(-5px);
 }
 @media screen and (max-width:1240px) {
   .form-2{
-  width: 240px;
+  width: 100%;
+  }
+  .form-2 textarea{
+    width: fit-content;
   }
   .form-1{
     width: 130%;
@@ -276,16 +275,53 @@ transform: translateY(-5px);
     width: 100%;
   }
   .contactpage{height: fit-content;}
+  .form-2 textarea{
+    width: fit-content;
+  }
 }
 @media screen and (max-width:999px) {
   
   
   .form-1{
-    max-width:22rem ;
+    max-width:20rem ;
     
   }
   .form-2{
 width: 7rem;
+  }
+  .form-2 textarea{
+    max-width: 15rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  
+  
+  .form-1{
+    max-width:12rem ;
+    
+  }
+  .form-2{
+width: 7rem;
+  }
+  .form-2 textarea{
+    max-width: 10rem;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width:800px) {
+  
+  
+  .form-1{
+    max-width:12rem ;
+    
+  }
+  .form-2{
+width: 7rem;
+  }
+  .form-2 textarea{
+    max-width: 4rem;
+    margin-right: 10px;
   }
 }
  
