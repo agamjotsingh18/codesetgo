@@ -7,15 +7,15 @@
 <h1 align="center">Contributions Accepted under GSSoC '23</h1>
 
 
-CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcomed! 
+CodeSetGo is a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers, and enthusiastic folks who are engaged toward the brighter future of technology and innovations! The Tech interested students and professionals are all welcome! 
 <h2>
   About Us
 </h2>
-CodeSetGo is a community made for the students and made by the students. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers and enthusiastic folks who are engaged toward the brighter future of technology and innovations!
-The Tech interested students and professionals are all welcomed! We provide the best learning experience and the latest trends of the tech world at your doorsteps from the minds of highly qualified industry professionals. <br>
+CodeSetGo is a community made for the students and made by the students. It's a place for Tech Enthusiasts to learn the latest technology in the comfort and convenience of their homes! It's the community of learners, developers, cryptographers, and enthusiastic folks who are engaged toward the brighter future of technology and innovations!
+The Tech interested students and professionals are all welcome! We provide the best learning experience and the latest trends of the tech world at your doorsteps from the minds of highly qualified industry professionals. <br>
 
 # Webinars, Workshops, and Boot Camps
-We don't stop at just learning; we actively engage our community through webinars, workshops, and boot camps. These events foster an environment of collaboration, enabling aspiring students and professionals to come together, share ideas, and take their skills to new heights.So JOIN US! and LEARN AND INCREASE YOUR SKILL SET AT EASE!
+We don't stop at just learning; we actively engage our community through webinars, workshops, and boot camps. These events foster an environment of collaboration, enabling aspiring students and professionals to come together, share ideas, and take their skills to new heights. So JOIN US! and LEARN AND INCREASE YOUR SKILL SET AT EASE!
 
 
 
@@ -208,7 +208,7 @@ Thanks goes to these wonderful people :
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
 ---
 
