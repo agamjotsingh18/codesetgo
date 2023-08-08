@@ -1993,20 +1993,11 @@ footer {
   margin-bottom: 15px;
 }
 
-#Gitbtn {
-  display: inline-flex;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  margin-right: 0.5rem;
-  align-items: center;
-  border-radius: 0.5rem;
-  height: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  text-align: center;
-  background: #24292f;
+ 
+#Gitbtn{
+  display: inline-block;
+  background-color: black;
   color: white;
+  margin: 5px 10px;
 }
+
