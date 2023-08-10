@@ -54,6 +54,31 @@
 }
 
 .enquiry-form .spandiv small {
+    color: #e74c3c;
+ }
+  
+.enquiry-form button{
+    padding: 15px;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+}
+
+.sr-only-labels {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
   color: #e74c3c;
 }
 
