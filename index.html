@@ -126,6 +126,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto " href="Resources.html">Resources</a></li>
           <li><a class="nav-link scrollto " href="Contributer.html">Our Contributors</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li>
@@ -416,6 +417,8 @@
     <!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
+
+
     <section id="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -423,7 +426,8 @@
         </div>
         <div class="row contact-info">
           <div class="enquiry">
-            <form class="enquiry-form" id="enquiry-form" aria-label="Contact us form">
+           
+            <form class="enquiry-form" id="enquiry-form" aria-label="Contact us form" action="https://getform.io/f/0125a310-c60b-492d-ab54-476717dbf671" method="POST" novalidate>
               <div class="title">GET IN TOUCH</div>
               <div>
                 <div class="inputContainer">
@@ -432,7 +436,6 @@
                     aria-label="Enter you name" aria-describedby="nameerr" />
                   <i class="fa fa-user"></i>
                 </div>
-                <div class="spandiv"><small class="small" id="nameerr" role="alert"></small></div>
               </div>
               
             <div>
@@ -442,9 +445,7 @@
                   required aria-required="true" aria-label="Enter you email" aria-describedby="mailerr" />
                 <i class="fa fa-envelope"></i>
               </div>
-              <div class="spandiv"><small class="small" id="mailerr" role="alert"></small></div>
-            </div>
-              
+             
              <div>
               <div class="inputContainer">
                  <label for="phone" class="sr-only-labels">Enter Your Phone Number: </label>
@@ -454,20 +455,49 @@
               <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
              </div>
             
-              <div>
+                <div class="spandiv"><small class="small" id="phoneerr" role="alert"></small></div>
+    
+              
                 <div class="inputContainer">
                   <label for="message" class="sr-only-labels">How can we help you? </label>
                   <textarea id="message" name="message" row="5" class="" placeholder="How can we help you?" required aria-required="true" aria-label="Enter you message" aria-describedby="msgerr"></textarea>
                   <i class="fa fa-comment"></i>
                 </div>
-                <div class="spandiv"><small class="small" id="msgerr" role="alert"></small></div>
               </div>
-             
+          
 
               <button type="submit" role="button" aria-describedby="Submit button" onclick="sendMail()" class="hoverchanger">
                 Send
               </button>
+         </div>
+               
+                  
             </form>
+            
+            <script>
+              const form = document.getElementById('enquiry-form');
+            
+              form.addEventListener('submit', function (event) {
+                event.preventDefault();
+            
+                if (form.checkValidity()) {
+                  // Submit the form if it's valid
+                  form.submit();
+                } else {
+                  // Display error messages for invalid fields
+                  const inputs = form.querySelectorAll('input, select, textarea');
+                  inputs.forEach((input) => {
+                    if (!input.checkValidity()) {
+                      const errorElement = input.parentElement.querySelector('.small');
+                      errorElement.textContent = input.validationMessage;
+                    }
+                  });
+                }
+              });
+            </script>
+                        
+          
+          
           </div>
           <div class="col-md-12">
             <div class="contact-phone">
@@ -521,12 +551,12 @@
           <span>a community made for the students and made by the students.</span>
         </center>
       </div>
-      <div class="list-footer">
-        <ul><a href="#about">About Us</a></ul>
-        <ul><a href="#contact">Contact</a></ul>
-        <ul><a href="#services">Services</a></ul>
-        <ul><a href="">Licenses</a></ul>
-      </div>
+      <ul class="list-footer">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="">Licenses</a></li>
+      </ul>
     </div>
 
     <div class="wrapper">

@@ -1,56 +1,56 @@
-.enquiry{
- justify-content: center;
- align-items: center;
- display: flex;
- z-index: 1;
+/** @format */
+
+.enquiry {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 1;
 }
 
-.enquiry-form{
-    display: flex;
-    background-color: #050b1f;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 1000px;
-    border-radius: 10px;
-    margin: 4vw;
+.enquiry-form {
+  display: flex;
+  background-color: #050b1f;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 10px;
+  margin: 4vw;
 }
 
-.enquiry-form .title{
-    color: white;
-    text-align: left;
-    font-weight: 800;
-    font-size: 20pt;
-    margin-bottom: 20px;
+.enquiry-form .title {
+  color: white;
+  text-align: left;
+  font-weight: 800;
+  font-size: 20pt;
+  margin-bottom: 20px;
 }
 
 .enquiry-form span {
-    color: #2796ff;
+  color: #2796ff;
 }
 
-.enquiry-form input,textarea{
-    margin: 10px 0;
-    padding: 15px;
-    padding-left: 35px;
-    outline: none;
-    background: #f5f5f5;
-    font-size: 16px;
-    border: 0;
-    border-radius: 5px;
-    width: 100%;
+.enquiry-form input,
+.enquiry-form textarea {
+  margin: 10px 0;
+  padding: 15px;
+  padding-left: 35px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
 }
 
-.enquiry-form input.error{
-    border: 2px solid #e74c3c;
+.enquiry-form input.error,
+.enquiry-form textarea.error {
+  border: 2px solid #e74c3c;
 }
-.enquiry-form input.success{
-    border: 2px solid #2ecc71;
-}
-.enquiry-form textarea.error{
-    border: 2px solid #e74c3c;
-}
-.enquiry-form textarea.success{
-    border: 2px solid #2ecc71;
+
+.enquiry-form input.success,
+.enquiry-form textarea.success {
+  border: 2px solid #2ecc71;
 }
 
 .enquiry-form .spandiv small {
@@ -79,4 +79,18 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+  color: #e74c3c;
+}
+
+.enquiry-form button {
+  padding: 15px;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 10px;
 }
