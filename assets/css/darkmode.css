@@ -12,7 +12,7 @@ body.light{
     --color2:#2796FF;
     --color3:white;
     --color4:rgba(0,186,124);
-    --bar:white;
+    --bar:transparent;
     --footer:#f2f5f8;
     --callcolor:#2796FF;
     --service: linear-gradient(#4770a9, #98b3ee);
@@ -32,7 +32,7 @@ body.dark{
     --color2:white;
     --color3:#2796FF;
     --border-color:rgba(167, 165, 165, 0.168);
-    --bar:#141d26;
+    --bar: transparent;
     --footer:#141d26;
     --service: linear-gradient(rgb(45, 71, 99), #413b7a);
     --icon: linear-gradient(45deg, #2796ff 30%, #4d85b9 70%);

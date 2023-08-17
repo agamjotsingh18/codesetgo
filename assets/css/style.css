@@ -109,7 +109,6 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   background: var(--bar);
-  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
 #header #logo h1 {
